@@ -1,0 +1,466 @@
+/* Reset */
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+h2 {
+  font-size: 2.5rem;                /* Veći, ali responsive */
+  font-weight: 700;                 /* Bold */
+  text-align: center;
+  margin: 3rem 0 1.5rem;
+  color: #ffffff;                  /* Bijeli tekst */
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6); /* Duboka sjena */
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  letter-spacing: 0.5px;
+  position: relative;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9fafb;
+  color: #333;
+  line-height: 1.6;
+}
+header {
+  background: #0c003d;
+  color: white;
+  padding: 3rem 1rem;
+}
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.text-section {
+  flex: 1 1 400px;
+}
+.text-section h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.text-section p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 500px;
+}
+.btn-download {
+  display: inline-block;
+  background: white;
+  color: #4f46e5;
+  font-weight: 700;
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(255 255 255 / 0.4);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-right: 1rem;
+}
+.btn-download:hover {
+  background: #3730a3;
+  color: white;
+}
+.btn-trailer {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn-trailer:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+.video-thumbnail img {
+  max-width: 560px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  cursor: pointer;
+  display: block;
+}
+
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; 
+  z-index: 1000; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+.modal-content {
+  position: relative;
+  margin: 10% auto;
+  padding: 0;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 12px;
+  background-color: #000;
+}
+.close-btn {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1010;
+}
+.modal-content iframe {
+  width: 100%;
+  height: 315px;
+  border-radius: 12px;
+}
+
+/* Sections */
+section {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #4f46e5;
+}
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 1.5rem;
+}
+.feature-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgb(0 0 0 / 0.05);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+.feature-card h3 {
+  margin-bottom: 0.75rem;
+  color: #4338ca;
+}
+.screenshots {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+.screenshots img {
+  max-height: 400px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.1);
+  flex-shrink: 0;
+}
+.reviews {
+  background: #eef2ff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgb(79 70 229 / 0.15);
+  max-width: 700px;
+  margin: 0 auto;
+}
+.review {
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+.app-description {
+  padding: 3rem 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: #333;
+  background-color: #fdfdfd;
+}
+
+.app-description h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.app-description h3 {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+
+.app-description ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.app-description li {
+  margin-bottom: 0.6rem;
+}
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  flex-direction: column;
+}
+
+.lightbox.hidden {
+  display: none;
+}
+
+#lightbox-image {
+  max-width: 90%;
+  max-height: 80%;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+.close-lightbox {
+  color: #fff;
+  font-size: 2rem;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-buttons button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 3rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.screenshots img {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.screenshots img:hover {
+  transform: scale(1.05);
+}
+.language-support {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e0e0e0;
+}
+
+.language-support h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.language-support .flags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.language-support .flags img {
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+
+.language-support .flags img:hover {
+  transform: scale(1.1);
+}
+.flags-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 1rem 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.language-list {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+  text-align: center;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#toTopBtn {
+  position: fixed;
+  bottom: 320px;
+  right: 40px;
+  z-index: 100;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  display: none; /* sakriven dok se ne skrola malo */
+  transition: background-color 0.3s ease;
+}
+
+#toTopBtn:hover {
+  background-color: #0056b3;
+}
+
+
+.btn-home {
+  position: absolute;
+  top: 390px; /* ili visina headera + malo razmaka */
+  right: 65%;
+  background: #222;
+  color: #f0f0f0;
+  padding: 10px 16px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  transition: background 0.25s ease, transform 0.15s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 9999;
+}
+
+.btn-home:hover {
+  background: #444;
+  transform: translateY(-2px);
+}
+
+.btn-home:active {
+  transform: translateY(0);
+}
+
+.btn-home svg {
+  width: 18px;
+  height: 18px;
+  fill: #f0f0f0;
+}
+
+
+
+
+footer {
+  background: #0c003d;
+  color: white;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+footer a {
+  color: #a5b4fc;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  position: relative;
+  margin: 5% auto;
+  padding: 0;
+  width: 90%;
+  max-width: 800px;
+  background-color: #000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#youtube-video {
+  width: 100%;
+  height: 450px;
+  border: none;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  max-width: 480px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Responsive */
+@media (max-width: 800px) {
+
+    h2 {
+    font-size: 1.8rem; /* Manje za mobilne */
+  }
+
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .text-section, .video-thumbnail {
+    max-width: 100%;
+  }
+  .text-section h1 {
+    font-size: 2.5rem;
+  }
+  .text-section p {
+    font-size: 1.2rem;
+    max-width: 100%;
+  }
+  .video-thumbnail img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 1.8rem; /* Manje za mobilne */
+  }
+}

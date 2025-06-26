@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Invoicer X - Your Invoice App</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="header-content">
+    <div class="text-section">
+      <h1>Invoicer X</h1> 
+      <img src="GetItOnGooglePlay_Badge_Web_color_English(1).png" width="170px" height="50px">
+      <p>Your all-in-one invoice generator app</p>
+      <a href="https://play.google.com/store/apps/details?id=my.invoice.invoicegeneratorapp" target="_blank" rel="noopener" class="btn-download">
+        Get it on Google Play
+      </a>
+    
+      <button id="watch-trailer-btn" class="btn-trailer">▶ Watch Trailer</button>  
+    </div>
+    
+    <div class="video-thumbnail">
+      <img src="qr code.png" alt="Invoicer X Trailer Thumbnail" />
+    </div>
+    
+  </div>
+  
+  <!-- Modal -->
+  <div id="video-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="close-modal">&times;</span>
+      <iframe 
+        id="youtube-video" 
+        width="560" 
+        height="315" 
+        src="" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</header>
+
+
+
+<section class="language-support">
+  <h2>🌍 Language & Region Support</h2>
+  <p>Invoicer X is built for international use and supports the following languages and regions:</p>
+
+  <div class="flags-row">
+    <img src="https://flagcdn.com/us.svg" alt="English (US)" title="English (US)" height="32" />
+    <img src="https://flagcdn.com/gb.svg" alt="English (UK)" title="English (UK)" height="32" />
+    <img src="https://flagcdn.com/it.svg" alt="Italian" title="Italian (Italy)" height="32" />
+    <img src="https://flagcdn.com/nl.svg" alt="Dutch (Netherlands)" title="Dutch (Netherlands)" height="32" />
+    <img src="https://flagcdn.com/be.svg" alt="Dutch (Belgium)" title="Dutch (Belgium)" height="32" />
+    <img src="https://flagcdn.com/se.svg" alt="Swedish" title="Swedish (Sweden)" height="32" />
+    <img src="https://flagcdn.com/at.svg" alt="German (Austria)" title="German (Austria)" height="32" />
+    <img src="https://flagcdn.com/de.svg" alt="German (Germany)" title="German (Germany)" height="32" />
+    <img src="https://flagcdn.com/hu.svg" alt="Hungarian" title="Hungarian (Hungary)" height="32" />
+    <img src="https://flagcdn.com/fi.svg" alt="Finnish" title="Finnish (Finland)" height="32" />
+    <img src="https://flagcdn.com/cz.svg" alt="Czech" title="Czech (Czech Republic)" height="32" />
+    <img src="https://flagcdn.com/ie.svg" alt="Irish" title="Irish (Ireland)" height="32" />
+    <img src="https://flagcdn.com/hr.svg" alt="Croatian" title="Croatian (Croatia)" height="32" />
+    <img src="https://flagcdn.com/ru.svg" alt="Russian" title="Russian (Russia)" height="32" />
+    <img src="https://flagcdn.com/cn.svg" alt="Chinese" title="Chinese (Simplified)" height="32" />
+    <img src="https://flagcdn.com/fr.svg" alt="French" title="French (France)" height="32" />
+    <img src="https://flagcdn.com/kr.svg" alt="Korean" title="Korean (South Korea)" height="32" />
+    <img src="https://flagcdn.com/jp.svg" alt="Japanese" title="Japanese (Japan)" height="32" />
+    <img src="https://flagcdn.com/in.svg" alt="Hindi" title="Hindi (India)" height="32" />
+    <img src="https://flagcdn.com/es.svg" alt="Spanish" title="Spanish (Spain & LATAM)" height="32" />
+    <img src="https://flagcdn.com/pt.svg" alt="Portuguese" title="Portuguese (Portugal)" height="32" />
+  </div>
+
+  <p class="language-list">
+    Supported languages & regions:  
+    English (US & UK), Italian (Italy), Dutch (Netherlands & Belgium), Swedish (Sweden),  
+    German (Austria & Germany), Hungarian (Hungary), Finnish (Finland), Czech (Czech Republic),  
+    Irish (Ireland), Croatian (Croatia), Russian (Russia), Chinese (Simplified),  
+    French (France), Korean (South Korea), Japanese (Japan), Hindi (India),  
+    Spanish (Spain & Latin America), Portuguese (Portugal)
+  </p>
+</section>
+
+
+
+<section class="description">
+  <div class="container">
+    <h2>What is Invoicer X?</h2>
+    <p>
+      Invoicer X is your ultimate solution for creating fast, professional, and customizable invoices. Whether you're a freelancer, small business owner, or large enterprise, this app simplifies billing and financial management.
+    </p>
+    <p>
+      With intuitive design, multi-currency support, and features tailored for modern business needs — including QR codes and VAT compliance — Invoicer X helps you stay organized and get paid faster.
+    </p>
+  </div>
+</section>
+
+
+<section>
+  <h2>App Screenshots</h2>
+  <div class="screenshots">
+    <img src="Za google play.png" alt="Screenshot 1" data-index="0" />
+    <img src="invoice.png" alt="Screenshot 2" data-index="1" />
+    <img src="example1.jpg" alt="Screenshot 3" data-index="2" />
+    <img src="example2.jpg" alt="Screenshot 4" data-index="3" />
+    <img src="example3.jpg" alt="Screenshot 5" data-index="4" />
+
+  </div>
+</section>
+<!-- Lightbox Modal -->
+<div id="lightbox-modal" class="lightbox hidden">
+  <span class="close-lightbox">&times;</span>
+  <img id="lightbox-image" src="" alt="Large view" />
+  <div class="nav-buttons">
+    <button id="prev-btn">&#10094;</button>
+    <button id="next-btn">&#10095;</button>
+  </div>
+</div>
+
+<section class="app-description">
+  <h2>Try Invoicer X – Free for 3 Days!</h2>
+  <p>
+    Enjoy full access to all premium features during your trial – no commitment, cancel anytime.
+  </p>
+
+  <p>
+    Create and send professional invoices in just a few taps with <strong>Invoicer X</strong>, the smart invoicing app built for 
+    <strong>freelancers, small businesses, and B2B entrepreneurs</strong>.
+  </p>
+
+  <p>
+    Whether you’re a designer, developer, consultant, or contractor, Invoicer X makes invoicing fast, reliable, and fully customizable – 
+    perfect for both <strong>individual and business clients (B2B)</strong>.
+  </p>
+
+  <h3>Key Features:</h3>
+  <ul>
+    <li><strong>Dynamic Invoice Creation</strong> – Build clean, professional invoices in seconds</li>
+    <li><strong>Client Management</strong> – Save and reuse your client list for future billing</li>
+    <li><strong>Company or Individual Profiles</strong> – Tailor invoice details to match your business type</li>
+    <li><strong>Automatic Invoice Numbering</strong> – No more manual tracking</li>
+    <li><strong>International Payments</strong> – Add IBAN & SWIFT/BIC for cross-border compatibility</li>
+    <li><strong>B2B VAT Support</strong> – Include VAT ID with country-specific validation</li>
+    <li><strong>Tax Settings</strong> – Set VAT rates or issue tax-exempt invoices</li>
+    <li><strong>Legal Notes & QR Code</strong> – Add legal disclaimers and payment QR codes</li>
+    <li><strong>PDF Export & Print</strong> – Save or print invoices instantly</li>
+    <li><strong>Multi-language & Multi-currency</strong> – Invoice clients worldwide</li>
+    <li><strong>Light & Dark Mode</strong> – Work your way</li>
+    <li><strong>Company Logo Upload</strong> – Add personal branding with ease</li>
+  </ul>
+
+  <h3>Ideal for:</h3>
+  <p>Freelancers, consultants, sole traders, agencies, service providers, and B2B businesses needing simple, efficient invoicing.</p>
+
+  <h3>Languages & Regional Support:</h3>
+  <p>
+    Invoicer X is built for international use and supports over 20 languages including English, German, Spanish, Croatian, French, Hindi, and more.
+  </p>
+
+  <p><em>No complicated tools. No bloated features. Just everything you need to get paid.</em></p>
+  <p><strong>Download now and start sending better invoices today!</strong></p>
+</section>
+
+
+<button id="toTopBtn" title="Go to top">↑</button>
+
+<footer>
+  <p>© 2025 Invoicer X. All rights reserved.</p>
+  <p>
+    <a href="privacypolicy.html">Privacy Policy</a> |
+    <a href="termsofservice.html">Terms of Service</a> 
+    
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
