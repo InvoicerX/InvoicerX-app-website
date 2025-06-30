@@ -434,6 +434,28 @@ footer a:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
+.user-manual {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  margin-top: 40px;
+  border-top: 2px solid #ddd;
+}
+
+.user-manual h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.user-manual ol {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.user-manual ol li {
+  margin-bottom: 10px;
+}
+
+
 
 /* Responsive */
 @media (max-width: 800px) {
@@ -513,6 +535,28 @@ footer a:hover {
     font-size: 0.9rem;
     padding: 1rem;
   }
+
+  .user-manual {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  margin-top: 40px;
+  border-top: 2px solid #ddd;
+}
+
+.user-manual h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.user-manual ol {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.user-manual ol li {
+  margin-bottom: 10px;
+}
+
 }
 
 
@@ -569,4 +613,26 @@ footer a:hover {
     font-size: 0.9rem;
     padding: 1rem;
   }
+
+  .user-manual {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  margin-top: 40px;
+  border-top: 2px solid #ddd;
+}
+
+.user-manual h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.user-manual ol {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.user-manual ol li {
+  margin-bottom: 10px;
+}
+
 }
