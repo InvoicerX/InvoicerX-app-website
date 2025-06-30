@@ -117,7 +117,9 @@ const translations = {
   changesPolicyText: "We reserve the right to update this privacy policy at any time. Changes will be communicated through the app or via email, where applicable.",
   contactTitle: "7. Contact Information",
   contactText: "If you have any questions about this Privacy Policy or how we handle your data, please contact us at: www.gifonline@gmail.com",
-   termsTitle: "Terms of Service",
+
+
+  termsTitle: "Terms of Service",
   termsIntro: "Welcome to Invoicer X. By using our app and website, you agree to comply with and be bound by the following terms and conditions.",
   
   termsUseTitle: "1. Use of Service",
@@ -1801,11 +1803,35 @@ const translations = {
   changesTermsText: "Wir behalten uns das Recht vor, diese Nutzungsbedingungen jederzeit zu aktualisieren. Änderungen werden hier veröffentlicht und, wo möglich, kommuniziert.",
   contactTitle: "7. Kontakt",
   contactText: "Bei Fragen zu diesen Bedingungen kontaktieren Sie uns bitte unter www.gifonline@gmail.com",
+  
+  termsTitle: "Nutzungsbedingungen",
+termsIntro: "Willkommen bei Invoicer X. Durch die Nutzung unserer App und Website erklären Sie sich mit den folgenden Bedingungen einverstanden und verpflichten sich, diese einzuhalten.",
+
+termsUseTitle: "1. Nutzung des Dienstes",
+termsUseText: "Invoicer X bietet Rechnungsstellungsdienste für Freiberufler, kleine Unternehmen und B2B-Unternehmer an. Sie verpflichten sich, die App und Website verantwortungsvoll und gemäß allen geltenden Gesetzen zu nutzen.",
+
+termsAccountTitle: "2. Konto und Abonnement",
+termsAccountText: "Einige Funktionen erfordern möglicherweise ein Abonnement der Premium-Dienste nach Ablauf der 3-tägigen Testphase. Sie verpflichten sich, genaue Angaben zu machen und Ihre Kontodaten sicher zu verwahren. Testphasen sind unverbindlich und es besteht keine Verpflichtung zur Fortsetzung.",
+
+termsPaymentTitle: "3. Zahlung und Rückerstattungen",
+termsPaymentText: "Zahlungen für Premium-Funktionen werden über Google Play abgewickelt. Rückerstattungsrichtlinien unterliegen den Bedingungen von Google Play. Wir speichern Ihre Zahlungsinformationen nicht direkt.",
+
+termsIPTitle: "4. Geistiges Eigentum",
+termsIPText: "Alle Inhalte, Logos und Software im Zusammenhang mit Invoicer X sind unser Eigentum oder wurden uns lizenziert. Sie dürfen diese ohne Erlaubnis weder kopieren, verbreiten noch abgeleitete Werke erstellen.",
+
+termsLiabilityTitle: "5. Haftungsbeschränkung",
+termsLiabilityText: "Wir stellen den Dienst „wie besehen“ zur Verfügung und garantieren keinen ununterbrochenen Zugriff. Invoicer X haftet nicht für Schäden, die aus der Nutzung oder der Unmöglichkeit der Nutzung der App entstehen.",
+
+termsChangesTitle: "6. Änderungen der Bedingungen",
+termsChangesText: "Wir behalten uns das Recht vor, diese Nutzungsbedingungen jederzeit zu aktualisieren. Änderungen werden hier veröffentlicht und, wenn möglich, kommuniziert.",
+
+termsContactTitle: "7. Kontakt",
+termsContactText: "Wenn Sie Fragen zu diesen Bedingungen haben, kontaktieren Sie uns bitte unter www.gifonline@gmail.com",
 
 
 
 
-  },    
+  },   
 
   zh: {
     trailerBtn: "▶ 观看预告片",
@@ -1935,6 +1961,30 @@ const translations = {
   changesTermsText: "我们保留随时更新本服务条款的权利。变更将发布在此处并在可能的情况下进行通知。",
   contactTitle: "7. 联系方式",
   contactText: "如果您对这些条款有任何疑问，请通过以下方式联系我们 www.gifonline@gmail.com",
+  
+  termsTitle: "服务条款",
+termsIntro: "欢迎使用 Invoicer X。使用我们的应用程序和网站即表示您同意遵守以下条款和条件。",
+
+termsUseTitle: "1. 服务使用",
+termsUseText: "Invoicer X 为自由职业者、小型企业和B2B企业家提供开票服务。您同意负责任地使用该应用程序和网站，并遵守所有适用法律。",
+
+termsAccountTitle: "2. 账户与订阅",
+termsAccountText: "部分功能可能需要在3天试用期结束后订阅高级服务。您同意提供准确的信息并保持账户凭证的安全。试用期无需继续订阅。",
+
+termsPaymentTitle: "3. 付款与退款",
+termsPaymentText: "高级功能的付款通过Google Play处理。退款政策受Google Play条款约束。我们不直接存储您的付款信息。",
+
+termsIPTitle: "4. 知识产权",
+termsIPText: "所有与Invoicer X相关的内容、标志和软件均为我们的财产或经许可使用。未经许可，您不得复制、分发或创建衍生作品。",
+
+termsLiabilityTitle: "5. 责任限制",
+termsLiabilityText: "我们按“现状”提供服务，不保证不中断访问。Invoicer X不对因使用或无法使用应用程序而导致的任何损害负责。",
+
+termsChangesTitle: "6. 条款变更",
+termsChangesText: "我们保留随时更新本服务条款的权利。更改将发布在此处并在可能的情况下进行通知。",
+
+termsContactTitle: "7. 联系方式",
+termsContactText: "如果您对这些条款有任何疑问，请通过 www.gifonline@gmail.com 与我们联系。",
 
 
 
@@ -2069,6 +2119,31 @@ const translations = {
   contactTitle: "7. Contact",
   contactText: "Si vous avez des questions concernant ces conditions, veuillez nous contacter à www.gifonline@gmail.com",
 
+  termsTitle: "Conditions d'utilisation",
+termsIntro: "Bienvenue sur Invoicer X. En utilisant notre application et notre site web, vous acceptez de respecter et d'être lié par les conditions suivantes.",
+
+termsUseTitle: "1. Utilisation du service",
+termsUseText: "Invoicer X fournit des services de facturation pour les freelances, les petites entreprises et les entrepreneurs B2B. Vous acceptez d'utiliser l'application et le site web de manière responsable et conformément à toutes les lois applicables.",
+
+termsAccountTitle: "2. Compte et abonnement",
+termsAccountText: "Certaines fonctionnalités peuvent nécessiter un abonnement aux services premium après une période d'essai de 3 jours. Vous acceptez de fournir des informations exactes et de garder vos identifiants de compte sécurisés. Les périodes d'essai sont offertes sans obligation de continuer.",
+
+termsPaymentTitle: "3. Paiement et remboursements",
+termsPaymentText: "Les paiements pour les fonctionnalités premium sont traités via Google Play. Les politiques de remboursement sont soumises aux conditions de Google Play. Nous ne stockons pas directement vos informations de paiement.",
+
+termsIPTitle: "4. Propriété intellectuelle",
+termsIPText: "Tout le contenu, les logos et les logiciels liés à Invoicer X sont notre propriété ou sous licence. Vous ne pouvez pas copier, distribuer ou créer des œuvres dérivées sans permission.",
+
+termsLiabilityTitle: "5. Limitation de responsabilité",
+termsLiabilityText: "Nous fournissons le service \"tel quel\" et ne garantissons pas un accès ininterrompu. Invoicer X n'est pas responsable des dommages résultant de l'utilisation ou de l'incapacité à utiliser l'application.",
+
+termsChangesTitle: "6. Modifications des conditions",
+termsChangesText: "Nous nous réservons le droit de mettre à jour ces Conditions d'utilisation à tout moment. Les changements seront publiés ici et communiqués lorsque cela sera possible.",
+
+termsContactTitle: "7. Contact",
+termsContactText: "Si vous avez des questions concernant ces conditions, veuillez nous contacter à www.gifonline@gmail.com",
+
+
 
   },  
 
@@ -2200,7 +2275,30 @@ const translations = {
   changesTermsText: "본 약관은 언제든지 업데이트될 수 있습니다. 변경 사항은 이곳에 게시되며 가능한 경우 공지됩니다.",
   contactTitle: "7. 문의",
   contactText: "약관에 관한 질문이 있으시면 다음으로 연락해 주세요: www.gifonline@gmail.com",
+  
+   termsTitle: "이용 약관",
+  termsIntro: "Invoicer X에 오신 것을 환영합니다. 앱과 웹사이트를 사용함으로써 아래의 약관에 동의하게 됩니다.",
 
+  termsUseTitle: "1. 서비스 이용",
+  termsUseText: "Invoicer X는 프리랜서, 소규모 사업자, B2B 기업가를 위한 인보이스 서비스를 제공합니다. 앱과 웹사이트를 모든 관련 법규를 준수하며 책임감 있게 사용해야 합니다.",
+
+  termsAccountTitle: "2. 계정 및 구독",
+  termsAccountText: "일부 기능은 3일 체험 기간 종료 후 프리미엄 서비스 구독이 필요할 수 있습니다. 정확한 정보를 제공하고 계정 정보를 안전하게 관리해야 합니다. 체험 기간은 계속 이용 의무 없이 제공됩니다.",
+
+  termsPaymentTitle: "3. 결제 및 환불",
+  termsPaymentText: "프리미엄 기능 결제는 Google Play를 통해 처리됩니다. 환불 정책은 Google Play의 약관에 따릅니다. 결제 정보는 직접 저장하지 않습니다.",
+
+  termsIPTitle: "4. 지적 재산권",
+  termsIPText: "Invoicer X와 관련된 모든 콘텐츠, 로고 및 소프트웨어는 당사의 소유이거나 라이선스가 부여된 것입니다. 허가 없이 복사, 배포 또는 파생 작업을 할 수 없습니다.",
+
+  termsLiabilityTitle: "5. 책임 제한",
+  termsLiabilityText: "서비스는 \"있는 그대로\" 제공되며, 중단 없는 접근을 보장하지 않습니다. Invoicer X는 앱 사용 또는 사용 불능으로 인한 손해에 대해 책임지지 않습니다.",
+
+  termsChangesTitle: "6. 약관 변경",
+  termsChangesText: "본 이용 약관은 언제든지 업데이트될 수 있습니다. 변경 사항은 이곳에 게시되며 가능한 경우 안내해 드립니다.",
+
+  termsContactTitle: "7. 연락처",
+  termsContactText: "약관에 대한 질문이 있으면 www.gifonline@gmail.com 으로 문의해 주세요.",
 
 
   },   
@@ -2334,6 +2432,30 @@ const translations = {
   changesTermsText: "当社はいつでも本利用規約を更新する権利を保有します。変更はここに掲載され、可能な場合は通知されます。",
   contactTitle: "7. お問い合わせ",
   contactText: "本規約について質問がある場合は、以下の連絡先までお問い合わせください: www.gifonline@gmail.com",
+  
+  termsTitle: "利用規約",
+termsIntro: "Invoicer Xへようこそ。当アプリおよびウェブサイトを利用することで、以下の利用規約に同意したものとみなされます。",
+
+termsUseTitle: "1. サービスの利用",
+termsUseText: "Invoicer Xはフリーランサー、中小企業、B2B起業家向けの請求書作成サービスを提供します。アプリおよびウェブサイトを責任を持って、適用されるすべての法律に従って使用することに同意します。",
+
+termsAccountTitle: "2. アカウントおよびサブスクリプション",
+termsAccountText: "一部の機能は3日間のトライアル終了後にプレミアムサービスへの登録が必要です。正確な情報の提供とアカウント認証情報の安全管理に同意してください。トライアル期間は継続の義務はありません。",
+
+termsPaymentTitle: "3. 支払いおよび返金",
+termsPaymentText: "プレミアム機能の支払いはGoogle Playを通じて処理されます。返金ポリシーはGoogle Playの規約に従います。当社はお客様の支払い情報を直接保存しません。",
+
+termsIPTitle: "4. 知的財産権",
+termsIPText: "Invoicer Xに関連するすべてのコンテンツ、ロゴ、ソフトウェアは当社の所有物またはライセンスを受けたものです。許可なく複製、配布、派生作品の作成を禁じます。",
+
+termsLiabilityTitle: "5. 責任の制限",
+termsLiabilityText: "サービスは現状のまま提供され、中断のないアクセスを保証しません。Invoicer Xは利用や利用不能による損害について責任を負いません。",
+
+termsChangesTitle: "6. 利用規約の変更",
+termsChangesText: "当社はいつでも本利用規約を更新する権利を留保します。変更はここに掲載し、可能な限り通知します。",
+
+termsContactTitle: "7. お問い合わせ",
+termsContactText: "これらの規約について質問がある場合は、www.gifonline@gmail.comまでお問い合わせください。",
 
 
 
@@ -2467,6 +2589,30 @@ const translations = {
   changesTermsText: "हम कभी भी इन सेवा शर्तों को अपडेट करने का अधिकार सुरक्षित रखते हैं। परिवर्तन यहां पोस्ट किए जाएंगे और जहां संभव हो सूचित किया जाएगा।",
   contactTitle: "7. संपर्क करें",
   contactText: "यदि आपके पास इन शर्तों के बारे में कोई प्रश्न हैं, तो कृपया हमसे संपर्क करें: www.gifonline@gmail.com",
+  
+  termsTitle: "सेवा की शर्तें",
+termsIntro: "Invoicer X में आपका स्वागत है। हमारे ऐप और वेबसाइट का उपयोग करके, आप निम्न शर्तों और नियमों का पालन करने और उनसे बंधे रहने के लिए सहमत हैं।",
+
+termsUseTitle: "1. सेवा का उपयोग",
+termsUseText: "Invoicer X स्वतंत्र पेशेवरों, छोटे व्यवसायों और B2B उद्यमियों के लिए चालान सेवाएं प्रदान करता है। आप ऐप और वेबसाइट का जिम्मेदारी से और सभी लागू कानूनों के अनुसार उपयोग करने के लिए सहमत हैं।",
+
+termsAccountTitle: "2. खाता और सदस्यता",
+termsAccountText: "कुछ सुविधाओं के लिए 3 दिन की निःशुल्क ट्रायल समाप्त होने के बाद प्रीमियम सेवाओं की सदस्यता आवश्यक हो सकती है। आप सही जानकारी प्रदान करने और अपने खाते की सुरक्षा बनाए रखने के लिए सहमत हैं। ट्रायल अवधि के बाद कोई बाध्यता नहीं है।",
+
+termsPaymentTitle: "3. भुगतान और रिफंड",
+termsPaymentText: "प्रीमियम सुविधाओं के भुगतान Google Play के माध्यम से संसाधित होते हैं। रिफंड नीतियाँ Google Play की शर्तों के अधीन हैं। हम आपके भुगतान की जानकारी सीधे स्टोर नहीं करते।",
+
+termsIPTitle: "4. बौद्धिक संपदा",
+termsIPText: "Invoicer X से संबंधित सभी सामग्री, लोगो और सॉफ्टवेयर हमारी संपत्ति या हमें लाइसेंस प्राप्त हैं। बिना अनुमति के आप कॉपी, वितरण या व्युत्पन्न कार्य नहीं बना सकते।",
+
+termsLiabilityTitle: "5. दायित्व की सीमा",
+termsLiabilityText: "हम सेवा को 'जैसा है' प्रदान करते हैं और निरंतर पहुँच की गारंटी नहीं देते। Invoicer X किसी भी नुकसान के लिए जिम्मेदार नहीं है जो ऐप के उपयोग या उपयोग में असमर्थता से हो।",
+
+termsChangesTitle: "6. शर्तों में परिवर्तन",
+termsChangesText: "हम किसी भी समय इन सेवा शर्तों को अपडेट करने का अधिकार सुरक्षित रखते हैं। परिवर्तन यहाँ पोस्ट किए जाएंगे और जहाँ संभव हो सूचित किए जाएंगे।",
+
+termsContactTitle: "7. संपर्क",
+termsContactText: "यदि आपको इन शर्तों के बारे में प्रश्न हैं, तो कृपया हमसे www.gifonline@gmail.com पर संपर्क करें।",
 
 
   },  
@@ -2599,6 +2745,30 @@ const translations = {
   changesTermsText: "Nos reservamos el derecho de actualizar estos Términos de Servicio en cualquier momento. Los cambios se publicarán aquí y se comunicarán cuando sea posible.",
   contactTitle: "7. Contacto",
   contactText: "Si tienes preguntas sobre estos términos, por favor contáctanos en: www.gifonline@gmail.com",
+  
+  termsTitle: "Términos de Servicio",
+termsIntro: "Bienvenido a Invoicer X. Al usar nuestra aplicación y sitio web, aceptas cumplir y estar sujeto a los siguientes términos y condiciones.",
+
+termsUseTitle: "1. Uso del Servicio",
+termsUseText: "Invoicer X ofrece servicios de facturación para freelancers, pequeñas empresas y emprendedores B2B. Aceptas usar la aplicación y el sitio web de manera responsable y conforme a todas las leyes aplicables.",
+
+termsAccountTitle: "2. Cuenta y Suscripción",
+termsAccountText: "Algunas funciones pueden requerir suscribirse a servicios premium después de que finalice el período de prueba de 3 días. Aceptas proporcionar información precisa y mantener seguras las credenciales de tu cuenta. Los períodos de prueba se ofrecen sin obligación de continuar.",
+
+termsPaymentTitle: "3. Pagos y Reembolsos",
+termsPaymentText: "Los pagos para funciones premium se procesan a través de Google Play. Las políticas de reembolso están sujetas a los términos de Google Play. No almacenamos directamente tu información de pago.",
+
+termsIPTitle: "4. Propiedad Intelectual",
+termsIPText: "Todo el contenido, logos y software relacionados con Invoicer X son nuestra propiedad o están licenciados a nosotros. No puedes copiar, distribuir ni crear obras derivadas sin permiso.",
+
+termsLiabilityTitle: "5. Limitación de Responsabilidad",
+termsLiabilityText: "Ofrecemos el servicio \"tal cual\" y no garantizamos acceso ininterrumpido. Invoicer X no es responsable por daños resultantes del uso o la imposibilidad de usar la aplicación.",
+
+termsChangesTitle: "6. Cambios en los Términos",
+termsChangesText: "Nos reservamos el derecho de actualizar estos Términos de Servicio en cualquier momento. Los cambios serán publicados aquí y comunicados cuando sea posible.",
+
+termsContactTitle: "7. Contacto",
+termsContactText: "Si tienes preguntas sobre estos términos, por favor contáctanos en www.gifonline@gmail.com",
 
 
   },  
@@ -2731,6 +2901,30 @@ const translations = {
   changesTermsText: "Reservamo-nos o direito de atualizar estes Termos de Serviço a qualquer momento. As alterações serão publicadas aqui e comunicadas quando possível.",
   contactTitle: "7. Contato",
   contactText: "Se você tiver dúvidas sobre estes termos, por favor entre em contato conosco em: www.gifonline@gmail.com",
+  
+  termsTitle: "Termos de Serviço",
+termsIntro: "Bem-vindo ao Invoicer X. Ao usar nosso aplicativo e site, você concorda em cumprir e estar sujeito aos seguintes termos e condições.",
+
+termsUseTitle: "1. Uso do Serviço",
+termsUseText: "O Invoicer X oferece serviços de faturamento para freelancers, pequenas empresas e empreendedores B2B. Você concorda em usar o aplicativo e o site de forma responsável e em conformidade com todas as leis aplicáveis.",
+
+termsAccountTitle: "2. Conta e Assinatura",
+termsAccountText: "Alguns recursos podem exigir assinatura de serviços premium após o término do período de teste de 3 dias. Você concorda em fornecer informações precisas e manter suas credenciais de conta seguras. Os períodos de teste são oferecidos sem obrigação de continuidade.",
+
+termsPaymentTitle: "3. Pagamentos e Reembolsos",
+termsPaymentText: "Os pagamentos para recursos premium são processados através do Google Play. As políticas de reembolso estão sujeitas aos termos do Google Play. Não armazenamos suas informações de pagamento diretamente.",
+
+termsIPTitle: "4. Propriedade Intelectual",
+termsIPText: "Todo o conteúdo, logotipos e software relacionados ao Invoicer X são nossa propriedade ou licenciados para nós. Você não pode copiar, distribuir ou criar trabalhos derivados sem permissão.",
+
+termsLiabilityTitle: "5. Limitação de Responsabilidade",
+termsLiabilityText: "Oferecemos o serviço \"como está\" e não garantimos acesso ininterrupto. O Invoicer X não se responsabiliza por quaisquer danos resultantes do uso ou da incapacidade de usar o aplicativo.",
+
+termsChangesTitle: "6. Alterações nos Termos",
+termsChangesText: "Reservamo-nos o direito de atualizar estes Termos de Serviço a qualquer momento. As alterações serão publicadas aqui e comunicadas sempre que possível.",
+
+termsContactTitle: "7. Contato",
+termsContactText: "Se você tiver dúvidas sobre estes termos, por favor, entre em contato conosco em www.gifonline@gmail.com",
 
    
   },  
