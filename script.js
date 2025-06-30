@@ -28,8 +28,52 @@ document.addEventListener("DOMContentLoaded", function() {
       iframe.src = "";
       modal.style.display = "none";
     }
+
+    // Dropdown language menu
+const languageBtn = document.getElementById("language-btn");
+  const languageMenu = document.getElementById("language-menu");
+
+  languageBtn.addEventListener("click", (event) => {
+    event.stopPropagation(); // spriječi da klik "curla" na dokument i odmah zatvori meni
+
+    const isHidden = languageMenu.hasAttribute("hidden");
+    if (isHidden) {
+      languageMenu.removeAttribute("hidden");
+      languageMenu.setAttribute("aria-hidden", "false");
+      languageBtn.setAttribute("aria-expanded", "true");
+    } else {
+      languageMenu.setAttribute("hidden", "");
+      languageMenu.setAttribute("aria-hidden", "true");
+      languageBtn.setAttribute("aria-expanded", "false");
+    }
+  });
+
+  // Kad se klikne bilo gdje na dokument, osim na button i menu - zatvori meni
+  document.addEventListener("click", (event) => {
+    if (
+      !languageBtn.contains(event.target) &&
+      !languageMenu.contains(event.target)
+    ) {
+      languageMenu.setAttribute("hidden", "");
+      languageMenu.setAttribute("aria-hidden", "true");
+      languageBtn.setAttribute("aria-expanded", "false");
+    }
+  });
+
+
+// Zatvori meni ako se klikne bilo gdje izvan dugmeta i menija
+document.addEventListener("click", (event) => {
+  if (!languageBtn.contains(event.target) && !languageMenu.contains(event.target)) {
+    languageMenu.setAttribute("hidden", "");
+    languageMenu.setAttribute("aria-hidden", "true");
+    languageBtn.setAttribute("aria-expanded", "false");
+  }
+});
+
   });
 });
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const images = document.querySelectorAll(".screenshots img");
@@ -99,3 +143,8 @@ toTopBtn.addEventListener("click", () => {
     behavior: "smooth"
   });
 });
+
+
+
+
+

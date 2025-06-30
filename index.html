@@ -10,17 +10,6 @@
 <link rel="icon" href="/InvoicerX-app-website/invoicer-x-logo2copy.png" type="image/png">
 
 
-
-
-
-
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement(
-    {pageLanguage: 'en', includedLanguages: 'hr,de,fr,es,it,ru,zh-CN,ja,pt', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 
-    'google_translate_element'
-  );
-}
 </script>
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
@@ -84,26 +73,54 @@ function googleTranslateElementInit() {
 }
 </script>
 
-
-
-
 </head>
 
 
 <body>
-<div id="google_translate_element"></div>
+
 <header class="header">
+   <div class="language-dropdown">
+    
+  <button id="language-btn" aria-haspopup="true" aria-expanded="false" aria-label="Select Language">
+     Language
+  </button>
+  <ul id="language-menu" role="menu" aria-labelledby="language-btn" hidden>
+  <li role="menuitem"><button data-lang="en">🇺🇸 English (US)</button></li>
+  <li role="menuitem"><button data-lang="it">🇮🇹 Italy</button></li>
+  <li role="menuitem"><button data-lang="nl">🇳🇱 Netherlands</button></li>
+  <li role="menuitem"><button data-lang="be">🇧🇪 Belgium</button></li>
+  <li role="menuitem"><button data-lang="sv">🇸🇪 Sweden</button></li>
+  <li role="menuitem"><button data-lang="at">🇦🇹 Austria</button></li>
+  <li role="menuitem"><button data-lang="de">🇩🇪 Germany</button></li>
+  <li role="menuitem"><button data-lang="hu">🇭🇺 Hungary</button></li>
+  <li role="menuitem"><button data-lang="fi">🇫🇮 Finland</button></li>
+  <li role="menuitem"><button data-lang="cs">🇨🇿 Czech </button></li>
+  <li role="menuitem"><button data-lang="ga">🇮🇪 Ireland</button></li>
+  <li role="menuitem"><button data-lang="hr">🇭🇷 Croatia</button></li>
+  <li role="menuitem"><button data-lang="ru">🇷🇺 Russia</button></li>
+  <li role="menuitem"><button data-lang="zh">🇨🇳 Chinese</button></li>
+  <li role="menuitem"><button data-lang="fr">🇫🇷 France</button></li>
+  <li role="menuitem"><button data-lang="ko">🇰🇷 South Korea</button></li>
+  <li role="menuitem"><button data-lang="ja">🇯🇵 Japan</button></li>
+  <li role="menuitem"><button data-lang="hi">🇮🇳 India</button></li>
+  <li role="menuitem"><button data-lang="es">🇪🇸 Spain </button></li>
+  <li role="menuitem"><button data-lang="pt">🇵🇹 Portugal</button></li>
+</ul>
+
+</div>
+
+
   <div class="header-content">
     <div class="text-section">
       
       <h1>Invoicer X</h1> 
       <img src="GetItOnGooglePlay_Badge_Web_color_English(1).png" alt="Get it on Google Play" width="170px" height="50px">
-      <p>Your all-in-one invoice generator app</p>
-      <a href="https://play.google.com/store/apps/details?id=my.invoice.invoicegeneratorapp" target="_blank" rel="noopener" class="btn-download">
+      <p data-translate="headerText">Your all-in-one invoice generator app</p>
+      <a href="https://play.google.com/store/apps/details?id=my.invoice.invoicegeneratorapp" target="_blank" rel="noopener" class="btn-download" data-translate="downloadBtnText">
         Get it on Google Play
       </a>
        
-      <button id="watch-trailer-btn" class="btn-trailer">▶ Watch Trailer</button>  
+      <button id="watch-trailer-btn" data-translate="trailerBtn" class="btn-trailer">▶ Watch Trailer</button>  
     </div>
     <img src="invoicer-x-logo2copy.png" id="invoicer-x-logo2" alt="Invoicer X Logo Thumbnail" width="300px" height="300px" />
     <div class="video-thumbnail">
@@ -127,13 +144,16 @@ function googleTranslateElementInit() {
       </iframe>
     </div>
   </div>
+
+  
+
 </header>
 
 
 
 <section class="language-support">
-  <h2>🌍 Language & Region Support</h2>
-  <p>Invoicer X is built for international use and supports the following languages and regions:</p>
+  <h2 data-translate="languageSupportTitle">🌍 Language & Region Support</h2>
+  <p data-translate="languageSupportText">Invoicer X is built for international use and supports the following languages and regions:</p>
 
   <div class="flags-row">
     <img src="https://flagcdn.com/us.svg" alt="English (US)" title="English (US)" height="32" loading="lazy"/>
@@ -159,13 +179,13 @@ function googleTranslateElementInit() {
     <img src="https://flagcdn.com/pt.svg" alt="Portuguese" title="Portuguese (Portugal)" height="32" loading="lazy"/>
   </div>
 
-  <p class="language-list">
+  <p class="language-list" data-translate="languageList">
     Supported languages & regions:  
-    English (US & UK), Italian (Italy), Dutch (Netherlands & Belgium), Swedish (Sweden),  
-    German (Austria & Germany), Hungarian (Hungary), Finnish (Finland), Czech (Czech Republic),  
-    Irish (Ireland), Croatian (Croatia), Russian (Russia), Chinese (Simplified),  
-    French (France), Korean (South Korea), Japanese (Japan), Hindi (India),  
-    Spanish (Spain & Latin America), Portuguese (Portugal)
+    English (US & UK), Italian, Dutch (Netherlands & Belgium), Swedish,  
+    German (Austria & Germany), Hungarian, Finland, Czech,  
+    Irish, Croatian, Russian, Chinese (Simplified),  
+    French, Korean (South Korea), Japanese, Hindi,  
+    Spanish (Spain & Latin America), Portuguese.
   </p>
 </section>
 
@@ -173,11 +193,11 @@ function googleTranslateElementInit() {
 
 <section class="description">
   <div class="container">
-    <h2>What is Invoicer X?</h2>
-    <p>
+    <h2 data-translate="descriptionTitle">What is Invoicer X?</h2>
+    <p data-translate="descriptionParagraph1">
       Invoicer X is your ultimate solution for creating fast, professional, and customizable invoices. Whether you're a freelancer, small business owner, or large enterprise, this app simplifies billing and financial management.
     </p>
-    <p>
+    <p data-translate="descriptionParagraph2">
       With intuitive design, multi-currency support, and features tailored for modern business needs — including QR codes and VAT compliance — Invoicer X helps you stay organized and get paid faster.
     </p>
   </div>
@@ -185,106 +205,107 @@ function googleTranslateElementInit() {
 
 
 <section>
-  <h2>App Screenshots Gallery</h2>
+  <h2 data-translate="screenshotsTitle">App Screenshots Gallery</h2>
   <div class="screenshots">
 
     <div class="screenshot-item">
       <img src="Screenshot_20250624_230151_InvoicerX.jpg" alt="Screenshot 1" data-index="0" loading="lazy"/>
-      <p class="caption">B2B input option with a checkbox selection.</p>
+      <p class="caption" data-translate="caption1">B2B input option with a checkbox selection.</p>
     </div>
 
     <div class="screenshot-item">
       <img src="Screenshot_20250626_144339_InvoicerX.jpg" alt="Screenshot 2" data-index="1" loading="lazy"/>
-      <p class="caption">Language Selection.</p>
+      <p class="caption" data-translate="caption2">Language Selection.</p>
     </div>
 
     <div class="screenshot-item">
       <img src="Screenshot_20250626_144404_InvoicerX.jpg" alt="Screenshot 3" data-index="2" loading="lazy"/>
-      <p class="caption">Adding New Clients.</p>
+      <p class="caption" data-translate="caption3">Adding New Clients.</p>
     </div>
 
     <div class="screenshot-item">
       <img src="Screenshot_20250626_144444_InvoicerX.jpg" alt="Screenshot 4" data-index="3" loading="lazy"/>
-      <p class="caption">Automatic Tax Calculation and Flat Rate Option.</p>
+      <p class="caption" data-translate="caption4">Automatic Tax Calculation and Flat Rate Option.</p>
     </div>
 
     <div class="screenshot-item">
       <img src="Screenshot_20250628_100641_InvoicerX.jpg" alt="Screenshot 5" data-index="4" loading="lazy"/>
-      <p class="caption">Start screen with the Italian language selected.</p>
+      <p class="caption" data-translate="caption5">Start screen with the Italian language selected.</p>
     </div>
 
     <div class="screenshot-item">
       <img src="Screenshot_20250624_230145_InvoicerX.jpg" alt="Screenshot 6" data-index="5" loading="lazy"/>
-      <p class="caption">Croatian language selected.</p>
+      <p class="caption" data-translate="caption6">Croatian language selected.</p>
     </div>
 
     <div class="screenshot-item">
       <img src="Screenshot_20250628_100653_InvoicerX.jpg" alt="Screenshot 7" data-index="6" loading="lazy"/>
-      <p class="caption">German language selected.</p>
+      <p class="caption" data-translate="caption7">German language selected.</p>
     </div>
 
     <div class="screenshot-item">
       <img src="Screenshot_20250628_100705_InvoicerX.jpg" alt="Screenshot 8" data-index="7" loading="lazy"/>
-      <p class="caption">French language selected.</p>
+      <p class="caption" data-translate="caption8">French language selected.</p>
     </div>
 
     <div class="screenshot-item">
       <img src="Screenshot_20250628_100721_InvoicerX.jpg" alt="Screenshot 9" data-index="8" loading="lazy"/>
-      <p class="caption">Russian language selected.</p>
+      <p class="caption" data-translate="caption9">Russian language selected.</p>
     </div>
 
     <div class="screenshot-item">
       <img src="Screenshot_20250628_100734_InvoicerX.jpg" alt="Screenshot 10" data-index="9" loading="lazy"/>
-      <p class="caption">Portuguese language selected.</p>
+      <p class="caption" data-translate="caption10">Portuguese language selected.</p>
     </div>
 
     <div class="screenshot-item">
       <img src="Screenshot_20250628_100750_InvoicerX.jpg" alt="Screenshot 11" data-index="10" loading="lazy"/>
-      <p class="caption">Client overview and adding new clients.</p>
+      <p class="caption" data-translate="caption11">Client overview and adding new clients.</p>
     </div>
 
     <div class="screenshot-item">
       <img src="Screenshot_20250628_100801_InvoicerX.jpg" alt="Screenshot 12" data-index="11" loading="lazy"/>
-      <p class="caption">Managing saved clients.</p>
+      <p class="caption" data-translate="caption12">Managing saved clients.</p>
     </div>
 
     <div class="screenshot-item">
       <img src="Screenshot_20250628_100813_InvoicerX.jpg" alt="Screenshot 13" data-index="12" loading="lazy"/>
-      <p class="caption">Click on a saved client to generate an invoice.</p>
+      <p class="caption" data-translate="caption13">Click on a saved client to generate an invoice.</p>
     </div>
 
     <div class="screenshot-item">
       <img src="Screenshot_20250628_100836_InvoicerX.jpg" alt="Screenshot 14" data-index="13" loading="lazy"/>
-      <p class="caption">Currency selection.</p>
+      <p class="caption" data-translate="caption14">Currency selection.</p>
     </div>
 
     <div class="screenshot-item">
       <img src="Screenshot_20250628_100856_InvoicerX.jpg" alt="Screenshot 15" data-index="14" loading="lazy"/>
-      <p class="caption">Add multiple service items with quantity and price.</p>
+      <p class="caption" data-translate="caption15">Add multiple service items with quantity and price.</p>
     </div>
 
     <div class="screenshot-item">
       <img src="Screenshot_20250628_100932_InvoicerX.jpg" alt="Screenshot 16" data-index="15" loading="lazy"/>
-      <p class="caption">User Manual on 21 Language.</p>
+      <p class="caption" data-translate="caption16">User Manual on 21 Language.</p>
     </div>
 
     <div class="screenshot-item">
       <img src="Screenshot_20250628_100955_InvoicerX.jpg" alt="Screenshot 17" data-index="16" loading="lazy"/>
-      <p class="caption">Light theme.</p>
+      <p class="caption" data-translate="caption17">Light theme.</p>
     </div>
 
-     <div class="screenshot-item">
+    <div class="screenshot-item">
       <img src="Screenshot_20250628_101301_Firefox.jpg" alt="Screenshot 18" data-index="17" loading="lazy"/>
-      <p class="caption">Appearance of the saved PDF invoice.</p>
+      <p class="caption" data-translate="caption18">Appearance of the saved PDF invoice.</p>
     </div>
 
     <div class="screenshot-item">
       <img src="Screenshot_20250628_111929_InvoicerX.jpg" alt="Screenshot 19" data-index="18" loading="lazy"/>
-      <p class="caption">Add a company logo that will be visible on the invoice.</p>
+      <p class="caption" data-translate="caption19">Add a company logo that will be visible on the invoice.</p>
     </div>
 
   </div>
 </section>
+
 
 <!-- Lightbox Modal -->
 <div id="lightbox-modal" class="lightbox hidden">
@@ -297,85 +318,90 @@ function googleTranslateElementInit() {
 </div>
 
 <section class="app-description">
-  <h2>Try Invoicer X – Free for 3 Days!</h2>
-  <p>
+  <h2 data-translate="tryTitle">Try Invoicer X – Free for 3 Days!</h2>
+
+  <p data-translate="trialInfo">
     Enjoy full access to all premium features during your trial – no commitment, cancel anytime.
   </p>
 
-  <p>
+  <p data-translate="appIntro">
     Create and send professional invoices in just a few taps with <strong>Invoicer X</strong>, the smart invoicing app built for 
     <strong>freelancers, small businesses, and B2B entrepreneurs</strong>.
   </p>
 
-  <p>
+  <p data-translate="targetAudience">
     Whether you’re a designer, developer, consultant, or contractor, Invoicer X makes invoicing fast, reliable, and fully customizable – 
     perfect for both <strong>individual and business clients (B2B)</strong>.
   </p>
 
-  <h3>Key Features:</h3>
+  <h3 data-translate="featuresTitle">Key Features:</h3>
   <ul>
-    <li><strong>Dynamic Invoice Creation</strong> – Build clean, professional invoices in seconds</li>
-    <li><strong>Client Management</strong> – Save and reuse your client list for future billing</li>
-    <li><strong>Company or Individual Profiles</strong> – Tailor invoice details to match your business type</li>
-    <li><strong>Automatic Invoice Numbering</strong> – No more manual tracking</li>
-    <li><strong>International Payments</strong> – Add IBAN & SWIFT/BIC for cross-border compatibility</li>
-    <li><strong>B2B VAT Support</strong> – Include VAT ID with country-specific validation</li>
-    <li><strong>Tax Settings</strong> – Set VAT rates or issue tax-exempt invoices</li>
-    <li><strong>Legal Notes & QR Code</strong> – Add legal disclaimers and payment QR codes</li>
-    <li><strong>PDF Export & Print</strong> – Save or print invoices instantly</li>
-    <li><strong>Multi-language & Multi-currency</strong> – Invoice clients worldwide</li>
-    <li><strong>Light & Dark Mode</strong> – Work your way</li>
-    <li><strong>Company Logo Upload</strong> – Add personal branding with ease</li>
+    <li data-translate="feature1"><strong>Dynamic Invoice Creation</strong> – Build clean, professional invoices in seconds</li>
+    <li data-translate="feature2"><strong>Client Management</strong> – Save and reuse your client list for future billing</li>
+    <li data-translate="feature3"><strong>Company or Individual Profiles</strong> – Tailor invoice details to match your business type</li>
+    <li data-translate="feature4"><strong>Automatic Invoice Numbering</strong> – No more manual tracking</li>
+    <li data-translate="feature5"><strong>International Payments</strong> – Add IBAN & SWIFT/BIC for cross-border compatibility</li>
+    <li data-translate="feature6"><strong>B2B VAT Support</strong> – Include VAT ID with country-specific validation</li>
+    <li data-translate="feature7"><strong>Tax Settings</strong> – Set VAT rates or issue tax-exempt invoices</li>
+    <li data-translate="feature8"><strong>Legal Notes & QR Code</strong> – Add legal disclaimers and payment QR codes</li>
+    <li data-translate="feature9"><strong>PDF Export & Print</strong> – Save or print invoices instantly</li>
+    <li data-translate="feature10"><strong>Multi-language & Multi-currency</strong> – Invoice clients worldwide</li>
+    <li data-translate="feature11"><strong>Light & Dark Mode</strong> – Work your way</li>
+    <li data-translate="feature12"><strong>Company Logo Upload</strong> – Add personal branding with ease</li>
   </ul>
 
-  <h3>Ideal for:</h3>
-  <p>Freelancers, consultants, sole traders, agencies, service providers, and B2B businesses needing simple, efficient invoicing.</p>
+  <h3 data-translate="idealForTitle">Ideal for:</h3>
+  <p data-translate="idealForText">
+    Freelancers, consultants, sole traders, agencies, service providers, and B2B businesses needing simple, efficient invoicing.
+  </p>
 
-  <h3>Languages & Regional Support:</h3>
-  <p>
+  <h3 data-translate="languageSupportTitle">Languages & Regional Support:</h3>
+  <p data-translate="languageSupportText">
     Invoicer X is built for international use and supports over 20 languages including English, German, Spanish, Croatian, French, Hindi, and more.
   </p>
 
-  <p><em>No complicated tools. No bloated features. Just everything you need to get paid.</em></p>
-  <p><strong>Download now and start sending better invoices today!</strong></p>
+  <p data-translate="noBloat"><em>No complicated tools. No bloated features. Just everything you need to get paid.</em></p>
+  <p data-translate="cta"><strong>Download now and start sending better invoices today!</strong></p>
 </section>
+
 
 
 <button id="toTopBtn" title="Go to top">↑</button>
 
 <section class="user-manual">
   <div class="container">
-    <h2>📄 How to Create Your First Invoice – Quick Guide</h2>
+    <h2 data-translate="userManualTitle">📄 How to Create Your First Invoice – Quick Guide</h2>
     <ol>
-      <li><strong>Install the App:</strong> Download Invoicer X from <a href="https://play.google.com/store/apps/details?id=my.invoice.invoicegeneratorapp" target="_blank">Google Play Store</a>.</li>
-      <li><strong>Go to "My Profile":</strong> Change your language, add your business or personal info, and upload your logo.</li>
-      <li><strong>Save Your Information:</strong> Scroll to the bottom and tap "Save" to confirm your profile settings.</li>
-      <li><strong>Go to "Invoice":</strong> Add the client's name, address, OIB or B2B info, and the invoice date.</li>
-      <li><strong>Flat Rate Users:</strong> If you are using a flat rate, check the corresponding box.</li>
-      <li><strong>Non-Flat Rate Users:</strong> Add your service, quantity, currency, and price.</li>
-      <li><strong>Optional Note:</strong> You can add additional notes in the "Notes!" field if needed.</li>
-      <li><strong>Add More Items:</strong> To add more services or products, click "Add Item" and fill in the details.</li>
-      <li><strong>Generate Invoice:</strong> Tap "Generate Invoice" – the invoice will be dynamically created based on your input.</li>
-      <li><strong>Save and Print:</strong> Save the generated invoice as a PDF and print it if needed.</li>
-      <li><strong>Find Saved Invoices:</strong> All saved invoices are located in your device's Downloads folder.</li>
+      <li><strong data-translate="step1Strong">Install the App:</strong> <span data-translate="step1Text">Download Invoicer X from <a href="https://play.google.com/store/apps/details?id=my.invoice.invoicegeneratorapp" target="_blank">Google Play Store</a>.</span></li>
+      <li><strong data-translate="step2Strong">Go to "My Profile":</strong> <span data-translate="step2Text">Change your language, add your business or personal info, and upload your logo.</span></li>
+      <li><strong data-translate="step3Strong">Save Your Information:</strong> <span data-translate="step3Text">Scroll to the bottom and tap "Save" to confirm your profile settings.</span></li>
+      <li><strong data-translate="step4Strong">Go to "Invoice":</strong> <span data-translate="step4Text">Add the client's name, address, OIB or B2B info, and the invoice date.</span></li>
+      <li><strong data-translate="step5Strong">Flat Rate Users:</strong> <span data-translate="step5Text">If you are using a flat rate, check the corresponding box.</span></li>
+      <li><strong data-translate="step6Strong">Non-Flat Rate Users:</strong> <span data-translate="step6Text">Add your service, quantity, currency, and price.</span></li>
+      <li><strong data-translate="step7Strong">Optional Note:</strong> <span data-translate="step7Text">You can add additional notes in the "Notes!" field if needed.</span></li>
+      <li><strong data-translate="step8Strong">Add More Items:</strong> <span data-translate="step8Text">To add more services or products, click "Add Item" and fill in the details.</span></li>
+      <li><strong data-translate="step9Strong">Generate Invoice:</strong> <span data-translate="step9Text">Tap "Generate Invoice" – the invoice will be dynamically created based on your input.</span></li>
+      <li><strong data-translate="step10Strong">Save and Print:</strong> <span data-translate="step10Text">Save the generated invoice as a PDF and print it if needed.</span></li>
+      <li><strong data-translate="step11Strong">Find Saved Invoices:</strong> <span data-translate="step11Text">All saved invoices are located in your device's Downloads folder.</span></li>
     </ol>
 
-    <p><strong>✅ Tip:</strong> Make sure to complete your profile first so the invoice includes your correct business info and logo.</p>
-    <p><strong>🧾 Reminder:</strong> You can reuse client info for future invoices to save time.</p>
+    <p><strong data-translate="tipStrong">✅ Tip:</strong> <span data-translate="tipText">Make sure to complete your profile first so the invoice includes your correct business info and logo.</span></p>
+    <p><strong data-translate="reminderStrong">🧾 Reminder:</strong> <span data-translate="reminderText">You can reuse client info for future invoices to save time.</span></p>
   </div>
 </section>
 
 
 
-<footer>
-  <p>© 2025 Invoicer X. All rights reserved.</p>
-  <p>
-    <a href="privacypolicy.html">Privacy Policy</a> |
-    <a href="termsofservice.html">Terms of Service</a> 
-    
-  </p>
-</footer>
 
+<footer>
+  <p>© 2025 Invoicer X. All rights reserved. <br> Web Design by Alen K</p>
+  <p>
+  <a href="privacypolicy.html" data-translate="privacyPolicy">Privacy Policy</a> |
+  <a href="termsofservice.html" data-translate="termsOfService">Terms of Service</a>
+</p>
+
+</footer>
+<script src="language.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

@@ -455,6 +455,211 @@ footer a:hover {
   margin-bottom: 10px;
 }
 
+/* language button */
+#language-btn {
+  background: linear-gradient(270deg, #6a11cb, #2575fc, #6a11cb);
+  background-size: 600% 600%;
+  animation: gradientShift 8s ease infinite;
+  color: white;
+  margin-left: 20%;
+  width: 100%;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.language-dropdown {
+  position: relative;
+  margin-left: 85%;
+  display: inline-block; /* da se button i menu drže zajedno */
+}
+
+
+#language-btn:hover {
+  box-shadow: 0 0 10px rgba(37, 117, 252, 0.7), 0 0 20px rgba(106, 17, 203, 0.7);
+}
+
+@keyframes gradientShift {
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+ 
+#language-menu {
+  background: rgba(20, 20, 30, 0.75);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 12px 20px;
+  box-shadow:
+    0 0 10px rgba(106, 17, 203, 0.8),
+    0 0 20px rgba(37, 117, 252, 0.6);
+  color: #e0e0ff;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  top: 110%; /* malo ispod buttona */
+  left: 0;
+  min-width: 160px;
+  opacity: 0;
+  transform: translateY(-10px) rotateX(15deg);
+  pointer-events: none;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  z-index: 9999;
+}
+
+#language-menu[aria-hidden="false"],
+#language-menu:not([hidden]) {
+  opacity: 1;
+  width: 120%;
+  transform: translateY(0) rotateX(0);
+  pointer-events: auto;
+}
+
+#language-menu li button {
+  background: transparent;
+  border: none;
+  color: #c0c0ff;
+  width: 100%;
+  padding: 8px 10px;
+  text-align: left;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+#language-menu li button:hover,
+#language-menu li button:focus {
+  background: rgba(106, 17, 203, 0.6);
+  color: #fff;
+  box-shadow:
+    0 0 10px rgba(106, 17, 203, 0.9),
+    0 0 20px rgba(37, 117, 252, 0.7);
+  outline: none;
+}
+
+@media (max-width: 760px) {
+   h2 {
+    font-size: 1.8rem; /* Manje za mobilne */
+  }
+
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .text-section, .video-thumbnail {
+    max-width: 100%;
+  }
+  .text-section h1 {
+    font-size: 2.5rem;
+  }
+  .text-section p {
+    font-size: 1.2rem;
+    max-width: 100%;
+  }
+  .video-thumbnail img {
+    max-width: 100%;
+  }
+
+  /* language button */
+#language-btn {
+  background: linear-gradient(270deg, #6a11cb, #2575fc, #6a11cb);
+  background-size: 600% 600%;
+  animation: gradientShift 8s ease infinite;
+  color: white;
+  margin-left: 20%;
+  width: 100%;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.language-dropdown {
+  position: relative;
+  margin-left: 85%;
+  display: inline-block; /* da se button i menu drže zajedno */
+}
+
+
+#language-btn:hover {
+  box-shadow: 0 0 10px rgba(37, 117, 252, 0.7), 0 0 20px rgba(106, 17, 203, 0.7);
+}
+
+@keyframes gradientShift {
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+ 
+#language-menu {
+  background: rgba(20, 20, 30, 0.75);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 12px 20px;
+  box-shadow:
+    0 0 10px rgba(106, 17, 203, 0.8),
+    0 0 20px rgba(37, 117, 252, 0.6);
+  color: #e0e0ff;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  top: 110%; /* malo ispod buttona */
+  left: 0;
+  min-width: 160px;
+  opacity: 0;
+  transform: translateY(-10px) rotateX(15deg);
+  pointer-events: none;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  z-index: 9999;
+}
+
+#language-menu[aria-hidden="false"],
+#language-menu:not([hidden]) {
+  opacity: 1;
+  width: 120%;
+  transform: translateY(0) rotateX(0);
+  pointer-events: auto;
+}
+
+#language-menu li button {
+  background: transparent;
+  border: none;
+  color: #c0c0ff;
+  width: 100%;
+  padding: 8px 10px;
+  text-align: left;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+#language-menu li button:hover,
+#language-menu li button:focus {
+  background: rgba(106, 17, 203, 0.6);
+  color: #fff;
+  box-shadow:
+    0 0 10px rgba(106, 17, 203, 0.9),
+    0 0 20px rgba(37, 117, 252, 0.7);
+  outline: none;
+}
+
+
+
+
+}
 
 
 /* Responsive */
@@ -481,12 +686,190 @@ footer a:hover {
   .video-thumbnail img {
     max-width: 100%;
   }
+
+  /* language button */
+#language-btn {
+  background: linear-gradient(270deg, #6a11cb, #2575fc, #6a11cb);
+  background-size: 600% 600%;
+  animation: gradientShift 8s ease infinite;
+  color: white;
+  margin-left: 20%;
+  width: 100%;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.language-dropdown {
+  position: relative;
+  margin-left: 85%;
+  display: inline-block; /* da se button i menu drže zajedno */
+}
+
+
+#language-btn:hover {
+  box-shadow: 0 0 10px rgba(37, 117, 252, 0.7), 0 0 20px rgba(106, 17, 203, 0.7);
+}
+
+@keyframes gradientShift {
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+ 
+#language-menu {
+  background: rgba(20, 20, 30, 0.75);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 12px 20px;
+  box-shadow:
+    0 0 10px rgba(106, 17, 203, 0.8),
+    0 0 20px rgba(37, 117, 252, 0.6);
+  color: #e0e0ff;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  top: 110%; /* malo ispod buttona */
+  left: 0;
+  min-width: 160px;
+  opacity: 0;
+  transform: translateY(-10px) rotateX(15deg);
+  pointer-events: none;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  z-index: 9999;
+}
+
+#language-menu[aria-hidden="false"],
+#language-menu:not([hidden]) {
+  opacity: 1;
+  width: 120%;
+  transform: translateY(0) rotateX(0);
+  pointer-events: auto;
+}
+
+#language-menu li button {
+  background: transparent;
+  border: none;
+  color: #c0c0ff;
+  width: 100%;
+  padding: 8px 10px;
+  text-align: left;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+#language-menu li button:hover,
+#language-menu li button:focus {
+  background: rgba(106, 17, 203, 0.6);
+  color: #fff;
+  box-shadow:
+    0 0 10px rgba(106, 17, 203, 0.9),
+    0 0 20px rgba(37, 117, 252, 0.7);
+  outline: none;
+}
 }
 
 @media (max-width: 600px) {
   h2 {
     font-size: 1.8rem; /* Manje za mobilne */
   }
+
+  /* language button */
+#language-btn {
+  background: linear-gradient(270deg, #6a11cb, #2575fc, #6a11cb);
+  background-size: 600% 600%;
+  animation: gradientShift 8s ease infinite;
+  color: white;
+  margin-left: 20%;
+  width: 100%;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.language-dropdown {
+  position: relative;
+  margin-left: 85%;
+  display: inline-block; /* da se button i menu drže zajedno */
+}
+
+
+#language-btn:hover {
+  box-shadow: 0 0 10px rgba(37, 117, 252, 0.7), 0 0 20px rgba(106, 17, 203, 0.7);
+}
+
+@keyframes gradientShift {
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+ 
+#language-menu {
+  background: rgba(20, 20, 30, 0.75);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 12px 20px;
+  box-shadow:
+    0 0 10px rgba(106, 17, 203, 0.8),
+    0 0 20px rgba(37, 117, 252, 0.6);
+  color: #e0e0ff;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  top: 110%; /* malo ispod buttona */
+  left: 0;
+  min-width: 160px;
+  opacity: 0;
+  transform: translateY(-10px) rotateX(15deg);
+  pointer-events: none;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  z-index: 9999;
+}
+
+#language-menu[aria-hidden="false"],
+#language-menu:not([hidden]) {
+  opacity: 1;
+  width: 120%;
+  transform: translateY(0) rotateX(0);
+  pointer-events: auto;
+}
+
+#language-menu li button {
+  background: transparent;
+  border: none;
+  color: #c0c0ff;
+  width: 100%;
+  padding: 8px 10px;
+  text-align: left;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+#language-menu li button:hover,
+#language-menu li button:focus {
+  background: rgba(106, 17, 203, 0.6);
+  color: #fff;
+  box-shadow:
+    0 0 10px rgba(106, 17, 203, 0.9),
+    0 0 20px rgba(37, 117, 252, 0.7);
+  outline: none;
+}
 }
 
 @media (max-width: 480px) {
@@ -555,6 +938,95 @@ footer a:hover {
 
 .user-manual ol li {
   margin-bottom: 10px;
+}
+
+/* language button */
+#language-btn {
+  background: linear-gradient(270deg, #6a11cb, #2575fc, #6a11cb);
+  background-size: 600% 600%;
+  animation: gradientShift 8s ease infinite;
+  color: white;
+  margin-left: 20%;
+  width: 100%;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.language-dropdown {
+  position: relative;
+  margin-left: 85%;
+  display: inline-block; /* da se button i menu drže zajedno */
+}
+
+
+#language-btn:hover {
+  box-shadow: 0 0 10px rgba(37, 117, 252, 0.7), 0 0 20px rgba(106, 17, 203, 0.7);
+}
+
+@keyframes gradientShift {
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+ 
+#language-menu {
+  background: rgba(20, 20, 30, 0.75);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 12px 20px;
+  box-shadow:
+    0 0 10px rgba(106, 17, 203, 0.8),
+    0 0 20px rgba(37, 117, 252, 0.6);
+  color: #e0e0ff;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  top: 110%; /* malo ispod buttona */
+  left: 0;
+  min-width: 160px;
+  opacity: 0;
+  transform: translateY(-10px) rotateX(15deg);
+  pointer-events: none;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  z-index: 9999;
+}
+
+#language-menu[aria-hidden="false"],
+#language-menu:not([hidden]) {
+  opacity: 1;
+  width: 120%;
+  transform: translateY(0) rotateX(0);
+  pointer-events: auto;
+}
+
+#language-menu li button {
+  background: transparent;
+  border: none;
+  color: #c0c0ff;
+  width: 100%;
+  padding: 8px 10px;
+  text-align: left;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+#language-menu li button:hover,
+#language-menu li button:focus {
+  background: rgba(106, 17, 203, 0.6);
+  color: #fff;
+  box-shadow:
+    0 0 10px rgba(106, 17, 203, 0.9),
+    0 0 20px rgba(37, 117, 252, 0.7);
+  outline: none;
 }
 
 }
@@ -634,5 +1106,263 @@ footer a:hover {
 .user-manual ol li {
   margin-bottom: 10px;
 }
+
+/* language button */
+#language-btn {
+  background: linear-gradient(270deg, #6a11cb, #2575fc, #6a11cb);
+  background-size: 600% 600%;
+  animation: gradientShift 8s ease infinite;
+  color: white;
+  margin-left: 20%;
+  width: 100%;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.language-dropdown {
+  position: relative;
+  margin-left: 85%;
+  display: inline-block; /* da se button i menu drže zajedno */
+}
+
+
+#language-btn:hover {
+  box-shadow: 0 0 10px rgba(37, 117, 252, 0.7), 0 0 20px rgba(106, 17, 203, 0.7);
+}
+
+@keyframes gradientShift {
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+ 
+#language-menu {
+  background: rgba(20, 20, 30, 0.75);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 12px 20px;
+  box-shadow:
+    0 0 10px rgba(106, 17, 203, 0.8),
+    0 0 20px rgba(37, 117, 252, 0.6);
+  color: #e0e0ff;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  top: 110%; /* malo ispod buttona */
+  left: 0;
+  min-width: 160px;
+  opacity: 0;
+  transform: translateY(-10px) rotateX(15deg);
+  pointer-events: none;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  z-index: 9999;
+}
+
+#language-menu[aria-hidden="false"],
+#language-menu:not([hidden]) {
+  opacity: 1;
+  width: 120%;
+  transform: translateY(0) rotateX(0);
+  pointer-events: auto;
+}
+
+#language-menu li button {
+  background: transparent;
+  border: none;
+  color: #c0c0ff;
+  width: 100%;
+  padding: 8px 10px;
+  text-align: left;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+#language-menu li button:hover,
+#language-menu li button:focus {
+  background: rgba(106, 17, 203, 0.6);
+  color: #fff;
+  box-shadow:
+    0 0 10px rgba(106, 17, 203, 0.9),
+    0 0 20px rgba(37, 117, 252, 0.7);
+  outline: none;
+}
+
+
+}
+
+@media (max-width: 896px) {
+   h2 {
+    font-size: 1.4rem;  /* Još manji naslovi za male ekrane */
+  }
+
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  #invoicer-x-logo2 {
+    margin-top: -100px; /* Pomakni logo prema gore */
+    max-width: 70%;    /* Po želji smanji veličinu loga za male ekrane */
+    height: auto;
+
+  }
+
+  .text-section, .video-thumbnail {
+    max-width: 100%;
+  }
+
+  .text-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .text-section p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .btn-download, .btn-trailer {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .video-thumbnail img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .features {
+    grid-template-columns: 1fr; /* Stavi kartice u jedan stupac */
+  }
+
+
+  footer {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+
+  .user-manual {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  margin-top: 40px;
+  border-top: 2px solid #ddd;
+}
+
+.user-manual h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.user-manual ol {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.user-manual ol li {
+  margin-bottom: 10px;
+}
+
+/* language button */
+#language-btn {
+  position: relative;
+  background: linear-gradient(270deg, #6a11cb, #2575fc, #6a11cb);
+  background-size: 600% 600%;
+  animation: gradientShift 8s ease infinite;
+  color: white;
+  margin-left: 7%;
+  width: 100%;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.language-dropdown {
+  position: relative;
+  margin-left: 34%;
+  display: inline-block; /* da se button i menu drže zajedno */
+}
+
+
+#language-btn:hover {
+  box-shadow: 0 0 10px rgba(37, 117, 252, 0.7), 0 0 20px rgba(106, 17, 203, 0.7);
+}
+
+@keyframes gradientShift {
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+ 
+#language-menu {
+  background: rgba(20, 20, 30, 0.75);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 12px 20px;
+  box-shadow:
+    0 0 10px rgba(106, 17, 203, 0.8),
+    0 0 20px rgba(37, 117, 252, 0.6);
+  color: #e0e0ff;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  top: 110%; /* malo ispod buttona */
+  left: 0;
+  min-width: 160px;
+  opacity: 0;
+  transform: translateY(-10px) rotateX(15deg);
+  pointer-events: none;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  z-index: 9999;
+}
+
+#language-menu[aria-hidden="false"],
+#language-menu:not([hidden]) {
+  opacity: 1;
+  width: 120%;
+  transform: translateY(0) rotateX(0);
+  pointer-events: auto;
+}
+
+#language-menu li button {
+  background: transparent;
+  border: none;
+  color: #c0c0ff;
+  width: 100%;
+  padding: 8px 10px;
+  text-align: left;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+#language-menu li button:hover,
+#language-menu li button:focus {
+  background: rgba(106, 17, 203, 0.6);
+  color: #fff;
+  box-shadow:
+    0 0 10px rgba(106, 17, 203, 0.9),
+    0 0 20px rgba(37, 117, 252, 0.7);
+  outline: none;
+}
+
 
 }
