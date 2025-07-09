@@ -1434,7 +1434,7 @@ const translations = {
   feature9: "PDF izvoz i ispis – Spremite ili ispišite račune odmah",
   feature10: "Višejezičnost i više valuta – Izdajte račune klijentima diljem svijeta",
   feature11: "Svijetli i tamni način rada – Radite na način koji vam odgovara",
-  feature12: "<strong>Dodavanje logotipa tvrtke – Jednostavno dodajte svoj vizualni identitet",
+  feature12: "Dodavanje logotipa tvrtke – Jednostavno dodajte svoj vizualni identitet",
   idealForTitle: "Idealno za:",
   idealForText: "Freelancere, konzultante, obrtnike, agencije, pružatelje usluga i B2B tvrtke kojima je potrebno jednostavno i učinkovito izdavanje računa.",
   languageSupportText: "Invoicer X je razvijen za međunarodnu upotrebu i podržava više od 17 jezika uključujući engleski, njemački, španjolski, hrvatski, francuski i druge.",
