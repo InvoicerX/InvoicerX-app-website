@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://invoicerx.github.io/Invoicer-X/sitemap.xml
+Sitemap: https://invoicerx.github.io/Invoicer X - Your Invoice App/sitemap.xml

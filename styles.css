@@ -544,6 +544,50 @@ footer a:hover {
   outline: none;
 }
 
+/* how to use part */
+.how-to-use {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.how-to-use h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #4338ca;
+}
+
+.how-to-steps {
+  list-style: decimal inside;
+  padding-left: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: #444;
+}
+
+.how-to-steps li {
+  margin-bottom: 1rem;
+}
+
+.how-to-steps li strong {
+  font-weight: 700;
+  color: #000;
+}
+
+.how-to-footer {
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: #d9534f; /* Warning red */
+}
+
+
 @media (max-width: 760px) {
    h2 {
     font-size: 1.8rem; /* Manje za mobilne */
@@ -656,6 +700,48 @@ footer a:hover {
   outline: none;
 }
 
+/* how to use part */
+.how-to-use {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.how-to-use h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #4338ca;
+}
+
+.how-to-steps {
+  list-style: decimal inside;
+  padding-left: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: #444;
+}
+
+.how-to-steps li {
+  margin-bottom: 1rem;
+}
+
+.how-to-steps li strong {
+  font-weight: 700;
+  color: #000;
+}
+
+.how-to-footer {
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: #d9534f; /* Warning red */
+}
 
 
 
@@ -775,6 +861,51 @@ footer a:hover {
     0 0 20px rgba(37, 117, 252, 0.7);
   outline: none;
 }
+
+/* how to use part */
+.how-to-use {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.how-to-use h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #4338ca;
+}
+
+.how-to-steps {
+  list-style: decimal inside;
+  padding-left: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: #444;
+}
+
+.how-to-steps li {
+  margin-bottom: 1rem;
+}
+
+.how-to-steps li strong {
+  font-weight: 700;
+  color: #000;
+}
+
+.how-to-footer {
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: #d9534f; /* Warning red */
+}
+
+
 }
 
 @media (max-width: 600px) {
@@ -870,6 +1001,51 @@ footer a:hover {
     0 0 20px rgba(37, 117, 252, 0.7);
   outline: none;
 }
+
+/* how to use part */
+.how-to-use {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.how-to-use h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #4338ca;
+}
+
+.how-to-steps {
+  list-style: decimal inside;
+  padding-left: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: #444;
+}
+
+.how-to-steps li {
+  margin-bottom: 1rem;
+}
+
+.how-to-steps li strong {
+  font-weight: 700;
+  color: #000;
+}
+
+.how-to-footer {
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: #d9534f; /* Warning red */
+}
+
+
 }
 
 @media (max-width: 480px) {
@@ -1028,6 +1204,50 @@ footer a:hover {
     0 0 20px rgba(37, 117, 252, 0.7);
   outline: none;
 }
+
+/* how to use part */
+.how-to-use {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.how-to-use h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #4338ca;
+}
+
+.how-to-steps {
+  list-style: decimal inside;
+  padding-left: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: #444;
+}
+
+.how-to-steps li {
+  margin-bottom: 1rem;
+}
+
+.how-to-steps li strong {
+  font-weight: 700;
+  color: #000;
+}
+
+.how-to-footer {
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: #d9534f; /* Warning red */
+}
+
 
 }
 
@@ -1194,6 +1414,49 @@ footer a:hover {
     0 0 10px rgba(106, 17, 203, 0.9),
     0 0 20px rgba(37, 117, 252, 0.7);
   outline: none;
+}
+
+/* how to use part */
+.how-to-use {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.how-to-use h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #4338ca;
+}
+
+.how-to-steps {
+  list-style: decimal inside;
+  padding-left: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: #444;
+}
+
+.how-to-steps li {
+  margin-bottom: 1rem;
+}
+
+.how-to-steps li strong {
+  font-weight: 700;
+  color: #000;
+}
+
+.how-to-footer {
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: #d9534f; /* Warning red */
 }
 
 
@@ -1363,6 +1626,50 @@ footer a:hover {
     0 0 20px rgba(37, 117, 252, 0.7);
   outline: none;
 }
+
+/* how to use part */
+.how-to-use {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.how-to-use h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #4338ca;
+}
+
+.how-to-steps {
+  list-style: decimal inside;
+  padding-left: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: #444;
+}
+
+.how-to-steps li {
+  margin-bottom: 1rem;
+}
+
+.how-to-steps li strong {
+  font-weight: 700;
+  color: #000;
+}
+
+.how-to-footer {
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: #d9534f; /* Warning red */
+}
+
 
 
 }
