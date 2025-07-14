@@ -3,26 +3,126 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Invoicer X - Your Invoice App</title>
+<title>Invoicer X | Android Invoice App - Fast, Easy & Multilingual, PDF, QR, B2B</title>
+
 <link rel="stylesheet" href="styles.css" />
+
+<link rel="apple-touch-icon" href="invoicer-x-logo.png">
+<link rel="icon" href="https://invoicerx.github.io/InvoicerX-app-website/invoicer-x-logo2copy.png" type="image/png">
+<link rel="shortcut icon" href="https://invoicerx.github.io/InvoicerX-app-website/invoicer-x-logo2copy.png" type="image/png">
+
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+ 
+  <meta name="description" content="Invoicer X is a powerful Android invoicing app for freelancers, SMBs and enterprises. B2B-ready, supports 17 languages, QR, PDF, international billing. Try free for 3 days." />
+
+
+  <meta name="keywords" content="InvoicerX, Invoicer X, invoice app, Android invoicing, invoice generator, B2B invoices, multilingual billing, PDF invoices, QR code invoice, VAT billing, freelancer invoices, small business billing" />
+
+
+  
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="InvoicerX" />
+
+  <!-- Open Graph (for sharing on Facebook, LinkedIn, etc.) -->
+  <meta property="og:title" content="Invoicer-X - Fast & Simple Invoice App for Android" />
+  <meta property="og:description" content="Create invoices easily from your phone. InvoicerX is ideal for freelancers and small business owners." />
+  <meta property="og:image" content="https://invoicerx.github.io/InvoicerX-app-website/invoicer-x-logo2copy.png" />
+  <meta property="og:url" content="https://invoicerx.github.io/InvoicerX-app-website/" />
+  <meta property="og:type" content="website" />
+
+  
+
+  <!-- Canonical (da Google zna koji je glavni URL) -->
+  <link rel="canonical" href="https://invoicerx.github.io/InvoicerX-app-website/" />
+
+  
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-28Y9JXXELZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-28Y9JXXELZ');
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Invoicer X",
+  "operatingSystem": "Android",
+  "applicationCategory": "BusinessApplication",
+  "applicationSubCategory": "AccountingApplication",
+  "installUrl": "https://play.google.com/store/apps/details?id=my.invoice.invoicegeneratorapp",
+  "downloadUrl": "https://play.google.com/store/apps/details?id=my.invoice.invoicegeneratorapp",
+  "screenshot": "https://invoicerx.github.io/InvoicerX-app-website/Screenshot_20250626_144346_InvoicerX.jpg",
+  "offers": {
+    "@type": "Offer",
+    "price": "9.99",
+    "priceCurrency": "EUR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "ratingCount": "124"
+  },
+  "url": "https://play.google.com/store/apps/details?id=my.invoice.invoicegeneratorapp"
+}
+</script>
+
 </head>
+
+
 <body>
 
 <header class="header">
+   <div class="language-dropdown">
+    
+  <button id="language-btn" aria-haspopup="true" aria-expanded="false" aria-label="Select Language">
+     Language
+  </button>
+  <ul id="language-menu" role="menu" aria-labelledby="language-btn" hidden>
+  <li role="menuitem"><button data-lang="en">🇺🇸 English (US)</button></li>
+  <li role="menuitem"><button data-lang="it">🇮🇹 Italy</button></li>
+  <li role="menuitem"><button data-lang="nl">🇳🇱 Netherlands</button></li>
+  <li role="menuitem"><button data-lang="be">🇧🇪 Belgium</button></li>
+  <li role="menuitem"><button data-lang="sv">🇸🇪 Sweden</button></li>
+  <li role="menuitem"><button data-lang="at">🇦🇹 Austria</button></li>
+  <li role="menuitem"><button data-lang="de">🇩🇪 Germany</button></li>
+  <li role="menuitem"><button data-lang="hu">🇭🇺 Hungary</button></li>
+  <li role="menuitem"><button data-lang="fi">🇫🇮 Finland</button></li>
+  <li role="menuitem"><button data-lang="cs">🇨🇿 Czech </button></li>
+  <li role="menuitem"><button data-lang="ga">🇮🇪 Ireland</button></li>
+  <li role="menuitem"><button data-lang="hr">🇭🇷 Croatia</button></li>
+  <li role="menuitem"><button data-lang="ru">🇷🇺 Russia</button></li>
+  <li role="menuitem"><button data-lang="fr">🇫🇷 France</button></li>
+  <li role="menuitem"><button data-lang="es">🇪🇸 Spain </button></li>
+  <li role="menuitem"><button data-lang="pt">🇵🇹 Portugal</button></li>
+</ul>
+
+</div>
+
+
   <div class="header-content">
     <div class="text-section">
-      <h1>Invoicer X</h1> 
-      <img src="GetItOnGooglePlay_Badge_Web_color_English(1).png" width="170px" height="50px">
+      
+      <h1>Invoicer X - Fast Invoice App for Android</h1>
+
+      <img src="GetItOnGooglePlay_Badge_Web_color_English(1).png" alt="Get it on Google Play" width="170px" height="50px">
       <p data-translate="headerText">Your all-in-one invoice generator app</p>
       <a href="https://play.google.com/store/apps/details?id=my.invoice.invoicegeneratorapp" target="_blank" rel="noopener" class="btn-download" data-translate="downloadBtnText">
         Get it on Google Play
       </a>
-    
+       
       <button id="watch-trailer-btn" data-translate="trailerBtn" class="btn-trailer">▶ Watch Trailer</button>  
     </div>
-    
+    <img src="invoicer-x-logo2copy.png" id="invoicer-x-logo2" alt="Invoicer X Logo Thumbnail" width="300px" height="300px" />
     <div class="video-thumbnail">
-      <img src="qr code.png" alt="Invoicer X Trailer Thumbnail" />
+      <img src="qr code.png" alt="Scan QR code to download Invoicer X app" />
     </div>
     
   </div>
@@ -42,6 +142,10 @@
       </iframe>
     </div>
   </div>
+
+  
+
+
 </header>
 
 
@@ -51,76 +155,47 @@
 
 <a href="index.html" class="btn-home">Home Page</a>
 
-
+<br>
 <section id="privacy-policy" class="policy-section">
   <h1 data-translate="privacyTitle">Privacy Policy</h1>
 
-  <h2 data-translate="infoCollectTitle">1. Information We Collect</h2>
-
-  <h3 data-translate="personalInfo">Personal Information</h3>
-  <p data-translate="personalInfoText">
-    When you register or use the app, we may collect personal information such as your name, email address, and business details.
+  <p><strong data-translate="lastUpdatedLabel">Last updated:</strong> <span data-translate="lastUpdatedDate">14 July 2025</span></p>
+  <br>
+  <p data-translate="noCollectionText">
+    This app does <strong>not collect</strong>, store, or share any personal data — including your own profile information or data about your clients.
+    All information entered in the app (such as client names, addresses, tax numbers, or bank account details) is stored <strong>only on your device</strong> using local browser storage (localStorage).
+    The app does <strong>not have access</strong> to any of this data.
   </p>
 
-  <h3 data-translate="invoiceData">Invoice Data</h3>
-  <p data-translate="invoiceDataText">
-    Information you input into invoices, such as client names, addresses, and payment amounts, is stored to provide the service.
+  <h2 data-translate="infoUsageTitle">1. What Information the App Uses</h2>
+  <p data-translate="infoUsageText">
+    All data input (e.g. for invoices or in "My Profile") is used solely for app functionality on your device.
+    No data is transmitted, collected, or stored externally.
   </p>
 
-  <h3 data-translate="deviceInfo">Device Information</h3>
-  <p data-translate="deviceInfoText">
-    We may collect non-personal data about your device, such as operating system, IP address, and app usage statistics, to improve functionality.
+  <h2 data-translate="trackingTitle">2. Tracking and Analytics</h2>
+  <p data-translate="trackingText">
+    The app does not use cookies, third-party APIs, analytics tools, or any tracking mechanisms.
+    We do not know who you are, what data you enter, or how you use the app.
   </p>
 
-  <h2 data-translate="useInfoTitle">2. How We Use Your Information</h2>
-  <ul>
-    <li data-translate="use1">To provide and maintain the functionality of the app</li>
-    <li data-translate="use2">To process transactions and send invoices on your behalf</li>
-    <li data-translate="use3">To communicate with you about updates, changes, or issues</li>
-    <li data-translate="use4">To analyze usage and improve the app’s performance and features</li>
-  </ul>
-
-  <h2 data-translate="sharingInfoTitle">3. Sharing of Information</h2>
-  <p data-translate="sharingIntro">We do not sell, rent, or share your personal information with third parties except as required for:</p>
-
-  <h3 data-translate="thirdParty">Third-Party Services</h3>
-  <p data-translate="thirdPartyText">
-    Integration with payment processors or cloud services you opt to use.
+  <h2 data-translate="sharingTitle">3. Data Sharing</h2>
+  <p data-translate="sharingText">
+    No entered information is shared with any third party. Everything remains private and local to your device.
   </p>
 
-  <h3 data-translate="legalCompliance">Legal Compliance</h3>
-  <p data-translate="legalComplianceText">
-    Responding to legal obligations, court orders, or to prevent fraud.
+  <h2 data-translate="securityTitle">4. Security</h2>
+  <p data-translate="securityText">
+    Since all data is stored locally, you are in full control of it. If you clear your browser cache or local storage, your data will be deleted.
   </p>
 
-  <h2 data-translate="dataSecurityTitle">4. Data Security</h2>
-  <p data-translate="dataSecurityText">
-    We implement industry-standard security measures to protect your data. However, no method of electronic storage or transmission is 100% secure, and we cannot guarantee absolute security.
-  </p>
-
-  <h2 data-translate="yourRightsTitle">5. Your Rights</h2>
-
-  <h3 data-translate="accessCorrection">Access and Correction</h3>
-  <p data-translate="accessCorrectionText">
-    You can access and update your personal information through the app.
-  </p>
-
-  <h3 data-translate="dataDeletion">Data Deletion</h3>
-  <p data-translate="dataDeletionText">
-    You may request that we delete your data by contacting us. Note that some data may need to be retained for legal or compliance purposes.
-  </p>
-
-  <h2 data-translate="changesPolicyTitle">6. Changes to This Policy</h2>
-  <p data-translate="changesPolicyText">
-    We reserve the right to update this privacy policy at any time. Changes will be communicated through the app or via email, where applicable.
-  </p>
-
-  <h2 data-translate="contactTitle">7. Contact Information</h2>
+  <h2 data-translate="contactTitle">5. Contact</h2>
   <p data-translate="contactText">
-    If you have any questions about this Privacy Policy or how we handle your data, please contact us at:
+    For any privacy-related questions, please contact us at:
+    <strong><a href="mailto:info.invoicerx@gmail.com">info.invoicerx@gmail.com</a></strong>
   </p>
-  <p><strong>Email:</strong> <a href="mailto:www.gifonline@gmail.com">www.gifonline@gmail.com</a></p>
 </section>
+
 
 
 
