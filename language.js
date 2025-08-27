@@ -1,8 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const savedLang = localStorage.getItem('selectedLanguage') || 'en'; // default eng
-  applyLanguage(savedLang);
+  const savedLang = localStorage.getItem('selectedLanguage') || 'en';
+  translatePage(savedLang);  // <-- ovdje pozivaš definiranu funkciju translatePage
 });
-
+   
+const languageBtn = document.getElementById("language-btn");
+const languageMenu = document.getElementById("language-menu");
 
 const translations = {
   en: {
@@ -143,7 +145,11 @@ howToUseStep9: "Tap the Generate Invoice button to create the invoice.",
 howToUseStep10: "If needed, save the invoice as a PDF or print it.",
 howToUseWarning: "⚠️ The invoice will not generate correctly if required fields are missing or incomplete.",
 howToUseEasy: "Simple and fast! ⚡",
-
+contactDescription: "Contact us.",
+nameUser: "Your Name",
+emailUser: "email@",
+messageUser: "Message",
+submit: "Submit",
 
   },
 
@@ -288,7 +294,11 @@ contactText: "Per qualsiasi domanda relativa alla privacy, contattaci a: info.in
   
   termsContactTitle: "7. Contatto",
   termsContactText: "Se hai domande su questi termini, contattaci a info.invoicerx@gmail.com",
-
+  contactDescription: "Contattaci.",
+  nameUser: "Il tuo nome",
+  emailUser: "email@",
+  messageUser: "Messaggio",
+  submit: "Invia",
 
   },  
   nl: {
@@ -431,7 +441,12 @@ contactText: "Voor privacygerelateerde vragen kun je contact met ons opnemen via
   
   termsContactTitle: "7. Contact",
   termsContactText: "Als je vragen hebt over deze voorwaarden, neem dan contact met ons op via  info.invoicerx@gmail.com",
+  contactDescription: "Neem contact met ons op.",
+  nameUser: "Uw naam",
+  emailUser: "email@",
+  messageUser: "Bericht",
 
+  submit: "Verzenden",
 
 
   },   
@@ -574,7 +589,11 @@ contactText: "För frågor relaterade till integritet, vänligen kontakta oss p�
   
   termsContactTitle: "7. Kontakt",
   termsContactText: "Om du har frågor om dessa villkor, vänligen kontakta oss på info.invoicerx@gmail.com",
-
+  contactDescription: "Kontakta oss.",
+   nameUser: "Ditt namn",
+   emailUser: "email@",
+   messageUser: "Meddelande",
+   submit: "Skicka",
   },   
 
   be: {
@@ -714,29 +733,33 @@ contactText: "Voor vragen over privacy kun je contact met ons opnemen via: info.
 
   termsContactTitle: "7. Contact",
   termsContactText: "Als u vragen heeft over deze voorwaarden, neem dan contact met ons op via info.invoicerx@gmail.com",
-
+  contactDescription: "Neem contact met ons op.",
+  nameUser: "Uw naam",
+  emailUser: "email@",
+  messageUser: "Bericht",
+  submit: "Verzenden",
 
   },   
 
   at: {
     howToUseTitle: "📲 Wie man Invoicer X benutzt",
-howToUseStep1: "Lade die App aus dem Google Play Store herunter.",
-howToUseStep2: "Öffne die App und gehe zu Mein Profil.",
-howToUseStep3: "Wähle deine bevorzugte Sprache, bevor du dein Profil ausfüllst.",
-howToUseStep4: "Fülle deine Firmendaten aus und füge optional dein Logo hinzu.",
-howToUseStep5: "Speichere die Daten, indem du auf die Schaltfläche Profil speichern klickst.",
-howToUseStep6: "Gehe zurück zum Abschnitt Rechnung.",
-howToUseStep7: "Gib die Kundendaten ein: Name, Adresse, Umsatzsteuer-ID (falls erforderlich).",
-howToUseStep8: "Füge die Dienstleistungen, Mengen und Preise für die Rechnung hinzu.",
-howToUseStep9: "Klicke auf die Schaltfläche Rechnung generieren, um die Rechnung zu erstellen.",
-howToUseStep10: "Speichere die Rechnung bei Bedarf als PDF oder drucke sie aus.",
-howToUseWarning: "⚠️ Die Rechnung wird nicht korrekt generiert, wenn Pflichtfelder nicht ausgefüllt oder unvollständig sind.",
-howToUseEasy: "Einfach und schnell! ⚡",
+    howToUseStep1: "Lade die App aus dem Google Play Store herunter.",
+    howToUseStep2: "Öffne die App und gehe zu Mein Profil.",
+    howToUseStep3: "Wähle deine bevorzugte Sprache, bevor du dein Profil ausfüllst.",
+    howToUseStep4: "Fülle deine Firmendaten aus und füge optional dein Logo hinzu.",
+    howToUseStep5: "Speichere die Daten, indem du auf die Schaltfläche Profil speichern klickst.",
+    howToUseStep6: "Gehe zurück zum Abschnitt Rechnung.",
+    howToUseStep7: "Gib die Kundendaten ein: Name, Adresse, Umsatzsteuer-ID (falls erforderlich).",
+    howToUseStep8: "Füge die Dienstleistungen, Mengen und Preise für die Rechnung hinzu.",
+    howToUseStep9: "Klicke auf die Schaltfläche Rechnung generieren, um die Rechnung zu erstellen.",
+    howToUseStep10: "Speichere die Rechnung bei Bedarf als PDF oder drucke sie aus.",
+    howToUseWarning: "⚠️ Die Rechnung wird nicht korrekt generiert, wenn Pflichtfelder nicht ausgefüllt oder unvollständig sind.",
+    howToUseEasy: "Einfach und schnell! ⚡",
 
     trailerBtn: "▶ Trailer ansehen",
     headerText: "Deine All-in-One Rechnungserstellungs-App",
     downloadBtnText: "Lade es auf Google Play herunter",
-   languageList: "Unterstützte Sprachen und Regionen: Englisch (US, UK, Australien & Kanada), Italienisch, Niederländisch (Niederlande & Belgien), Schwedisch, Deutsch (Österreich & Deutschland), Ungarisch, Finnisch, Tschechisch, Irisch, Kroatisch, Russisch, Französisch, Spanisch (Spanien & Lateinamerika), Portugiesisch.",
+    languageList: "Unterstützte Sprachen und Regionen: Englisch (US, UK, Australien & Kanada), Italienisch, Niederländisch (Niederlande & Belgien), Schwedisch, Deutsch (Österreich & Deutschland), Ungarisch, Finnisch, Tschechisch, Irisch, Kroatisch, Russisch, Französisch, Spanisch (Spanien & Lateinamerika), Portugiesisch.",
 
     languageSupportTitle: "🌍 Sprach- und Regionsunterstützung",
     descriptionTitle: "Was ist Invoicer X?",
@@ -764,10 +787,10 @@ howToUseEasy: "Einfach und schnell! ⚡",
     caption19: "Fügen Sie ein Firmenlogo hinzu, das auf der Rechnung sichtbar ist.", 
     caption20: "Mobiles Layout",
      tryTitle: "Teste Invoicer X – 3 Tage kostenlos!",
-  trialInfo: "Genießen Sie während der Testphase vollen Zugriff auf alle Premium-Funktionen – ohne Verpflichtung, jederzeit kündbar.",
-  appIntro: "Erstellen und versenden Sie professionelle Rechnungen mit nur wenigen Klicks mit Invoicer X, der smarten Rechnungs-App für Freelancer, Kleinunternehmen und B2B-Unternehmer.",
-  targetAudience: "Egal ob Designer, Entwickler, Berater oder Auftragnehmer – Invoicer X macht das Rechnungsstellen schnell, zuverlässig und vollständig anpassbar – perfekt für Einzelpersonen und Geschäftskunden (B2B).",
-  featuresTitle: "Wesentliche Funktionen:",
+    trialInfo: "Genießen Sie während der Testphase vollen Zugriff auf alle Premium-Funktionen – ohne Verpflichtung, jederzeit kündbar.",
+    appIntro: "Erstellen und versenden Sie professionelle Rechnungen mit nur wenigen Klicks mit Invoicer X, der smarten Rechnungs-App für Freelancer, Kleinunternehmen und B2B-Unternehmer.",
+    targetAudience: "Egal ob Designer, Entwickler, Berater oder Auftragnehmer – Invoicer X macht das Rechnungsstellen schnell, zuverlässig und vollständig anpassbar – perfekt für Einzelpersonen und Geschäftskunden (B2B).",
+    featuresTitle: "Wesentliche Funktionen:",
   feature1: "Dynamische Rechnungserstellung – Erstellen Sie saubere, professionelle Rechnungen in Sekundenschnelle",
   feature2: "Kundenverwaltung – Speichern und wiederverwenden Sie Ihre Kundenliste für zukünftige Abrechnungen",
   feature3: "Firmen- oder Einzelprofile – Passen Sie Rechnungsdetails an Ihren Geschäftstyp an",
@@ -855,7 +878,11 @@ contactText: "Bei Fragen zum Datenschutz kontaktiere uns bitte unter: info.invoi
 
   termsContactTitle: "7. Kontakt",
   termsContactText: "Wenn Sie Fragen zu diesen Bedingungen haben, kontaktieren Sie uns bitte unter info.invoicerx@gmail.com",
-
+  contactDescription: "Kontaktieren Sie uns.",
+  nameUser: "Ihr Name",
+  emailUser: "email@",
+  messageUser: "Nachricht",
+  submit: "Absenden",
 
 
   },  
@@ -996,12 +1023,16 @@ contactText: "Ha bármilyen adatvédelmi kérdésed van, kérjük, lépj kapcsol
 
   termsContactTitle: "7. Kapcsolat",
   termsContactText: "Ha kérdése van ezen feltételekkel kapcsolatban, kérjük, vegye fel velünk a kapcsolatot a következő címen: info.invoicerx@gmail.com",
-
-
+  contactDescription: "Lépjen kapcsolatba velünk.",
+  nameUser: "Neved",
+  emailUser: "email@",
+  messageUser: "Üzenet",
+  submit: "Küldés",
+ 
   },   
 
   fi: {
-    howToUseTitle: "📲 Kuinka käyttää Invoicer X:ää",
+  howToUseTitle: "📲 Kuinka käyttää Invoicer X:ää",
   howToUseStep1: "Lataa sovellus Google Playsta.",
   howToUseStep2: "Avaa sovellus ja siirry kohtaan My Profile (Oma profiili).",
   howToUseStep3: "Valitse haluamasi kieli ennen profiilin täyttämistä!",
@@ -1136,13 +1167,17 @@ contactText: "Jos sinulla on kysyttävää tietosuojasta, ota meihin yhteyttä: 
 
   termsContactTitle: "7. Yhteystiedot",
   termsContactText: "Jos sinulla on kysyttävää näistä ehdoista, ota meihin yhteyttä osoitteessa: info.invoicerx@gmail.com",
-
+  contactDescription: "Ota meihin yhteyttä.",
+  nameUser: "Nimesi",
+  emailUser: "email@",
+  messageUser: "Viesti",
+  submit: "Lähetä",
 
 
   }, 
 
   cs: {
-     howToUseTitle: "📲 Jak používat Invoicer X",
+  howToUseTitle: "📲 Jak používat Invoicer X",
   howToUseStep1: "Stáhněte si aplikaci z Google Play.",
   howToUseStep2: "Otevřete aplikaci a přejděte do sekce My Profile (Můj profil).",
   howToUseStep3: "Před vyplněním profilu vyberte preferovaný jazyk!",
@@ -1277,12 +1312,16 @@ contactText: "Máte-li jakékoli dotazy týkající se ochrany osobních údajů
 
   termsContactTitle: "7. Kontakt",
   termsContactText: "Pokud máte otázky ohledně těchto podmínek, kontaktujte nás na: info.invoicerx@gmail.com",
-
+  contactDescription: "Kontaktujte nás.",
+  nameUser: "Vaše jméno",
+  emailUser: "email@",
+  messageUser: "Zpráva",
+  submit: "Odeslat",
 
   },   
 
   ga: {
-    howToUseTitle: "📲 Conas Invoicer X a Úsáid",
+  howToUseTitle: "📲 Conas Invoicer X a Úsáid",
   howToUseStep1: "Íoslódáil an aip ó Google Play.",
   howToUseStep2: "Oscail an aip agus téigh go dtí My Profile.",
   howToUseStep3: "Roghnaigh do theanga roimh líonadh isteach do phróifíl!",
@@ -1417,12 +1456,16 @@ contactText: "Má tá ceisteanna agat maidir le príobháideachas, déan teagmh�
 
   termsContactTitle: "7. Teagmháil",
   termsContactText: "Má tá ceisteanna agat faoi na téarmaí seo, déan teagmháil linn ag: info.invoicerx@gmail.com",
-
+  contactDescription: "Déan teagmháil linn.",
+  nameUser: "D`ainm",
+  emailUser: "email@",
+  messageUser: "Teachtaireacht",
+  submit: "Seol",
 
   },  
 
   hr: {
-    howToUseTitle: "📲 Kako koristiti Invoicer X",
+  howToUseTitle: "📲 Kako koristiti Invoicer X",
   howToUseStep1: "Preuzmi aplikaciju s Google Playa.",
   howToUseStep2: "Otvori aplikaciju i idi na My Profile.",
   howToUseStep3: "Odaberi svoj jezik prije nego što popuniš profil!",
@@ -1559,12 +1602,16 @@ contactText: "Za sva pitanja vezana uz privatnost, kontaktirajte nas na: info.in
 
   termsContactTitle: "7. Kontakt",
   termsContactText: "Ako imate pitanja o ovim uvjetima, molimo kontaktirajte nas na: info.invoicerx@gmail.com",
-
+  contactDescription: "Kontaktirajte nas.",
+  nameUser: "Vaše ime",
+  emailUser: "email@",
+  messageUser: "Poruka",
+  submit: "Pošalji",
 
   },  
 
   ru: {
-    howToUseTitle: "📲 Как использовать Invoicer X",
+  howToUseTitle: "📲 Как использовать Invoicer X",
   howToUseStep1: "Скачайте приложение из Google Play.",
   howToUseStep2: "Откройте приложение и перейдите в раздел My Profile.",
   howToUseStep3: "Выберите предпочтительный язык перед заполнением профиля!",
@@ -1701,12 +1748,16 @@ contactText: "Если у вас есть вопросы по поводу ко�
 
   termsContactTitle: "7. Контакты",
   termsContactText: "Если у вас есть вопросы по этим условиям, пожалуйста, свяжитесь с нами по адресу: info.invoicerx@gmail.com",
-
+  contactDescription: "Свяжитесь c нами.",
+  nameUser: "Ваше имя",
+  emailUser: "email@",
+  messageUser: "Сообщение",
+  submit: "Отправить",
 
   },  
 
   de: {
-    howToUseTitle: "📲 So verwendest du Invoicer X",
+  howToUseTitle: "📲 So verwendest du Invoicer X",
   howToUseStep1: "Lade die App aus dem Google Play Store herunter.",
   howToUseStep2: "Öffne die App und gehe zu „My Profile“.",
   howToUseStep3: "Wähle deine bevorzugte Sprache, bevor du dein Profil ausfüllst!",
@@ -1859,14 +1910,18 @@ termsChangesText: "Wir behalten uns das Recht vor, diese Nutzungsbedingungen jed
 
 termsContactTitle: "7. Kontakt",
 termsContactText: "Wenn Sie Fragen zu diesen Bedingungen haben, kontaktieren Sie uns bitte unter info.invoicerx@gmail.com",
-
+contactDescription: "Kontaktieren Sie uns.",
+nameUser: "Ihr Name",
+emailUser: "email@",
+messageUser: "Nachricht",
+submit: "Senden",
 
 
 
   },   
 
   fr: {
-    howToUseTitle: "📲 Comment utiliser Invoicer X",
+  howToUseTitle: "📲 Comment utiliser Invoicer X",
   howToUseStep1: "Téléchargez l’application depuis Google Play.",
   howToUseStep2: "Ouvrez l’application et allez dans « My Profile ».",
   howToUseStep3: "Sélectionnez votre langue préférée avant de remplir votre profil !",
@@ -2002,14 +2057,18 @@ termsChangesText: "Nous nous réservons le droit de mettre à jour ces Condition
 
 termsContactTitle: "7. Contact",
 termsContactText: "Si vous avez des questions concernant ces conditions, veuillez nous contacter à info.invoicerx@gmail.com",
-
+contactDescription: "Contactez-nous.",
+nameUser: "Votre nom",
+emailUser: "email@",
+messageUser: "Message",
+submit: "Envoyer",
 
 
   },  
   
 
   es: {
-    howToUseTitle: "📲 Cómo usar Invoicer X",
+  howToUseTitle: "📲 Cómo usar Invoicer X",
   howToUseStep1: "Descarga la aplicación desde Google Play.",
   howToUseStep2: "Abre la aplicación y ve a «My Profile».",
   howToUseStep3: "Selecciona tu idioma preferido antes de completar tu perfil.",
@@ -2161,12 +2220,16 @@ termsChangesText: "Nos reservamos el derecho de actualizar estos Términos de Se
 
 termsContactTitle: "7. Contacto",
 termsContactText: "Si tienes preguntas sobre estos términos, por favor contáctanos en info.invoicerx@gmail.com",
-
+contactDescription: "Contáctanos.",
+nameUser: "Su nombre",
+emailUser: "email@",
+messageUser: "Mensaje",
+submit: "Enviar",
 
   },  
 
   pt: {
-    howToUseTitle: "📲 Como usar o Invoicer X",
+  howToUseTitle: "📲 Como usar o Invoicer X",
   howToUseStep1: "Baixe o aplicativo na Google Play.",
   howToUseStep2: "Abra o aplicativo e vá para «My Profile».",
   howToUseStep3: "Selecione seu idioma preferido antes de preencher seu perfil.",
@@ -2301,37 +2364,47 @@ termsChangesText: "Reservamo-nos o direito de atualizar estes Termos de Serviço
 
 termsContactTitle: "7. Contato",
 termsContactText: "Se você tiver dúvidas sobre estes termos, por favor, entre em contato conosco em info.invoicerx@gmail.com",
-
+contactDescription: "Contacte-nos.",
+nameUser: "Seu nome",
+emailUser: "email@",
+messageUser: "Mensagem",
+submit: "Enviar",
    
   },  
 };      
 
-
-const languageBtn = document.getElementById("language-btn");
-const languageMenu = document.getElementById("language-menu");
 
 // Funkcija koja prevodi stranicu na odabrani jezik
 function translatePage(lang) {
   const elements = document.querySelectorAll("[data-translate]");
   elements.forEach(el => {
     const key = el.getAttribute("data-translate");
-    if (translations[lang] && translations[lang][key]) {
-      el.textContent = translations[lang][key];
+    const text = translations[lang] && translations[lang][key];
+    if (!text) return;
+
+    if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
+      el.placeholder = text;   // postavlja placeholder
+    } else {
+      el.textContent = text;   // postavlja tekst za button, span, itd.
     }
   });
 }
 
-// Učitavanje jezika iz localStorage i primjena prijevoda na početku
-document.addEventListener('DOMContentLoaded', () => {
-  const savedLang = localStorage.getItem('selectedLanguage') || 'en'; // default eng
-  translatePage(savedLang);
-});
 
 // Otvaranje/zatvaranje jezika menija
 languageBtn.addEventListener("click", () => {
   const isExpanded = languageBtn.getAttribute("aria-expanded") === "true";
   languageBtn.setAttribute("aria-expanded", !isExpanded);
   languageMenu.hidden = isExpanded;
+});
+
+document.addEventListener("click", () => {
+  languageMenu.hidden = true;
+  languageBtn.setAttribute("aria-expanded", false);
+});
+
+languageMenu.addEventListener("click", (event) => {
+  event.stopPropagation(); // spriječi zatvaranje menija kad se klikne unutar njega
 });
 
 // Odabir jezika iz menija
@@ -2347,4 +2420,22 @@ document.querySelectorAll('#language-menu button').forEach(button => {
     languageBtn.setAttribute("aria-expanded", false);
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

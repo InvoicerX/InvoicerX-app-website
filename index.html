@@ -415,22 +415,27 @@
   </div>
 </section>
 
-
+<div class="userForm">
+   
 <form action="https://formspree.io/f/manbwony" method="POST" id="contact-form">
-  <input type="text" name="name" required placeholder="Your Name">
-  <input type="email" name="email" required placeholder="email@">
-  <textarea name="message" required placeholder="Message"></textarea>
+  <p data-translate="contactDescription" style="font-weight: bold; color: #007BFF; text-shadow: 2px 2px 3px rgba(90, 90, 90, 0.3);">
+    Contact Us.
+  </p>
+  <br>
+  <input type="text" name="name" data-translate="nameUser" required placeholder="Your Name">
+  <input type="email" name="email" data-translate="emailUser" required placeholder="email@">
+  <textarea name="message" data-translate="messageUser" required placeholder="Message"></textarea>
 
   <!-- Zaštita od bota -->
-  <input type="text" name="_honey" style="display:none">
+  <input type="text" name="_honey"  style="display:none">
 
   <!-- Redirekcija nakon slanja -->
   <input type="hidden" name="_next" value="https://tvojsite.github.io/thank-you.html">
 
-  <button type="submit">Pošalji</button>
+  <button type="submit" data-translate="submit">Pošalji</button>
 </form>
 
-
+</div>
 
 
 
