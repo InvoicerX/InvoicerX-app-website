@@ -13,13 +13,23 @@ h2 {
   letter-spacing: 0.5px;
   position: relative;
 }
+
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f9fafb;
+  background: linear-gradient(135deg, #f9fafb, #e3f2fd, #f3e5f5);
+  background-attachment: fixed;
   color: #333;
   line-height: 1.6;
+  background-size: 200% 200%;
+  animation: gradientFlow 15s ease infinite;
 }
 
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
 
 
@@ -624,6 +634,8 @@ footer a:hover {
 #contact-form button:hover {
   background-color: rgba(37, 117, 252, 0.7);
 }
+
+
 
 @media (max-width: 760px) {
    h2 {
