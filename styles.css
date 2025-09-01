@@ -1,6 +1,7 @@
 /* Reset */
 * {
   margin: 0; padding: 0; box-sizing: border-box;
+  
 }
 h2 {
   font-size: 2.5rem;                /* Veći, ali responsive */
@@ -215,6 +216,8 @@ section h2 {
   line-height: 1.7;
   color: #333;
   background-color: #fdfdfd;
+  box-shadow: 2px 4px 8px #808080;
+  border-radius: 12px; 
 }
 
 .app-description h2 {
@@ -297,6 +300,8 @@ section h2 {
   padding: 3rem 1rem;
   background-color: #f9f9f9;
   border-top: 1px solid #e0e0e0;
+  box-shadow: 2px 4px 8px #808080;
+  border-radius: 12px; 
 }
 
 .language-support h2 {
@@ -474,6 +479,8 @@ footer a:hover {
   padding: 40px 20px;
   margin-top: 40px;
   border-top: 2px solid #ddd;
+  box-shadow: 2px 4px 8px #808080;
+  border-radius: 12px; 
 }
 
 .user-manual h2 {
@@ -583,8 +590,8 @@ footer a:hover {
 .how-to-use {
   background-color: #f9f9f9;
   padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 12px; 
+  box-shadow: 2px 4px 8px #808080;
   margin: 2rem auto;
   max-width: 800px;
 }
@@ -658,7 +665,9 @@ footer a:hover {
   background-color: rgba(37, 117, 252, 0.7);
 }
 
-
+#contact-form {
+  box-shadow: 2px 4px 8px #808080;
+}
 
 @media (max-width: 760px) {
    h2 {
