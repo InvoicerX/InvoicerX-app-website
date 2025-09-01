@@ -37,7 +37,26 @@ header {
   background: #0c003d;
   color: white;
   padding: 3rem 1rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
+
+
+
+
+.header-divider {
+  height: 5px;
+  background: linear-gradient(90deg, #ffcd00, #4f46e5, #ffcd00);
+  background-size: 200% 100%;
+  animation: glowMove 5s linear infinite;
+  box-shadow: 0 0 12px rgba(79,70,229,0.6);
+}
+
+@keyframes glowMove {
+  0% { background-position: 0 0; }
+  100% { background-position: 200% 0; }
+}
+
+
 .header-content {
   max-width: 1200px;
   margin: 0 auto;
@@ -391,6 +410,10 @@ footer {
   text-align: center;
   margin-top: 3rem;
 }
+
+
+
+
 footer a {
   color: #50e3c2;
   text-decoration: none;
