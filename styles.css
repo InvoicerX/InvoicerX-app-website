@@ -107,6 +107,8 @@ header {
 }
 .btn-trailer:hover {
   background-color: rgba(255,255,255,0.2);
+  color: yellow;
+  
 }
 .video-thumbnail img {
   max-width: 560px;
@@ -1719,7 +1721,7 @@ footer a:hover {
   }
 
   #invoicer-x-logo2 {
-    margin-top: -100px; /* Pomakni logo prema gore */
+    margin-top: -70px; /* Pomakni logo prema gore */
     max-width: 70%;    /* Po želji smanji veličinu loga za male ekrane */
     height: auto;
 
@@ -1744,7 +1746,10 @@ footer a:hover {
     margin: 0.5rem 0;
     width: 100%;
     box-sizing: border-box;
+    
   }
+
+  
 
   .video-thumbnail img {
     max-width: 100%;
