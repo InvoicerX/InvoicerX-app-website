@@ -8,6 +8,7 @@ const languageMenu = document.getElementById("language-menu");
 
 const translations = {
   en: {
+     caption0: "Different Templates",
     trailerBtn: "▶ Watch Trailer",
     headerText: "Your all-in-one invoice generator app",
     downloadBtnText: "Get it on Google Play",
@@ -155,7 +156,7 @@ desktopOrCustomVersion: "If you would like a desktop version of Invoicer X or a 
   },
 
   it: {
-    
+    caption0: "Modelli Diversi",
   howToUseTitle: "📲 Come usare Invoicer X",
 howToUseStep1: "Scarica l'app da Google Play.",
 howToUseStep2: "Apri l'app e vai su My Profile.",
@@ -305,6 +306,7 @@ contactText: "Per qualsiasi domanda relativa alla privacy, contattaci a: info.in
   },  
 
   nl: {
+    caption0: "Verschillende Sjablonen",
     howToUseTitle: "📲 Hoe gebruik je Invoicer X",
 howToUseStep1: "Download de app uit de Google Play Store.",
 howToUseStep2: "Open de app en ga naar Mijn Profiel.",
@@ -454,6 +456,7 @@ contactText: "Voor privacygerelateerde vragen kun je contact met ons opnemen via
 
   },   
   sv: {
+    caption0: "Olika Mallar",
     howToUseTitle: "📲 Så använder du Invoicer X",
 howToUseStep1: "Ladda ner appen från Google Play.",
 howToUseStep2: "Öppna appen och gå till Min Profil.",
@@ -602,6 +605,7 @@ contactText: "För frågor relaterade till integritet, vänligen kontakta oss p�
   },   
 
   be: {
+    caption0: "Verschillende Sjablonen",
    howToUseTitle: "📲 Hoe gebruik je Invoicer X",
 howToUseStep1: "Download de app van Google Play.",
 howToUseStep2: "Open de app en ga naar Mijn Profiel.",
@@ -748,6 +752,7 @@ contactText: "Voor vragen over privacy kun je contact met ons opnemen via: info.
   },   
 
   at: {
+    caption0: "Verschiedene Vorlagen",
     howToUseTitle: "📲 Wie man Invoicer X benutzt",
     howToUseStep1: "Lade die App aus dem Google Play Store herunter.",
     howToUseStep2: "Öffne die App und gehe zu Mein Profil.",
@@ -895,6 +900,7 @@ contactText: "Bei Fragen zum Datenschutz kontaktiere uns bitte unter: info.invoi
   },  
 
   hu: {
+    caption0: "Különböző Sablonok",
       howToUseTitle: "📲 Hogyan használd az Invoicer X-et",
   howToUseStep1: "Töltsd le az alkalmazást a Google Play Áruházból.",
   howToUseStep2: "Nyisd meg az alkalmazást, majd menj a My Profile (Profilom) menüpontra.",
@@ -1041,6 +1047,7 @@ contactText: "Ha bármilyen adatvédelmi kérdésed van, kérjük, lépj kapcsol
   },   
 
   fi: {
+  caption0: "Eri Mallit",
   howToUseTitle: "📲 Kuinka käyttää Invoicer X:ää",
   howToUseStep1: "Lataa sovellus Google Playsta.",
   howToUseStep2: "Avaa sovellus ja siirry kohtaan My Profile (Oma profiili).",
@@ -1187,6 +1194,7 @@ contactText: "Jos sinulla on kysyttävää tietosuojasta, ota meihin yhteyttä: 
   }, 
 
   cs: {
+    caption0: "Různé Šablony",
   howToUseTitle: "📲 Jak používat Invoicer X",
   howToUseStep1: "Stáhněte si aplikaci z Google Play.",
   howToUseStep2: "Otevřete aplikaci a přejděte do sekce My Profile (Můj profil).",
@@ -1333,6 +1341,7 @@ contactText: "Máte-li jakékoli dotazy týkající se ochrany osobních údajů
   },   
 
   ga: {
+    caption0: "Teimpléid Eile",
   howToUseTitle: "📲 Conas Invoicer X a Úsáid",
   howToUseStep1: "Íoslódáil an aip ó Google Play.",
   howToUseStep2: "Oscail an aip agus téigh go dtí My Profile.",
@@ -1479,6 +1488,7 @@ contactText: "Má tá ceisteanna agat maidir le príobháideachas, déan teagmh�
   },  
 
   hr: {
+    caption0: "Različiti Predlošci",
   howToUseTitle: "📲 Kako koristiti Invoicer X",
   howToUseStep1: "Preuzmi aplikaciju s Google Playa.",
   howToUseStep2: "Otvori aplikaciju i idi na My Profile.",
@@ -1627,6 +1637,7 @@ contactText: "Za sva pitanja vezana uz privatnost, kontaktirajte nas na: info.in
   },  
 
   ru: {
+    caption0: "Разные Шаблоны",
   howToUseTitle: "📲 Как использовать Invoicer X",
   howToUseStep1: "Скачайте приложение из Google Play.",
   howToUseStep2: "Откройте приложение и перейдите в раздел My Profile.",
@@ -1775,6 +1786,7 @@ contactText: "Если у вас есть вопросы по поводу ко�
   },  
 
   de: {
+    caption0: "Verschiedene Vorlagen",
   howToUseTitle: "📲 So verwendest du Invoicer X",
   howToUseStep1: "Lade die App aus dem Google Play Store herunter.",
   howToUseStep2: "Öffne die App und gehe zu „My Profile“.",
@@ -1940,6 +1952,7 @@ desktopOrCustomVersion: "Wenn Sie eine Desktop-Version von Invoicer X oder eine 
   },   
 
   fr: {
+    caption0: "Modèles Différents",
   howToUseTitle: "📲 Comment utiliser Invoicer X",
   howToUseStep1: "Téléchargez l’application depuis Google Play.",
   howToUseStep2: "Ouvrez l’application et allez dans « My Profile ».",
@@ -2088,6 +2101,7 @@ desktopOrCustomVersion: "Si vous souhaitez une version bureau d'Invoicer X ou un
   
 
   es: {
+    caption0: "Plantillas Diferentes",
   howToUseTitle: "📲 Cómo usar Invoicer X",
   howToUseStep1: "Descarga la aplicación desde Google Play.",
   howToUseStep2: "Abre la aplicación y ve a «My Profile».",
@@ -2251,6 +2265,7 @@ desktopOrCustomVersion: "Si deseas una versión de escritorio de Invoicer X o un
   },  
 
   pt: {
+    caption0: "Modelos Diferentes",
   howToUseTitle: "📲 Como usar o Invoicer X",
   howToUseStep1: "Baixe o aplicativo na Google Play.",
   howToUseStep2: "Abra o aplicativo e vá para «My Profile».",
