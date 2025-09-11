@@ -150,7 +150,8 @@ nameUser: "Your Name",
 emailUser: "email@",
 messageUser: "Message",
 submit: "Submit",
-
+costumVersion: "Need a Desktop or Custom Version?",
+desktopOrCustomVersion: "If you would like a desktop version of Invoicer X or a version tailored to your device, feel free to contact us and we'll be happy to help!"
   },
 
   it: {
@@ -299,8 +300,10 @@ contactText: "Per qualsiasi domanda relativa alla privacy, contattaci a: info.in
   emailUser: "email@",
   messageUser: "Messaggio",
   submit: "Invia",
-
+  costumVersion: "Hai bisogno di una versione desktop o personalizzata?",
+  desktopOrCustomVersion: "Se desideri una versione desktop di Invoicer X o una versione personalizzata per il tuo dispositivo, non esitare a contattarci e saremo felici di aiutarti!"
   },  
+
   nl: {
     howToUseTitle: "📲 Hoe gebruik je Invoicer X",
 howToUseStep1: "Download de app uit de Google Play Store.",
@@ -445,9 +448,9 @@ contactText: "Voor privacygerelateerde vragen kun je contact met ons opnemen via
   nameUser: "Uw naam",
   emailUser: "email@",
   messageUser: "Bericht",
-
   submit: "Verzenden",
-
+  costumVersion: "Heeft u een desktop- of aangepaste versie nodig?",
+  desktopOrCustomVersion: "Als je een desktopversie van Invoicer X wilt of een versie op maat van je apparaat, neem dan gerust contact met ons op en wij helpen je graag!"
 
   },   
   sv: {
@@ -594,6 +597,8 @@ contactText: "För frågor relaterade till integritet, vänligen kontakta oss p�
    emailUser: "email@",
    messageUser: "Meddelande",
    submit: "Skicka",
+   costumVersion: "Behöver du en skrivbords- eller anpassad version?",
+   desktopOrCustomVersion: "Om du vill ha en skrivbordsversion av Invoicer X eller en version anpassad för din enhet, tveka inte att kontakta oss så hjälper vi dig gärna!"
   },   
 
   be: {
@@ -738,7 +743,8 @@ contactText: "Voor vragen over privacy kun je contact met ons opnemen via: info.
   emailUser: "email@",
   messageUser: "Bericht",
   submit: "Verzenden",
-
+  costumVersion: "Heeft u een desktop- of aangepaste versie nodig?",
+  desktopOrCustomVersion: "Als je een desktopversie van Invoicer X wilt of een versie aangepast aan je apparaat, neem gerust contact met ons op en wij helpen je graag!"
   },   
 
   at: {
@@ -883,7 +889,8 @@ contactText: "Bei Fragen zum Datenschutz kontaktiere uns bitte unter: info.invoi
   emailUser: "email@",
   messageUser: "Nachricht",
   submit: "Absenden",
-
+  costumVersion: "Brauchen Sie eine Desktop- oder benutzerdefinierte Version?",
+  desktopOrCustomVersion: "Wenn Sie eine Desktop-Version von Invoicer X oder eine auf Ihr Gerät zugeschnittene Version möchten, können Sie uns gerne kontaktieren – wir helfen Ihnen gerne!"
 
   },  
 
@@ -1028,7 +1035,9 @@ contactText: "Ha bármilyen adatvédelmi kérdésed van, kérjük, lépj kapcsol
   emailUser: "email@",
   messageUser: "Üzenet",
   submit: "Küldés",
- 
+  costumVersion: "Szükséged van egy asztali vagy egyedi verzióra?",
+  desktopOrCustomVersion: "Ha szeretnél egy asztali verziót az Invoicer X-ből vagy az eszközödre szabott verziót, bátran lépj velünk kapcsolatba és örömmel segítünk!"
+
   },   
 
   fi: {
@@ -1172,7 +1181,8 @@ contactText: "Jos sinulla on kysyttävää tietosuojasta, ota meihin yhteyttä: 
   emailUser: "email@",
   messageUser: "Viesti",
   submit: "Lähetä",
-
+  costumVersion: "Tarvitsetko työpöytä- tai mukautetun version?",
+  desktopOrCustomVersion: "Jos haluat Invoicer X:n työpöytäversion tai laitteellesi räätälöidyn version, voit ottaa meihin yhteyttä ja autamme mielellämme!"
 
   }, 
 
@@ -1317,6 +1327,8 @@ contactText: "Máte-li jakékoli dotazy týkající se ochrany osobních údajů
   emailUser: "email@",
   messageUser: "Zpráva",
   submit: "Odeslat",
+  costumVersion: "Potřebujete desktopovou nebo vlastní verzi?",
+  desktopOrCustomVersion: "Pokud chcete desktopovou verzi Invoicer X nebo verzi přizpůsobenou vašemu zařízení, neváhejte nás kontaktovat a rádi vám pomůžeme!"
 
   },   
 
@@ -1461,6 +1473,8 @@ contactText: "Má tá ceisteanna agat maidir le príobháideachas, déan teagmh�
   emailUser: "email@",
   messageUser: "Teachtaireacht",
   submit: "Seol",
+  costumVersion: "An bhfuil leagan deisce nó saincheaptha uait?",
+  desktopOrCustomVersion: "Má tá tú ag iarraidh leagan deisce de Invoicer X nó leagan atá oiriúnaithe do do ghléas, ná bíodh drogall ort déan teagmháil linn agus beidh áthas orainn cabhrú leat!"
 
   },  
 
@@ -1607,6 +1621,8 @@ contactText: "Za sva pitanja vezana uz privatnost, kontaktirajte nas na: info.in
   emailUser: "email@",
   messageUser: "Poruka",
   submit: "Pošalji",
+   costumVersion: "Trebate desktop ili prilagođenu verziju?",
+  desktopOrCustomVersion: "Ako želite desktop verziju Invoicer X-a ili verziju prilagođenu vašem uređaju, slobodno kontaktirajte nas i rado ćemo vam pomoći!"
 
   },  
 
@@ -1753,6 +1769,8 @@ contactText: "Если у вас есть вопросы по поводу ко�
   emailUser: "email@",
   messageUser: "Сообщение",
   submit: "Отправить",
+  costumVersion: "Нужна настольная или пользовательская версия?",
+  desktopOrCustomVersion: "Если вы хотите настольную версию Invoicer X или версию, адаптированную под ваше устройство, смело свяжитесь с нами, и мы будем рады помочь!"
 
   },  
 
@@ -1915,7 +1933,8 @@ nameUser: "Ihr Name",
 emailUser: "email@",
 messageUser: "Nachricht",
 submit: "Senden",
-
+costumVersion: "Benötigen Sie eine Desktop- oder benutzerdefinierte Version?",
+desktopOrCustomVersion: "Wenn Sie eine Desktop-Version von Invoicer X oder eine Version, die auf Ihr Gerät zugeschnitten ist, möchten, können Sie uns gerne kontaktieren und wir helfen Ihnen gerne!"
 
 
   },   
@@ -2062,7 +2081,8 @@ nameUser: "Votre nom",
 emailUser: "email@",
 messageUser: "Message",
 submit: "Envoyer",
-
+costumVersion: "Besoin d'une version bureau ou personnalisée ?",
+desktopOrCustomVersion: "Si vous souhaitez une version bureau d'Invoicer X ou une version adaptée à votre appareil, n'hésitez pas à nous contacter, nous serons ravis de vous aider !"
 
   },  
   
@@ -2225,6 +2245,8 @@ nameUser: "Su nombre",
 emailUser: "email@",
 messageUser: "Mensaje",
 submit: "Enviar",
+costumVersion: "¿Necesitas una versión de escritorio o personalizada?",
+desktopOrCustomVersion: "Si deseas una versión de escritorio de Invoicer X o una versión adaptada a tu dispositivo, no dudes en contactarnos y estaremos encantados de ayudarte."
 
   },  
 
@@ -2369,7 +2391,9 @@ nameUser: "Seu nome",
 emailUser: "email@",
 messageUser: "Mensagem",
 submit: "Enviar",
-   
+costumVersion: "Precisa de uma versão para desktop ou personalizada?",
+desktopOrCustomVersion: "Se deseja uma versão para desktop do Invoicer X ou uma versão adaptada ao seu dispositivo, sinta-se à vontade para entrar em contato e teremos todo o prazer em ajudar!"   
+
   },  
 };      
 
