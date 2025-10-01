@@ -10,7 +10,7 @@ const translations = {
   en: {
      caption0: "Different Templates",
     trailerBtn: "▶ Watch Trailer",
-    headerText: "Your all-in-one invoice generator app",
+    headerText: "✅ Your all-in-one invoice generator app",
     downloadBtnText: "Get it on Google Play",
     languageList: "Supported languages & regions: English (US, UK, Australia & Canada), Italian, Dutch (Netherlands & Belgium), Swedish, German (Austria & Germany), Hungarian, Finnish, Czech, Irish, Croatian, Russian, French, Spanish (Spain & Latin America), Portuguese.",
 
@@ -174,7 +174,7 @@ howToUseEasy: "Semplice e veloce! ⚡",
 
 
     trailerBtn: "▶ Guarda il trailer",
-    headerText: "La tua app tutto-in-uno per creare fatture",
+    headerText: "✅ La tua app tutto-in-uno per creare fatture",
     downloadBtnText: "Scaricala da Google Play", 
     languageList: "Lingue e regioni supportate: Inglese (US, UK, Australia e Canada), Italiano, Olandese (Paesi Bassi e Belgio), Svedese, Tedesco (Austria e Germania), Ungherese, Finlandese, Ceco, Irlandese, Croato, Russo, Francese, Spagnolo (Spagna e America Latina), Portoghese.",
 
@@ -322,7 +322,7 @@ howToUseWarning: "⚠️ De factuur wordt niet correct gegenereerd als verplicht
 howToUseEasy: "Simpel en snel! ⚡",
 
     trailerBtn: "▶ Bekijk trailer",
-    headerText: "Jouw alles-in-één facturatie-app",
+    headerText: "✅ Jouw alles-in-één facturatie-app",
     downloadBtnText: "Download via Google Play",
     languageList: "Ondersteunde talen en regio’s: Engels (VS, VK, Australië en Canada), Italiaans, Nederlands (Nederland & België), Zweeds, Duits (Oostenrijk & Duitsland), Hongaars, Fins, Tsjechisch, Iers, Kroatisch, Russisch, Frans, Spaans (Spanje & Latijns-Amerika), Portugees.",
 
@@ -472,7 +472,7 @@ howToUseWarning: "⚠️ Fakturan genereras inte korrekt om obligatoriska fält 
 howToUseEasy: "Enkelt och snabbt! ⚡",
 
     trailerBtn: "▶ Se trailern",
-    headerText: "Din kompletta fakturagenerator-app",
+    headerText: "✅ Din kompletta fakturagenerator-app",
     downloadBtnText: "Hämta på Google Play",
     languageList: "Språk och regioner som stöds: Engelska (US, UK, Australien och Kanada), Italienska, Nederländska (Nederländerna & Belgien), Svenska, Tyska (Österrike & Tyskland), Ungerska, Finska, Tjeckiska, Irländska, Kroatiska, Ryska, Franska, Spanska (Spanien & Latinamerika), Portugisiska.",
 
@@ -621,7 +621,7 @@ howToUseWarning: "⚠️ De factuur wordt niet correct gegenereerd als verplicht
 howToUseEasy: "Simpel en snel! ⚡",
 
     trailerBtn: "▶ Trailer bekijken",
-    headerText: "Jouw alles-in-één facturatie-app",
+    headerText: "✅ Jouw alles-in-één facturatie-app",
     downloadBtnText: "Download via Google Play",
     languageList: "Ondersteunde talen en regio’s: Engels (VS, VK, Australië & Canada), Italiaans, Nederlands (Nederland & België), Zweeds, Duits (Oostenrijk & Duitsland), Hongaars, Fins, Tsjechisch, Iers, Kroatisch, Russisch, Frans, Spaans (Spanje & Latijns-Amerika), Portugees.",
 
@@ -768,7 +768,7 @@ contactText: "Voor vragen over privacy kun je contact met ons opnemen via: info.
     howToUseEasy: "Einfach und schnell! ⚡",
 
     trailerBtn: "▶ Trailer ansehen",
-    headerText: "Deine All-in-One Rechnungserstellungs-App",
+    headerText: "✅ Deine All-in-One Rechnungserstellungs-App",
     downloadBtnText: "Lade es auf Google Play herunter",
     languageList: "Unterstützte Sprachen und Regionen: Englisch (US, UK, Australien & Kanada), Italienisch, Niederländisch (Niederlande & Belgien), Schwedisch, Deutsch (Österreich & Deutschland), Ungarisch, Finnisch, Tschechisch, Irisch, Kroatisch, Russisch, Französisch, Spanisch (Spanien & Lateinamerika), Portugiesisch.",
 
@@ -915,7 +915,7 @@ contactText: "Bei Fragen zum Datenschutz kontaktiere uns bitte unter: info.invoi
   howToUseWarning: "⚠️ A számla nem fog helyesen elkészülni, ha a kötelező mezők nincsenek kitöltve!",
   howToUseEasy: "Egyszerű és gyors! ⚡",
     trailerBtn: "▶ Előzetes megtekintése",
-    headerText: "Minden az egyben számlakészítő alkalmazásod",
+    headerText: "✅ Minden az egyben számlakészítő alkalmazásod",
     downloadBtnText: "Töltsd le a Google Play-ről",
    languageList: "Támogatott nyelvek és régiók: Angol (US, UK, Ausztrália & Kanada), Olasz, Holland (Hollandia & Belgium), Svéd, Német (Ausztria & Németország), Magyar, Finn, Cseh, Ír, Horvát, Orosz, Francia, Spanyol (Spanyolország & Latin-Amerika), Portugál.",
 
@@ -1062,7 +1062,7 @@ contactText: "Ha bármilyen adatvédelmi kérdésed van, kérjük, lépj kapcsol
   howToUseWarning: "⚠️ Laskua ei voi luoda oikein, jos vaaditut kentät ovat tyhjiä tai virheellisiä!",
   howToUseEasy: "Yksinkertaista ja nopeaa! ⚡",
     trailerBtn: "▶ Katso traileri",
-    headerText: "Kaikki-yhdessä-laskusovelluksesi",
+    headerText: "✅ Kaikki-yhdessä-laskusovelluksesi",
     downloadBtnText: "Lataa Google Playsta",
     languageList: "Tuetut kielet ja alueet: Englanti (US, UK, Australia & Kanada), Italia, Hollanti (Alankomaat & Belgia), Ruotsi, Saksa (Itävalta & Saksa), Unkari, Suomi, Tšekki, Irlanti, Kroatia, Venäjä, Ranska, Espanja (Espanja & Latinalainen Amerikka), Portugali.",
 
@@ -1209,7 +1209,7 @@ contactText: "Jos sinulla on kysyttävää tietosuojasta, ota meihin yhteyttä: 
   howToUseWarning: "⚠️ Faktura nebude správně vytvořena, pokud nejsou vyplněna povinná pole!",
   howToUseEasy: "Jednoduché a rychlé! ⚡",
     trailerBtn: "▶ Zobrazit trailer",
-    headerText: "Vaše vše v jednom aplikace pro tvorbu faktur",
+    headerText: "✅ Vaše vše v jednom aplikace pro tvorbu faktur",
     downloadBtnText: "Stáhnout z Google Play",
     languageList: "Podporované jazyky a oblasti: Angličtina (US, UK, Austrálie & Kanada), Italština, Nizozemština (Nizozemsko & Belgie), Švédština, Němčina (Rakousko & Německo), Maďarština, Finština, Čeština, Irština, Chorvatština, Ruština, Čínština (zjednodušená), Francouzština, Španělština (Španělsko & Latinská Amerika), Portugalština.",
 
@@ -1356,7 +1356,7 @@ contactText: "Máte-li jakékoli dotazy týkající se ochrany osobních údajů
   howToUseWarning: "⚠️ Ní dhéanfar an sonrasc go ceart mura bhfuil na réimsí riachtanacha líonta isteach!",
   howToUseEasy: "Simplí agus tapa! ⚡",
     trailerBtn: "▶ Féach ar an leantóir",
-    headerText: "Do aip uile-i-ngnéitheach do ghiniúint sonrascanna",
+    headerText: "✅ Do aip uile-i-ngnéitheach do ghiniúint sonrascanna",
     downloadBtnText: "Faigh é ar Google Play",
    languageList: "Teangacha agus réigiúin a dtacaítear leo: Béarla (SAM, Ríocht Aontaithe, An Astráil & Ceanada), Iodáilis, Ollainnis (An Ísiltír & An Bheilg), Sualainnis, Gearmáinis (An Ostair & An Ghearmáin), Ungáiris, Fionlainnis, Seicis, Gaeilge, Cróitis, Rúisis, Fraincis, Spáinnis (An Spáinn & Meiriceá Laidineach), Portaingéilis.",
 
@@ -1503,7 +1503,7 @@ contactText: "Má tá ceisteanna agat maidir le príobháideachas, déan teagmh�
   howToUseWarning: "⚠️ Račun se neće ispravno generirati ako obavezna polja nisu popunjena!",
   howToUseEasy: "Jednostavno i brzo! ⚡",
     trailerBtn: "▶ Pogledaj trailer",
-    headerText: "Tvoja aplikacija za izradu računa",
+    headerText: "✅ Tvoja aplikacija za izradu računa",
     downloadBtnText: "Preuzmi na Google Play",
    languageList: "Podržani jezici i regije: Engleski (SAD, UK, Australija i Kanada), Talijanski, Nizozemski (Nizozemska & Belgija), Švedski, Njemački (Austrija & Njemačka), Mađarski, Finski, Češki, Irski, Hrvatski, Ruski, Francuski, Španjolski (Španjolska & Latinska Amerika), Portugalski.",
 
@@ -1652,7 +1652,7 @@ contactText: "Za sva pitanja vezana uz privatnost, kontaktirajte nas na: info.in
   howToUseWarning: "⚠️ Счет не будет сгенерирован корректно, если обязательные поля не заполнены!",
   howToUseEasy: "Просто и быстро! ⚡",
     trailerBtn: "▶ Смотреть трейлер",
-    headerText: "Ваше универсальное приложение для создания счетов",
+    headerText: "✅ Ваше универсальное приложение для создания счетов",
     downloadBtnText: "Скачать в Google Play",
    languageList: "Поддерживаемые языки и регионы: Английский (США, Великобритания, Австралия и Канада), Итальянский, Голландский (Нидерланды и Бельгия), Шведский, Немецкий (Австрия и Германия), Венгерский, Финский, Чешский, Ирландский, Хорватский, Русский, Французский, Испанский (Испания и Латинская Америка), Португальский.",
 
@@ -1801,7 +1801,7 @@ contactText: "Если у вас есть вопросы по поводу ко�
   howToUseWarning: "⚠️ Die Rechnung wird nicht korrekt generiert, wenn erforderliche Felder fehlen oder unvollständig sind!",
   howToUseEasy: "Einfach und schnell! ⚡",
     trailerBtn: "▶ Trailer ansehen",
-    headerText: "Deine All-in-One-Rechnungserstellungs-App",
+    headerText: "✅ Deine All-in-One-Rechnungserstellungs-App",
     downloadBtnText: "Bei Google Play herunterladen",
     languageList: "Unterstützte Sprachen und Regionen: Englisch (US, UK, Australien & Kanada), Italienisch, Niederländisch (Niederlande & Belgien), Schwedisch, Deutsch (Österreich & Deutschland), Ungarisch, Finnisch, Tschechisch, Irisch, Kroatisch, Russisch, Französisch, Spanisch (Spanien & Lateinamerika), Portugiesisch.",
 
@@ -1967,7 +1967,7 @@ desktopOrCustomVersion: "Wenn Sie eine Desktop-Version von Invoicer X oder eine 
   howToUseWarning: "⚠️ La facture ne sera pas générée correctement si des champs obligatoires sont manquants ou incomplets !",
   howToUseEasy: "Simple et rapide ! ⚡",
     trailerBtn: "▶ Voir la promo",
-    headerText: "App tout-en-un de facturation",
+    headerText: "✅ App tout-en-un de facturation",
     downloadBtnText: "Télécharger sur Google Play",
     languageList: "Langues et régions prises en charge : Anglais (US, UK, Australie & Canada), Italien, Néerlandais (Pays-Bas & Belgique), Suédois, Allemand (Autriche & Allemagne), Hongrois, Finnois, Tchèque, Irlandais, Croate, Russe, Français, Espagnol (Espagne & Amérique Latine), Portugais.",
 
@@ -2116,7 +2116,7 @@ desktopOrCustomVersion: "Si vous souhaitez une version bureau d'Invoicer X ou un
   howToUseWarning: "⚠️ La factura no se generará correctamente si los campos obligatorios están vacíos o incompletos.",
   howToUseEasy: "¡Simple y rápido! ⚡",
     trailerBtn: "▶ Ver el tráiler",
-    headerText: "Tu aplicación todo en uno para generar facturas",
+    headerText: "✅ Tu aplicación todo en uno para generar facturas",
     downloadBtnText: "Consíguelo en Google Play",
     languageList: "Idiomas y regiones compatibles: Inglés (EE.UU., Reino Unido, Australia y Canadá), Italiano, Holandés (Países Bajos y Bélgica), Sueco, Alemán (Austria y Alemania), Húngaro, Finés, Checo, Irlandés, Croata, Ruso, Francés, Español (España y América Latina), Portugués.",
 
@@ -2280,7 +2280,7 @@ desktopOrCustomVersion: "Si deseas una versión de escritorio de Invoicer X o un
   howToUseWarning: "⚠️ A fatura não será gerada corretamente se os campos obrigatórios não estiverem preenchidos ou estiverem incompletos.",
   howToUseEasy: "Simples e rápido! ⚡",
     trailerBtn: "▶ Ver trailer",
-    headerText: "Seu aplicativo tudo-em-um para gerar faturas",
+    headerText: "✅ Seu aplicativo tudo-em-um para gerar faturas",
     downloadBtnText: "Baixar no Google Play",
     languageList: "Idiomas e regiões suportadas: Inglês (EUA, Reino Unido, Austrália e Canadá), Italiano, Holandês (Países Baixos e Bélgica), Sueco, Alemão (Áustria e Alemanha), Húngaro, Finlandês, Tcheco, Irlandês, Croata, Russo, Francês, Espanhol (Espanha e América Latina), Português.",
 
