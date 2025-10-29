@@ -1,10 +1,68 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // 1️⃣ Preuzmi spremljeni jezik i prevedi stranicu
   const savedLang = localStorage.getItem('selectedLanguage') || 'en';
-  translatePage(savedLang);  // <-- ovdje pozivaš definiranu funkciju translatePage
+  translatePage(savedLang);
+
+  // 2️⃣ Dohvati elemente za dropdown
+  const languageBtn = document.getElementById("language-btn");
+  const languageMenu = document.getElementById("language-menu");
+
+  // 3️⃣ Toggle dropdown menu
+  languageBtn.addEventListener("click", (event) => {
+    event.stopPropagation(); // spriječi zatvaranje od globalnog click listenera
+
+    const isHidden = languageMenu.hasAttribute("hidden");
+    if (isHidden) {
+      languageMenu.removeAttribute("hidden");
+      languageBtn.setAttribute("aria-expanded", "true");
+    } else {
+      languageMenu.setAttribute("hidden", "");
+      languageBtn.setAttribute("aria-expanded", "false");
+    }
+  });
+
+  // 4️⃣ Klik izvan dropdowna zatvara menu
+  document.addEventListener("click", () => {
+    languageMenu.setAttribute("hidden", "");
+    languageBtn.setAttribute("aria-expanded", "false");
+  });
+
+  // 5️⃣ Spriječi zatvaranje pri kliku unutar menija
+  languageMenu.addEventListener("click", (event) => {
+    event.stopPropagation();
+  });
+
+  // 6️⃣ Odabir jezika iz menija
+  languageMenu.querySelectorAll("button").forEach(button => {
+    button.addEventListener("click", () => {
+      const selectedLang = button.getAttribute('data-lang');
+      const langCode = selectedLang.toLowerCase().split('-')[0];
+
+      localStorage.setItem('selectedLanguage', langCode);
+      translatePage(langCode);
+
+      languageMenu.setAttribute("hidden", "");
+      languageBtn.setAttribute("aria-expanded", "false");
+    });
+  });
 });
-   
-const languageBtn = document.getElementById("language-btn");
-const languageMenu = document.getElementById("language-menu");
+
+// Funkcija koja prevodi stranicu
+function translatePage(lang) {
+  const elements = document.querySelectorAll("[data-translate]");
+  elements.forEach(el => {
+    const key = el.getAttribute("data-translate");
+    const text = translations[lang] && translations[lang][key];
+    if (!text) return;
+
+    if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
+      el.placeholder = text;
+    } else {
+      el.textContent = text;
+    }
+  });
+}
+
 
 const translations = {
   en: {
@@ -2411,54 +2469,6 @@ desktopOrCustomVersion: "Se deseja uma versão para desktop do Invoicer X ou uma
 
   },  
 };      
-
-
-// Funkcija koja prevodi stranicu na odabrani jezik
-function translatePage(lang) {
-  const elements = document.querySelectorAll("[data-translate]");
-  elements.forEach(el => {
-    const key = el.getAttribute("data-translate");
-    const text = translations[lang] && translations[lang][key];
-    if (!text) return;
-
-    if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
-      el.placeholder = text;   // postavlja placeholder
-    } else {
-      el.textContent = text;   // postavlja tekst za button, span, itd.
-    }
-  });
-}
-
-
-// Otvaranje/zatvaranje jezika menija
-languageBtn.addEventListener("click", () => {
-  const isExpanded = languageBtn.getAttribute("aria-expanded") === "true";
-  languageBtn.setAttribute("aria-expanded", !isExpanded);
-  languageMenu.hidden = isExpanded;
-});
-
-document.addEventListener("click", () => {
-  languageMenu.hidden = true;
-  languageBtn.setAttribute("aria-expanded", false);
-});
-
-languageMenu.addEventListener("click", (event) => {
-  event.stopPropagation(); // spriječi zatvaranje menija kad se klikne unutar njega
-});
-
-// Odabir jezika iz menija
-document.querySelectorAll('#language-menu button').forEach(button => {
-  button.addEventListener('click', () => {
-    const selectedLang = button.getAttribute('data-lang');
-    const langCode = selectedLang.toLowerCase().split('-')[0]; // normalizacija ako treba
-
-    localStorage.setItem('selectedLanguage', langCode);
-    translatePage(langCode);
-
-    languageMenu.hidden = true;
-    languageBtn.setAttribute("aria-expanded", false);
-  });
-});
 
 
 
