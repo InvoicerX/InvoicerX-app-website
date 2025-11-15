@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const savedLang = localStorage.getItem('selectedLanguage') || 'en';
   translatePage(savedLang);
 
+  
+
   // 2️⃣ Dohvati elemente za dropdown
   const languageBtn = document.getElementById("language-btn");
   const languageMenu = document.getElementById("language-menu");
@@ -64,8 +66,35 @@ function translatePage(lang) {
 }
 
 
+
+const boldTexts = {
+  en: "Invoicer X now includes full - Quote creation support!",
+  it: "Invoicer X ora include il pieno supporto per la creazione di preventivi!",
+  nl: "Invoicer X bevat nu volledige ondersteuning voor het maken van offertes!",
+  be: "Invoicer X ondersteunt nu volledig het maken van offertes!",
+  sv: "Invoicer X inkluderar nu fullständigt stöd för att skapa offerter!",
+  at: "Invoicer X unterstützt jetzt vollständig die Erstellung von Angeboten!",
+  de: "Invoicer X bietet jetzt volle Unterstützung für die Angebotserstellung!",
+  hu: "Az Invoicer X mostantól teljes mértékben támogatja az árajánlatok készítését!",
+  fi: "Invoicer X sisältää nyt täydellisen tarjousten luontituen!",
+  cs: "Invoicer X nyní plně podporuje vytváření nabídek!",
+  ga: "Tá tacaíocht iomlán ag Invoicer X anois le haghaidh cruthú tuairiscí!",
+  hr: "Invoicer X sada uključuje potpunu podršku za kreiranje ponuda!",
+  ru: "Invoicer X теперь полностью поддерживает создание коммерческих предложений!",
+  fr: "Invoicer X inclut maintenant la prise en charge complète des devis!",
+  es: "Invoicer X ahora incluye soporte completo para la creación de presupuestos!",
+  pt: "O Invoicer X agora inclui suporte completo para a criação de orçamentos!"
+};
+
+
+
+
+
 const translations = {
   en: {
+    whatsNewTitle: "🆕 What's New",
+    whatsNewText: "Invoicer X now includes full - Quote creation support! - You can quickly generate professional quotes for your clients, just like invoices. Save, export, and share quotes as PDFs instantly, with the same ease, layout, and multi-currency options as invoices. Perfect for freelancers, contractors, and small businesses who need fast, professional quotations alongside their invoicing workflow.",
+
      caption0: "Different Templates",
     trailerBtn: "▶ Watch Trailer",
     headerText: "✅ Your all-in-one invoice generator app",
@@ -102,7 +131,7 @@ const translations = {
   appIntro: "Create and send professional invoices in just a few taps with Invoicer X, the smart invoicing app built for freelancers, small businesses, and B2B entrepreneurs.",
   targetAudience: "Whether you’re a designer, developer, consultant, or contractor, Invoicer X makes invoicing fast, reliable, and fully customizable – perfect for both individual and business clients (B2B).",
   featuresTitle: "Key Features:",
-  feature1: "Dynamic Invoice Creation – Build clean, professional invoices in seconds",
+  feature1: "Dynamic Invoice & Quote Creation – Build clean, professional invoices and quotes in seconds",
   feature2: "Client Management – Save and reuse your client list for future billing",
   feature3: "Company or Individual Profiles – Tailor invoice details to match your business type",
   feature4: "Automatic Invoice Numbering – No more manual tracking",
@@ -214,6 +243,9 @@ desktopOrCustomVersion: "If you would like a desktop version of Invoicer X or a 
   },
 
   it: {
+    whatsNewTitle: "🆕 Novità",
+whatsNewText: "Invoicer X ora include pieno - supporto per la creazione di preventivi! - Puoi generare rapidamente preventivi professionali per i tuoi clienti, proprio come le fatture. Salva, esporta e condividi i preventivi in PDF istantaneamente, con la stessa semplicità, layout e opzioni multi-valuta delle fatture. Perfetto per freelance, consulenti e piccole imprese che necessitano di preventivi rapidi e professionali insieme alla gestione delle fatture.",
+
     caption0: "Modelli Diversi",
   howToUseTitle: "📲 Come usare Invoicer X",
 howToUseStep1: "Scarica l'app da Google Play.",
@@ -266,7 +298,7 @@ howToUseEasy: "Semplice e veloce! ⚡",
   appIntro: "Crea e invia fatture professionali in pochi tocchi con Invoicer X, l'app intelligente per la fatturazione pensata per freelance, piccole imprese e imprenditori B2B.",
   targetAudience: "Che tu sia un designer, sviluppatore, consulente o appaltatore, Invoicer X rende la fatturazione veloce, affidabile e completamente personalizzabile – perfetta sia per clienti individuali che aziendali (B2B).",
   featuresTitle: "Caratteristiche principali:",
-  feature1: "Creazione Dinamica delle Fatture – Costruisci fatture pulite e professionali in pochi secondi",
+  feature1: "Creazione Dinamica di Fatture e Preventivi – Genera fatture e preventivi professionali in pochi secondi",
   feature2: "Gestione Clienti – Salva e riutilizza la tua lista clienti per fatturazioni future",
   feature3: "Profili Aziendali o Individuali – Adatta i dettagli della fattura al tipo di attività",
   feature4: "Numerazione Automatica delle Fatture – Niente più tracciamento manuale",
@@ -364,6 +396,9 @@ contactText: "Per qualsiasi domanda relativa alla privacy, contattaci a: info.in
   },  
 
   nl: {
+    whatsNewTitle: "🆕 Wat is er nieuw",
+whatsNewText: "Invoicer X biedt nu volledige ondersteuning voor het maken van offertes! Je kunt snel professionele offertes maken voor je klanten, net zoals bij facturen. Sla offertes op, exporteer ze en deel ze direct als PDF's, met dezelfde eenvoud, layout en multi-valuta opties als bij facturen. Perfect voor freelancers, aannemers en kleine bedrijven die snelle en professionele offertes nodig hebben naast hun facturatieproces.",
+
     caption0: "Verschillende Sjablonen",
     howToUseTitle: "📲 Hoe gebruik je Invoicer X",
 howToUseStep1: "Download de app uit de Google Play Store.",
@@ -415,7 +450,7 @@ howToUseEasy: "Simpel en snel! ⚡",
   appIntro: "Maak en verstuur professionele facturen met slechts een paar tikken met Invoicer X, de slimme facturatie-app voor freelancers, kleine bedrijven en B2B-ondernemers.",
   targetAudience: "Of je nu een ontwerper, ontwikkelaar, consultant of aannemer bent, Invoicer X maakt factureren snel, betrouwbaar en volledig aanpasbaar – perfect voor zowel individuele als zakelijke klanten (B2B).",
   featuresTitle: "Belangrijkste functies:",
-  feature1: "Dynamische factuurcreatie – Maak binnen enkele seconden schone, professionele facturen",
+  feature1: "Dynamische Factuur- en Offertecreatie – Maak schone, professionele facturen en offertes in seconden",
   feature2: "Klantenbeheer – Sla je klantenlijst op en hergebruik deze voor toekomstige facturering",
   feature3: "Bedrijfs- of individuele profielen – Pas factuurdetails aan op je bedrijfstype",
   feature4: "Automatische factuurnummering – Geen handmatig bijhouden meer",
@@ -514,6 +549,9 @@ contactText: "Voor privacygerelateerde vragen kun je contact met ons opnemen via
 
   },   
   sv: {
+    whatsNewTitle: "🆕 Nyheter",
+whatsNewText: "Invoicer X inkluderar nu fullständigt stöd för skapande av offerter! Du kan snabbt skapa professionella offerter för dina kunder, precis som fakturor. Spara, exportera och dela offerter som PDF direkt, med samma enkelhet, layout och multi-valuta alternativ som fakturor. Perfekt för frilansare, entreprenörer och småföretag som behöver snabba och professionella offerter tillsammans med fakturaflödet.",
+
     caption0: "Olika Mallar",
     howToUseTitle: "📲 Så använder du Invoicer X",
 howToUseStep1: "Ladda ner appen från Google Play.",
@@ -565,7 +603,7 @@ howToUseEasy: "Enkelt och snabbt! ⚡",
   appIntro: "Skapa och skicka professionella fakturor med bara några tryck med Invoicer X, den smarta faktureringsappen för frilansare, småföretag och B2B-entreprenörer.",
   targetAudience: "Oavsett om du är designer, utvecklare, konsult eller entreprenör gör Invoicer X fakturering snabb, pålitlig och helt anpassningsbar – perfekt för både individuella och företagskunder (B2B).",
   featuresTitle: "Viktiga funktioner:",
-  feature1: "Dynamisk fakturaskapande – Skapa rena, professionella fakturor på några sekunder",
+  feature1: "Dynamisk Faktura- och Offertskapande – Skapa rena, professionella fakturor och offerter på några sekunder",
   feature2: "Kundhantering – Spara och återanvänd din kundlista för framtida fakturering",
   feature3: "Företags- eller individuella profiler – Anpassa fakturadetaljer efter din företagstyp",
   feature4: "Automatisk fakturanummerering – Ingen manuell spårning längre",
@@ -663,6 +701,9 @@ contactText: "För frågor relaterade till integritet, vänligen kontakta oss p�
   },   
 
   be: {
+    whatsNewTitle: "🆕 Wat is nieuw",
+whatsNewText: "Invoicer X ondersteunt nu volledig het maken van offertes! Je kunt snel professionele offertes voor je klanten genereren, net zoals facturen. Sla offertes op, exporteer en deel ze als PDF's met hetzelfde gemak, lay-out en multi-valuta opties als bij facturen. Ideaal voor freelancers, aannemers en kleine bedrijven die snelle en professionele offertes nodig hebben.",
+
     caption0: "Verschillende Sjablonen",
    howToUseTitle: "📲 Hoe gebruik je Invoicer X",
 howToUseStep1: "Download de app van Google Play.",
@@ -713,7 +754,7 @@ howToUseEasy: "Simpel en snel! ⚡",
   appIntro: "Maak en verstuur professionele facturen met slechts een paar tikken met Invoicer X, de slimme factureringsapp voor freelancers, kleine bedrijven en B2B-ondernemers.",
   targetAudience: "Of je nu ontwerper, ontwikkelaar, consultant of aannemer bent, Invoicer X maakt facturatie snel, betrouwbaar en volledig aanpasbaar – perfect voor zowel individuele als zakelijke klanten (B2B).",
   featuresTitle: "Belangrijkste functies:",
-  feature1: "Dynamische factuuraanmaak – Maak binnen enkele seconden nette, professionele facturen",
+  feature1: "Dynamische Factuur- en Offertecreatie – Maak in enkele seconden professionele facturen en offertes",
   feature2: "Klantenbeheer – Bewaar en hergebruik je klantenlijst voor toekomstige facturatie",
   feature3: "Bedrijf of individuele profielen – Pas factuurgegevens aan op je type bedrijf",
   feature4: "Automatische factuurnummering – Geen handmatige tracking meer",
@@ -810,6 +851,9 @@ contactText: "Voor vragen over privacy kun je contact met ons opnemen via: info.
   },   
 
   at: {
+    whatsNewTitle: "🆕 Neuigkeiten",
+whatsNewText: "Invoicer X unterstützt jetzt vollständig die Angebotserstellung! Du kannst schnell professionelle Angebote für deine Kunden erstellen, genau wie Rechnungen. Speichere, exportiere und teile Angebote als PDFs sofort, mit der gleichen Leichtigkeit, Layout und Multiwährungsoptionen wie bei Rechnungen. Perfekt für Freelancer, Auftragnehmer und kleine Unternehmen, die schnelle, professionelle Angebote benötigen.",
+
     caption0: "Verschiedene Vorlagen",
     howToUseTitle: "📲 Wie man Invoicer X benutzt",
     howToUseStep1: "Lade die App aus dem Google Play Store herunter.",
@@ -860,7 +904,7 @@ contactText: "Voor vragen over privacy kun je contact met ons opnemen via: info.
     appIntro: "Erstellen und versenden Sie professionelle Rechnungen mit nur wenigen Klicks mit Invoicer X, der smarten Rechnungs-App für Freelancer, Kleinunternehmen und B2B-Unternehmer.",
     targetAudience: "Egal ob Designer, Entwickler, Berater oder Auftragnehmer – Invoicer X macht das Rechnungsstellen schnell, zuverlässig und vollständig anpassbar – perfekt für Einzelpersonen und Geschäftskunden (B2B).",
     featuresTitle: "Wesentliche Funktionen:",
-  feature1: "Dynamische Rechnungserstellung – Erstellen Sie saubere, professionelle Rechnungen in Sekundenschnelle",
+  feature1: "Dynamische Rechnung- & Angebots-Erstellung – Erstellen Sie in Sekunden saubere, professionelle Rechnungen und Angebote",
   feature2: "Kundenverwaltung – Speichern und wiederverwenden Sie Ihre Kundenliste für zukünftige Abrechnungen",
   feature3: "Firmen- oder Einzelprofile – Passen Sie Rechnungsdetails an Ihren Geschäftstyp an",
   feature4: "Automatische Rechnungsnummerierung – Keine manuelle Nachverfolgung mehr",
@@ -958,6 +1002,9 @@ contactText: "Bei Fragen zum Datenschutz kontaktiere uns bitte unter: info.invoi
   },  
 
   hu: {
+    whatsNewTitle: "🆕 Újdonságok",
+whatsNewText: "Az Invoicer X mostantól teljes mértékben támogatja az árajánlatok készítését! Gyorsan készíthetsz profi árajánlatokat ügyfeleidnek, ugyanúgy, mint a számlákat. Mentheted, exportálhatod és megoszthatod az árajánlatokat PDF-ben azonos könnyedséggel, elrendezéssel és több valutás opciókkal, mint a számlák esetében. Tökéletes szabadúszóknak, vállalkozóknak és kisvállalkozásoknak.",
+
     caption0: "Különböző Sablonok",
       howToUseTitle: "📲 Hogyan használd az Invoicer X-et",
   howToUseStep1: "Töltsd le az alkalmazást a Google Play Áruházból.",
@@ -1007,7 +1054,7 @@ contactText: "Bei Fragen zum Datenschutz kontaktiere uns bitte unter: info.invoi
   appIntro: "Készíts és küldj professzionális számlákat néhány koppintással az Invoicer X segítségével, az okos számlázó alkalmazás freelancer-ek, kisvállalkozások és B2B vállalkozók számára.",
   targetAudience: "Legyél akár tervező, fejlesztő, tanácsadó vagy vállalkozó, az Invoicer X gyors, megbízható és teljesen testreszabható számlázást kínál – ideális egyéni és üzleti ügyfelek (B2B) számára.",
   featuresTitle: "Főbb funkciók:",
-  feature1: "Dinamikus számlakészítés – Készíts tiszta, professzionális számlákat másodpercek alatt",
+  feature1: "Dinamikus Számla- és Ajánlatkészítés – Készítsen tiszta, profi számlákat és ajánlatokat másodpercek alatt",
   feature2: "Ügyfélkezelés – Mentsd el és használd újra ügyfeleid listáját a jövőbeni számlázáshoz",
   feature3: "Cég vagy egyéni profilok – Igazítsd a számla részleteit az üzleti típusodhoz",
   feature4: "Automatikus számlaszámozás – Nem kell manuálisan nyomon követned",
@@ -1105,6 +1152,9 @@ contactText: "Ha bármilyen adatvédelmi kérdésed van, kérjük, lépj kapcsol
   },   
 
   fi: {
+    whatsNewTitle: "🆕 Uutta",
+whatsNewText: "Invoicer X sisältää nyt täyden tarjousten luomisen tuen! Voit nopeasti luoda ammattimaisia tarjouksia asiakkaille, aivan kuten laskut. Tallenna, vie ja jaa tarjoukset PDF-muodossa välittömästi, samalla helppoudella, ulkoasulla ja monivaluuttavaihtoehdoilla kuin laskuissa. Täydellinen freelancereille, urakoitsijoille ja pienyrityksille, jotka tarvitsevat nopeita ja ammattimaisia tarjouksia.",
+
   caption0: "Eri Mallit",
   howToUseTitle: "📲 Kuinka käyttää Invoicer X:ää",
   howToUseStep1: "Lataa sovellus Google Playsta.",
@@ -1154,7 +1204,7 @@ contactText: "Ha bármilyen adatvédelmi kérdésed van, kérjük, lépj kapcsol
   appIntro: "Luo ja lähetä ammattimaisia laskuja muutamalla napautuksella Invoicer X:n avulla, älykäs laskutusapp freelancerille, pienyrityksille ja B2B-yrittäjille.",
   targetAudience: "Oletpa sitten suunnittelija, kehittäjä, konsultti tai urakoitsija, Invoicer X tekee laskutuksesta nopeaa, luotettavaa ja täysin muokattavaa – täydellinen yksityis- ja yritysasiakkaille (B2B).",
   featuresTitle: "Tärkeimmät ominaisuudet:",
-  feature1: "Dynaaminen laskujen luonti – Luo selkeitä, ammattimaisia laskuja sekunneissa",
+  feature1: "Dynaaminen Lasku- ja Tarjousluonti – Luo siistejä, ammattimaisia laskuja ja tarjouksia sekunneissa",
   feature2: "Asiakashallinta – Tallenna ja käytä asiakaslistaasi uudelleen tulevaa laskutusta varten",
   feature3: "Yritys- tai yksilöprofiilit – Mukauta laskutietoja liiketoimintatyyppisi mukaan",
   feature4: "Automaattinen laskujen numerointi – Ei enää manuaalista seurantaa",
@@ -1252,6 +1302,9 @@ contactText: "Jos sinulla on kysyttävää tietosuojasta, ota meihin yhteyttä: 
   }, 
 
   cs: {
+    whatsNewTitle: "🆕 Co je nového",
+whatsNewText: "Invoicer X nyní plně podporuje tvorbu nabídek! Můžete rychle vytvořit profesionální nabídky pro své klienty, stejně jako faktury. Ukládejte, exportujte a sdílejte nabídky jako PDF okamžitě, se stejnou jednoduchostí, rozvržením a možnostmi více měn jako u faktur. Perfektní pro freelancery, dodavatele a malé firmy, které potřebují rychlé a profesionální nabídky.",
+
     caption0: "Různé Šablony",
   howToUseTitle: "📲 Jak používat Invoicer X",
   howToUseStep1: "Stáhněte si aplikaci z Google Play.",
@@ -1301,7 +1354,7 @@ contactText: "Jos sinulla on kysyttävää tietosuojasta, ota meihin yhteyttä: 
   appIntro: "Vytvářejte a odesílejte profesionální faktury během několika klepnutí s Invoicer X, chytrou fakturační aplikací pro freelancery, malé podniky a B2B podnikatele.",
   targetAudience: "Ať už jste designér, vývojář, konzultant nebo dodavatel, Invoicer X vám usnadní rychlé, spolehlivé a plně přizpůsobitelné fakturování – ideální pro jednotlivce i firemní klienty (B2B).",
   featuresTitle: "Hlavní funkce:",
-  feature1: "Dynamické vytváření faktur – Vytvářejte čisté a profesionální faktury během sekund",
+  feature1: "Dynamické Vytváření Faktur a Nabídek – Vytvořte čisté, profesionální faktury a nabídky během několika sekund",
   feature2: "Správa klientů – Ukládejte a znovu používejte svůj seznam klientů pro budoucí fakturaci",
   feature3: "Profily společnosti nebo jednotlivce – Přizpůsobte detaily faktury podle typu vašeho podnikání",
   feature4: "Automatické číslování faktur – Už žádné ruční sledování",
@@ -1399,6 +1452,9 @@ contactText: "Máte-li jakékoli dotazy týkající se ochrany osobních údajů
   },   
 
   ga: {
+    whatsNewTitle: "🆕 Nuashonruithe",
+whatsNewText: "Tá tacaíocht iomlán ag Invoicer X anois do chruthú luachana! Is féidir leat luachana gairmiúla a ghiniúint go tapa do do chliaint, díreach cosúil le húsáid bhilleanna. Sábháil, easpórtáil, agus roinn luachana mar PDF go pras, leis an éascaíocht, leagan amach, agus roghanna il-airgeadra céanna mar bhilleanna. Foirfe do shaorghnóthaithe, conraitheoirí, agus gnólachtaí beaga a bhfuil gá acu le luachana tapa agus gairmiúla.",
+
     caption0: "Teimpléid Eile",
   howToUseTitle: "📲 Conas Invoicer X a Úsáid",
   howToUseStep1: "Íoslódáil an aip ó Google Play.",
@@ -1448,7 +1504,7 @@ contactText: "Máte-li jakékoli dotazy týkající se ochrany osobních údajů
   appIntro: "Cruthaigh agus seol sonrascí gairmiúla i gceann cúpla sconna le Invoicer X, an aip sonrasc cliste atá tógtha do shaor-úsáideoirí, gnólachtaí beaga agus fiontraithe B2B.",
   targetAudience: "Cibé an dearthóir, forbróir, comhairleoir nó conraitheoir thú, déanann Invoicer X sonrasc a dhéanamh tapa, iontaofa agus inúsáidte go hiomlán – foirfe do chliaint aonair agus gnó (B2B).",
   featuresTitle: "Gnéithe Eochair:",
-  feature1: "Cruthú Sonrasc Dinimiciúil – Tóg sonrasc glan, gairmiúil i gceann soicindí",
+  feature1: "Cruth Dinimici Cuntas & Tairiscintí – Tóg cuntais agus tairiscintí gairmiúla go glan i gceann soicind",
   feature2: "Bainistíocht Cliant – Sábháil agus athúsáid do liosta cliant don bhilleáil amach anseo",
   feature3: "Próifílí Cuideachta nó Duine Aonair – Déan sonraí an sonrasc a oiriúnú do chineál do ghnó",
   feature4: "Uimhriú Uathoibríoch Sonrasc – Níl ort níos mó rianú láimhe a dhéanamh",
@@ -1546,6 +1602,9 @@ contactText: "Má tá ceisteanna agat maidir le príobháideachas, déan teagmh�
   },  
 
   hr: {
+    whatsNewTitle: "🆕 Što je novo",
+whatsNewText: "Invoicer X sada uključuje potpunu podršku za kreiranje ponuda! Brzo možete generirati profesionalne ponude za svoje klijente, baš kao i račune. Spremite, izvezite i dijelite ponude u PDF-u odmah, s istom lakoćom, izgledom i opcijama više valuta kao kod računa. Savršeno za freelancere, izvođače i male tvrtke kojima su potrebne brze i profesionalne ponude.",
+
     caption0: "Različiti Predlošci",
   howToUseTitle: "📲 Kako koristiti Invoicer X",
   howToUseStep1: "Preuzmi aplikaciju s Google Playa.",
@@ -1595,7 +1654,7 @@ contactText: "Má tá ceisteanna agat maidir le príobháideachas, déan teagmh�
   appIntro: "Kreirajte i pošaljite profesionalne račune u nekoliko dodira s aplikacijom Invoicer X, pametnom aplikacijom za izdavanje računa razvijenom za freelancere, male tvrtke i B2B poduzetnike.",
   targetAudience: "Bilo da ste dizajner, programer, konzultant ili izvođač radova, Invoicer X čini izdavanje računa brzim, pouzdanim i u potpunosti prilagodljivim – savršen za pojedince i poslovne klijente (B2B).",
   featuresTitle: "Ključne značajke:",
-  feature1: "Dinamično kreiranje računa – Izradite čiste, profesionalne račune u nekoliko sekundi",
+  feature1: "Dinamičko kreiranje faktura i ponuda – Izradite čiste, profesionalne fakture i ponude u nekoliko sekundi",
   feature2: "Upravljanje klijentima – Spremite i ponovno koristite popis klijenata za buduće fakturiranje",
   feature3: "Profili tvrtke ili pojedinca – Prilagodite detalje računa prema vrsti poslovanja",
   feature4: "Automatsko numeriranje računa – Nema više ručnog praćenja",
@@ -1695,6 +1754,9 @@ contactText: "Za sva pitanja vezana uz privatnost, kontaktirajte nas na: info.in
   },  
 
   ru: {
+    whatsNewTitle: "🆕 Что нового",
+whatsNewText: "Invoicer X теперь полностью поддерживает создание коммерческих предложений! Вы можете быстро создавать профессиональные предложения для ваших клиентов, так же как и счета. Сохраняйте, экспортируйте и делитесь предложениями в PDF мгновенно, с той же простотой, макетом и мультивалютными опциями, что и для счетов. Идеально для фрилансеров, подрядчиков и малых предприятий.",
+
     caption0: "Разные Шаблоны",
   howToUseTitle: "📲 Как использовать Invoicer X",
   howToUseStep1: "Скачайте приложение из Google Play.",
@@ -1745,7 +1807,7 @@ contactText: "Za sva pitanja vezana uz privatnost, kontaktirajte nas na: info.in
   appIntro: "Создавайте и отправляйте профессиональные счета за несколько кликов с помощью Invoicer X – умного приложения для выставления счетов, разработанного для фрилансеров, малого бизнеса и B2B-предпринимателей.",
   targetAudience: "Будь вы дизайнер, разработчик, консультант или подрядчик, Invoicer X делает выставление счетов быстрым, надежным и полностью настраиваемым – идеально подходит как для частных лиц, так и для корпоративных клиентов (B2B).",
   featuresTitle: "Основные функции:",
-  feature1: "Динамическое создание счетов – создавайте аккуратные, профессиональные счета за секунды",
+  feature1: "Динамическое создание счетов и предложений – Создавайте чистые, профессиональные счета и предложения за секунды",
   feature2: "Управление клиентами – сохраняйте и повторно используйте список клиентов для будущих счетов",
   feature3: "Профили компании или частного лица – настройка деталей счета под тип бизнеса",
   feature4: "Автоматическая нумерация счетов – больше не нужно отслеживать вручную",
@@ -1844,6 +1906,9 @@ contactText: "Если у вас есть вопросы по поводу ко�
   },  
 
   de: {
+    whatsNewTitle: "🆕 Neuigkeiten",
+whatsNewText: "Invoicer X unterstützt jetzt vollständig die Angebotserstellung! Du kannst schnell professionelle Angebote für deine Kunden erstellen, genau wie Rechnungen. Speichere, exportiere und teile Angebote als PDFs sofort, mit der gleichen Leichtigkeit, Layout und Multiwährungsoptionen wie bei Rechnungen. Ideal für Freelancer, Auftragnehmer und kleine Unternehmen, die schnelle, professionelle Angebote benötigen.",
+
     caption0: "Verschiedene Vorlagen",
   howToUseTitle: "📲 So verwendest du Invoicer X",
   howToUseStep1: "Lade die App aus dem Google Play Store herunter.",
@@ -1893,7 +1958,7 @@ contactText: "Если у вас есть вопросы по поводу ко�
   appIntro: "Erstelle und versende professionelle Rechnungen in nur wenigen Klicks mit Invoicer X, der smarten Rechnungs-App für Freelancer, kleine Unternehmen und B2B-Unternehmer.",
   targetAudience: "Ob Designer, Entwickler, Berater oder Dienstleister – Invoicer X macht das Erstellen von Rechnungen schnell, zuverlässig und vollständig anpassbar – ideal für Einzel- und Geschäftskunden (B2B).",
   featuresTitle: "Hauptfunktionen:",
-  feature1: "Dynamische Rechnungserstellung – saubere, professionelle Rechnungen in Sekunden",
+  feature1: "Dynamische Rechnung- & Angebots-Erstellung – Erstellen Sie professionelle Rechnungen und Angebote in Sekundenschnelle",
   feature2: "Kundenverwaltung – speichere und verwalte deine Kundenliste für zukünftige Rechnungen",
   feature3: "Firmen- oder Einzelprofile – passe Rechnungsdetails an deinen Geschäftstyp an",
   feature4: "Automatische Rechnungsnummerierung – kein manuelles Nachverfolgen mehr",
@@ -2010,6 +2075,9 @@ desktopOrCustomVersion: "Wenn Sie eine Desktop-Version von Invoicer X oder eine 
   },   
 
   fr: {
+    whatsNewTitle: "🆕 Nouveautés",
+whatsNewText: "Invoicer X prend désormais en charge la création complète de devis ! Vous pouvez rapidement générer des devis professionnels pour vos clients, tout comme les factures. Enregistrez, exportez et partagez les devis au format PDF instantanément, avec la même facilité, mise en page et options multidevises que pour les factures. Parfait pour les freelances, entrepreneurs et petites entreprises qui ont besoin de devis rapides et professionnels.",
+
     caption0: "Modèles Différents",
   howToUseTitle: "📲 Comment utiliser Invoicer X",
   howToUseStep1: "Téléchargez l’application depuis Google Play.",
@@ -2059,7 +2127,7 @@ desktopOrCustomVersion: "Wenn Sie eine Desktop-Version von Invoicer X oder eine 
   appIntro: "Créez et envoyez des factures professionnelles en quelques clics avec Invoicer X, l'application intelligente conçue pour les freelances, les petites entreprises et les entrepreneurs B2B.",
   targetAudience: "Que vous soyez designer, développeur, consultant ou entrepreneur, Invoicer X rend la facturation rapide, fiable et entièrement personnalisable – parfait pour les clients individuels et professionnels (B2B).",
   featuresTitle: "Fonctionnalités clés :",
-  feature1: "Création dynamique de factures – créez des factures claires et professionnelles en quelques secondes",
+  feature1: "Création Dynamique de Factures et Devis – Créez des factures et devis professionnels en quelques secondes",
   feature2: "Gestion des clients – sauvegardez et réutilisez votre liste de clients pour la facturation future",
   feature3: "Profils d’entreprise ou individuels – adaptez les détails de la facture à votre type d’activité",
   feature4: "Numérotation automatique des factures – plus besoin de suivi manuel",
@@ -2159,6 +2227,9 @@ desktopOrCustomVersion: "Si vous souhaitez une version bureau d'Invoicer X ou un
   
 
   es: {
+    whatsNewTitle: "🆕 Novedades",
+whatsNewText: "¡Invoicer X ahora incluye soporte completo para la creación de presupuestos! Puedes generar rápidamente presupuestos profesionales para tus clientes, igual que las facturas. Guarda, exporta y comparte presupuestos en PDF al instante, con la misma facilidad, diseño y opciones de moneda múltiple que las facturas. Perfecto para freelancers, contratistas y pequeñas empresas que necesitan presupuestos rápidos y profesionales.",
+
     caption0: "Plantillas Diferentes",
   howToUseTitle: "📲 Cómo usar Invoicer X",
   howToUseStep1: "Descarga la aplicación desde Google Play.",
@@ -2208,7 +2279,7 @@ desktopOrCustomVersion: "Si vous souhaitez une version bureau d'Invoicer X ou un
   appIntro: "Crea y envía facturas profesionales en solo unos toques con Invoicer X, la aplicación inteligente de facturación diseñada para freelancers, pequeñas empresas y emprendedores B2B.",
   targetAudience: "Ya seas diseñador, desarrollador, consultor o contratista, Invoicer X hace que la facturación sea rápida, confiable y totalmente personalizable – perfecta para clientes individuales y empresariales (B2B).",
   featuresTitle: "Características clave:",
-  feature1: "Creación dinámica de facturas – Construye facturas limpias y profesionales en segundos",
+  feature1: "Creación Dinámica de Facturas y Presupuestos – Crea facturas y presupuestos profesionales en segundos",
   feature2: "Gestión de clientes – Guarda y reutiliza tu lista de clientes para futuras facturaciones",
   feature3: "Perfiles de empresa o individuales – Adapta los detalles de la factura a tu tipo de negocio",
   feature4: "Numeración automática de facturas – Olvídate del seguimiento manual",
@@ -2323,6 +2394,9 @@ desktopOrCustomVersion: "Si deseas una versión de escritorio de Invoicer X o un
   },  
 
   pt: {
+    whatsNewTitle: "🆕 Novidades",
+whatsNewText: "O Invoicer X agora inclui suporte completo para a criação de orçamentos! Você pode gerar rapidamente orçamentos profissionais para seus clientes, assim como faturas. Salve, exporte e compartilhe orçamentos em PDF instantaneamente, com a mesma facilidade, layout e opções de múltiplas moedas que as faturas. Perfeito para freelancers, contratantes e pequenas empresas que precisam de orçamentos rápidos e profissionais.",
+
     caption0: "Modelos Diferentes",
   howToUseTitle: "📲 Como usar o Invoicer X",
   howToUseStep1: "Baixe o aplicativo na Google Play.",
@@ -2372,7 +2446,7 @@ desktopOrCustomVersion: "Si deseas una versión de escritorio de Invoicer X o un
   appIntro: "Crie e envie faturas profissionais com poucos toques usando o Invoicer X, o aplicativo inteligente de faturamento feito para freelancers, pequenas empresas e empreendedores B2B.",
   targetAudience: "Seja você designer, desenvolvedor, consultor ou contratado, o Invoicer X torna a emissão de faturas rápida, confiável e totalmente personalizável – perfeito para clientes individuais e empresariais (B2B).",
   featuresTitle: "Recursos principais:",
-  feature1: "Criação dinâmica de faturas – Construa faturas limpas e profissionais em segundos",
+  feature1: "Criação Dinâmica de Faturas e Orçamentos – Gere faturas e orçamentos profissionais em segundos",
   feature2: "Gerenciamento de clientes – Salve e reutilize sua lista de clientes para faturamento futuro",
   feature3: "Perfis de empresa ou individual – Ajuste os detalhes da fatura conforme seu tipo de negócio",
   feature4: "Numeração automática de faturas – Chega de rastreamento manual",
@@ -2469,6 +2543,9 @@ desktopOrCustomVersion: "Se deseja uma versão para desktop do Invoicer X ou uma
 
   },  
 };      
+
+
+
 
 
 
