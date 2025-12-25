@@ -678,6 +678,33 @@ footer a:hover {
   margin: 20px 0; /* razmak gore-dole */
 }
 
+/* contact us link */
+.gdpr-badge {
+  display: inline-block;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #e5e7eb;
+  font-size: 14px;
+  line-height: 1.4;
+  box-shadow: 0 0 25px rgba(0, 150, 255, 0.35);
+  border: 1px solid rgba(0,150,255,0.4);
+  text-align: center;
+}
+
+.gdpr-badge .line1 {
+  color: #7dd3fc;
+  font-weight: 600;
+}
+
+.gdpr-badge .line2 {
+  color: #a5f3fc; /* nešto svjetlije, da se razlikuje, opcionalno */
+  font-weight: 500;
+}
+
+
 
 
 
