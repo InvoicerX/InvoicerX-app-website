@@ -93,16 +93,18 @@ const boldTexts = {
 const translations = {
   en: {
     gdprTitle: "GDPR Friendly",
-    gdprLine1: "No cloud • No tracking • Local storage only",
+    gdprLine1: "🔒 Privacy-first • No cloud • No tracking • Local storage only",
     gdprLine2: "Your data stays on your device",
     whatsNewTitle: "🆕 What's New",
-    whatsNewText: "Invoicer X now includes full - Quote creation support! - You can quickly generate professional quotes for your clients, just like invoices. Save, export, and share quotes as PDFs instantly, with the same ease, layout, and multi-currency options as invoices. Perfect for freelancers, contractors, and small businesses who need fast, professional quotations alongside their invoicing workflow.",
+    
+    whatsNewText: "01.01.2026 - Invoicer X now includes full - Quote creation support! - You can quickly generate professional quotes for your clients, just like invoices. Save, export, and share quotes as PDFs instantly, with the same ease, layout, and multi-currency options as invoices. Perfect for freelancers, contractors, and small businesses who need fast, professional quotations alongside their invoicing workflow.",
 
      caption0: "Different Templates",
     trailerBtn: "▶ Watch Trailer",
     headerText: "✅ Your all-in-one invoice generator app",
     downloadBtnText: "Get it on Google Play",
-    languageList: "Supported languages & regions: English (US, UK, Australia & Canada), Italian, Dutch (Netherlands & Belgium), Swedish, German (Austria & Germany), Hungarian, Finnish, Czech, Irish, Croatian, Russian, French, Spanish (Spain & Latin America), Portuguese.",
+     
+     
 
     languageSupportTitle: "🌍 Language & Region Support",
      descriptionTitle: "What is Invoicer X?",
@@ -155,11 +157,11 @@ const translations = {
   step1Strong: "Install the App:",
   step1Text: "Download Invoicer X from Google Play Store.",
   step2Strong: 'Go to "My Profile":',
-  step2Text: "Change your language, add your business or personal info, and upload your logo.",
+  step2Text: "Add your business or personal info, and upload your logo.",
   step3Strong: "Save Your Information:",
   step3Text: 'Scroll to the bottom and tap "Save" to confirm your profile settings.',
   step4Strong: 'Go to "Invoice":',
-  step4Text: "Add the client's name, address, OIB or B2B info, and the invoice date.",
+  step4Text: "Add the client's name, address, and optional EIN (for business clients)",
   step5Strong: "Flat Rate Users:",
   step5Text: "If you are using a flat rate, check the corresponding box.",
   step6Strong: "Non-Flat Rate Users:",
