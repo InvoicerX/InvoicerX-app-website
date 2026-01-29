@@ -715,22 +715,44 @@ footer a:hover {
 
 .brand .x {
   font-weight: 900;
-  font-size: 1.2em;
+  font-size: 1.3em; /* malo veće da se efekt vidi */
   color: transparent;
-  -webkit-text-stroke: 2px #0d6efd;
+  -webkit-text-stroke: 2px #0d6efd; /* outline boja */
+  display: inline-block;
   transform: rotate(1deg);
+  animation: wave 1s infinite alternate;
+  position: relative;
 }
+
+@keyframes wave {
+  0% { transform: rotate(-5deg) translateY(0); }
+  50% { transform: rotate(3deg) translateY(-2px); }
+  100% { transform: rotate(-2deg) translateY(0); }
+}
+
+
+
 
 
 @media (max-width: 760px) {
 
   .brand .x {
   font-weight: 900;
-  font-size: 1.2em;
+  font-size: 1.3em; /* malo veće da se efekt vidi */
   color: transparent;
-  -webkit-text-stroke: 2px #0d6efd;
+  -webkit-text-stroke: 2px #0d6efd; /* outline boja */
+  display: inline-block;
   transform: rotate(1deg);
+  animation: wave 1s infinite alternate;
+  position: relative;
 }
+
+@keyframes wave {
+  0% { transform: rotate(-5deg) translateY(0); }
+  50% { transform: rotate(3deg) translateY(-2px); }
+  100% { transform: rotate(-2deg) translateY(0); }
+}
+
 
 
 
@@ -930,11 +952,21 @@ footer a:hover {
 
   .brand .x {
   font-weight: 900;
-  font-size: 1.2em;
+  font-size: 1.3em; /* malo veće da se efekt vidi */
   color: transparent;
-  -webkit-text-stroke: 2px #0d6efd;
+  -webkit-text-stroke: 2px #0d6efd; /* outline boja */
+  display: inline-block;
   transform: rotate(1deg);
+  animation: wave 1s infinite alternate;
+  position: relative;
 }
+
+@keyframes wave {
+  0% { transform: rotate(-5deg) translateY(0); }
+  50% { transform: rotate(3deg) translateY(-2px); }
+  100% { transform: rotate(-2deg) translateY(0); }
+}
+
 
     h2 {
     font-size: 1.8rem; /* Manje za mobilne */
@@ -1130,11 +1162,21 @@ footer a:hover {
 
   .brand .x {
   font-weight: 900;
-  font-size: 1.2em;
+  font-size: 1.3em; /* malo veće da se efekt vidi */
   color: transparent;
-  -webkit-text-stroke: 2px #0d6efd;
+  -webkit-text-stroke: 2px #0d6efd; /* outline boja */
+  display: inline-block;
   transform: rotate(1deg);
+  animation: wave 1s infinite alternate;
+  position: relative;
 }
+
+@keyframes wave {
+  0% { transform: rotate(-5deg) translateY(0); }
+  50% { transform: rotate(3deg) translateY(-2px); }
+  100% { transform: rotate(-2deg) translateY(0); }
+}
+
 
   h2 {
     font-size: 1.8rem; /* Manje za mobilne */
@@ -1313,11 +1355,21 @@ footer a:hover {
 
   .brand .x {
   font-weight: 900;
-  font-size: 1.2em;
+  font-size: 1.3em; /* malo veće da se efekt vidi */
   color: transparent;
-  -webkit-text-stroke: 2px #0d6efd;
+  -webkit-text-stroke: 2px #0d6efd; /* outline boja */
+  display: inline-block;
   transform: rotate(1deg);
+  animation: wave 1s infinite alternate;
+  position: relative;
 }
+
+@keyframes wave {
+  0% { transform: rotate(-5deg) translateY(0); }
+  50% { transform: rotate(3deg) translateY(-2px); }
+  100% { transform: rotate(-2deg) translateY(0); }
+}
+
 
   h2 {
     font-size: 1.4rem;  /* Još manji naslovi za male ekrane */
@@ -1560,11 +1612,21 @@ footer a:hover {
 
   .brand .x {
   font-weight: 900;
-  font-size: 1.2em;
+  font-size: 1.3em; /* malo veće da se efekt vidi */
   color: transparent;
-  -webkit-text-stroke: 2px #0d6efd;
+  -webkit-text-stroke: 2px #0d6efd; /* outline boja */
+  display: inline-block;
   transform: rotate(1deg);
+  animation: wave 1s infinite alternate;
+  position: relative;
 }
+
+@keyframes wave {
+  0% { transform: rotate(-5deg) translateY(0); }
+  50% { transform: rotate(3deg) translateY(-2px); }
+  100% { transform: rotate(-2deg) translateY(0); }
+}
+
 
   h2 {
     font-size: 1.4rem;  /* Još manji naslovi za male ekrane */
@@ -1813,11 +1875,21 @@ footer a:hover {
 
   .brand .x {
   font-weight: 900;
-  font-size: 1.2em;
+  font-size: 1.3em; /* malo veće da se efekt vidi */
   color: transparent;
-  -webkit-text-stroke: 2px #0d6efd;
+  -webkit-text-stroke: 2px #0d6efd; /* outline boja */
+  display: inline-block;
   transform: rotate(1deg);
+  animation: wave 1s infinite alternate;
+  position: relative;
 }
+
+@keyframes wave {
+  0% { transform: rotate(-5deg) translateY(0); }
+  50% { transform: rotate(3deg) translateY(-2px); }
+  100% { transform: rotate(-2deg) translateY(0); }
+}
+
 
    h2 {
     font-size: 1.4rem;  /* Još manji naslovi za male ekrane */
