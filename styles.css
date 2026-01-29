@@ -704,11 +704,36 @@ footer a:hover {
   font-weight: 500;
 }
 
+.hero-title {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
 
+.hero-title .brand {
+  font-weight: 700;
+}
 
+.brand .x {
+  font-weight: 900;
+  font-size: 1.2em;
+  color: transparent;
+  -webkit-text-stroke: 2px #0d6efd;
+  transform: rotate(1deg);
+}
 
 
 @media (max-width: 760px) {
+
+  .brand .x {
+  font-weight: 900;
+  font-size: 1.2em;
+  color: transparent;
+  -webkit-text-stroke: 2px #0d6efd;
+  transform: rotate(1deg);
+}
+
+
+
    h2 {
     font-size: 1.8rem; /* Manje za mobilne */
   }
@@ -903,6 +928,14 @@ footer a:hover {
 /* Responsive */
 @media (max-width: 800px) {
 
+  .brand .x {
+  font-weight: 900;
+  font-size: 1.2em;
+  color: transparent;
+  -webkit-text-stroke: 2px #0d6efd;
+  transform: rotate(1deg);
+}
+
     h2 {
     font-size: 1.8rem; /* Manje za mobilne */
   }
@@ -1094,6 +1127,15 @@ footer a:hover {
 }
 
 @media (max-width: 600px) {
+
+  .brand .x {
+  font-weight: 900;
+  font-size: 1.2em;
+  color: transparent;
+  -webkit-text-stroke: 2px #0d6efd;
+  transform: rotate(1deg);
+}
+
   h2 {
     font-size: 1.8rem; /* Manje za mobilne */
   }
@@ -1267,6 +1309,16 @@ footer a:hover {
 }
 
 @media (max-width: 480px) {
+
+
+  .brand .x {
+  font-weight: 900;
+  font-size: 1.2em;
+  color: transparent;
+  -webkit-text-stroke: 2px #0d6efd;
+  transform: rotate(1deg);
+}
+
   h2 {
     font-size: 1.4rem;  /* Još manji naslovi za male ekrane */
   }
@@ -1504,6 +1556,16 @@ footer a:hover {
 
 
 @media (max-width: 412px) {
+
+
+  .brand .x {
+  font-weight: 900;
+  font-size: 1.2em;
+  color: transparent;
+  -webkit-text-stroke: 2px #0d6efd;
+  transform: rotate(1deg);
+}
+
   h2 {
     font-size: 1.4rem;  /* Još manji naslovi za male ekrane */
   }
@@ -1747,6 +1809,16 @@ footer a:hover {
 }
 
 @media (max-width: 896px) {
+
+
+  .brand .x {
+  font-weight: 900;
+  font-size: 1.2em;
+  color: transparent;
+  -webkit-text-stroke: 2px #0d6efd;
+  transform: rotate(1deg);
+}
+
    h2 {
     font-size: 1.4rem;  /* Još manji naslovi za male ekrane */
   }
@@ -1758,7 +1830,7 @@ footer a:hover {
   }
 
   #invoicer-x-logo2 {
-    margin-top: -70px; /* Pomakni logo prema gore */
+    margin-top: -35px; /* Pomakni logo prema gore */
     max-width: 70%;    /* Po želji smanji veličinu loga za male ekrane */
     height: auto;
 
