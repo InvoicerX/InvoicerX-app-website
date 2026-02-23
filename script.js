@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const closeBtn = document.getElementById("close-modal");
   const iframe = document.getElementById("youtube-video");
 
-  const videoId = "C78OFF5dWo8";
+  const videoId = "Vz3xEaUKc18";
   const videoUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
 
   btn.addEventListener("click", () => {
