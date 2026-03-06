@@ -1,453 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Invoicer X Android App for US Invoices and Quotes</title>
-
-
-
-<link rel="stylesheet" href="styles.css" />
-
-
-<!-- Desktop / browser -->
-<link rel="icon" type="image/png" sizes="16x16" href="invoicer-x-logo2copy-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="invoicer-x-logo2copy-32x32.png">
-<link rel="icon" type="image/png" sizes="48x48" href="invoicer-x-logo2copy-48x48.png">
-<link rel="shortcut icon" type="image/png" href="invoicer-x-logo2copy-48x48.png">
-
-<!-- Apple / iOS touch icon -->
-<link rel="apple-touch-icon" sizes="180x180" href="invoicer-x-logo2copy-180x180.png">
-
-<!-- Android / PWA -->
-<link rel="icon" type="image/png" sizes="192x192" href="invoicer-x-logo2copy-192x192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="invoicer-x-logo2copy-512x512.png">
-
-
-
-
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-  <meta name="privacy" content="GDPR Friendly - No tracking, No cloud, Local storage only">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Invoicer X — Android App for US Invoices & Quotes</title>
 
   <meta name="description" content="Invoicer X is an Android app for US invoices and quotes. Create professional USD invoices with EIN support, routing numbers, PDF export, and offline access." />
-
-
-
-
   <meta name="keywords" content="US invoice app, invoice generator USA, EIN invoice, routing number invoice, freelancer invoice US, small business invoicing app, PDF invoice generator" />
-
-
-
-  
   <meta name="robots" content="index, follow" />
   <meta name="author" content="InvoicerX" />
 
-  <!-- Open Graph (for sharing on Facebook, LinkedIn, etc.) -->
-  <meta property="og:title" content="Invoicer-X - Fast & Simple Invoice App for Android" />
-  <meta property="og:description" content="Create invoices easily from your phone. InvoicerX is ideal for freelancers and small business owners." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Invoicer X — Invoice Maker for Android" />
+  <meta property="og:description" content="Create invoices easily from your phone. Ideal for freelancers and small businesses." />
   <meta property="og:image" content="https://invoicerx.github.io/InvoicerX-app-website/invoicer-x-logo2copy.png" />
   <meta property="og:url" content="https://invoicerx.github.io/InvoicerX-app-website/" />
   <meta property="og:type" content="website" />
 
-  
-
-  <!-- Canonical (da Google zna koji je glavni URL) -->
   <link rel="canonical" href="https://invoicerx.github.io/InvoicerX-app-website/" />
+  <link rel="stylesheet" href="styles.css" />
 
-  
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-28Y9JXXELZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Favicons (ostavi svoje stvarne putanje) -->
+  <link rel="icon" type="image/png" sizes="32x32" href="invoicer-x-logo2copy-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="invoicer-x-logo2copy-180x180.png">
 
-  gtag('config', 'G-28Y9JXXELZ');
-</script>
+  <!-- GA (ako želiš ostavi) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-28Y9JXXELZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-28Y9JXXELZ');
+  </script>
 
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "MobileApplication",
-  "name": "Invoicer X",
-  "operatingSystem": "Android",
-  "applicationCategory": "BusinessApplication",
-  "applicationSubCategory": "AccountingApplication",
-  "installUrl": "https://play.google.com/store/apps/details?id=my.invoice.invoicegeneratorapp",
-  "downloadUrl": "https://play.google.com/store/apps/details?id=my.invoice.invoicegeneratorapp",
-  "logo": "https://invoicerx.github.io/InvoicerX-app-website/invoicer-x-logo2copy.png",
-  "screenshot": [
-    "https://invoicerx.github.io/InvoicerX-app-website/Screenshot_20250624_230151_InvoicerX.jpg",
-    "https://invoicerx.github.io/InvoicerX-app-website/Screenshot_20250626_144339_InvoicerX.jpg",
-    "https://invoicerx.github.io/InvoicerX-app-website/InvoicePDFLookZaFacebook%20copy.png",
-    "https://invoicerx.github.io/InvoicerX-app-website/Screenshot_20250628_111929_InvoicerX.jpg",
-    "https://invoicerx.github.io/InvoicerX-app-website/IspravljenaVerzijaMobilniLayout%20copy.png"
-  ],
-  "offers": {
-    "@type": "Offer",
-    "price": "6.99",
-    "priceCurrency": "EUR"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5",
-    "ratingCount": "2"
-  },
-  "url": "https://play.google.com/store/apps/details?id=my.invoice.invoicegeneratorapp"
-}
-</script>
-
-
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Invoicer X",
+    "operatingSystem": "Android",
+    "applicationCategory": "BusinessApplication",
+    "applicationSubCategory": "AccountingApplication",
+    "installUrl": "https://play.google.com/store/apps/details?id=my.invoice.invoicegeneratorapp",
+    "downloadUrl": "https://play.google.com/store/apps/details?id=my.invoice.invoicegeneratorapp",
+    "logo": "https://invoicerx.github.io/InvoicerX-app-website/invoicer-x-logo2copy.png",
+    "url": "https://play.google.com/store/apps/details?id=my.invoice.invoicegeneratorapp"
+  }
+  </script>
 </head>
-
 
 <body>
 
-<header class="header">
-  
-   <div class="language-dropdown">
-    
-  <button id="language-btn" aria-haspopup="true" aria-expanded="false" aria-label="Select Language">
-     Language
-  </button>
-  <ul id="language-menu" role="menu" aria-labelledby="language-btn" hidden>
-  <li role="menuitem"><button data-lang="en">🇺🇸 English (US)</button></li>
-  
-</ul>
+  <!-- Top right language (za sada samo EN) -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="spacer"></div>
 
-</div>
-
-
-
-
-
-  <div class="header-content">
-    <div class="text-section">
-      
-      <h1 class="hero-title">
-  <span class="brand">
-    <span class="invoicer">Invoicer</span>
-    <span class="x">X</span>
-  </span>
-  <span class="subtitle">Android App for US Invoices and Quotes</span>
-</h1>
-
-
-       <p>Your US-focused invoice generator with EIN & routing number support</p>
-
-       <div class="gdpr-badge">
-  🛡️ <strong data-translate="gdprTitle">GDPR Friendly</strong><br>
-  <span class="line1" data-translate="gdprLine1">🔒 Privacy-first • No cloud • No tracking • Local storage only</span><br>
-  <span class="line2" data-translate="gdprLine2">Your data stays on your device</span>
-</div>
-      <br>
-      <img src="GetItOnGooglePlay_Badge_Web_color_English(1).png" alt="Get it on Google Play" width="170px" height="50px">
-      <p data-translate="headerText">Your all-in-one invoice generator app</p>
-      <a href="https://play.google.com/store/apps/details?id=my.invoice.invoicegeneratorapp" target="_blank" rel="noopener" class="btn-download" data-translate="downloadBtnText">
-        Get it on Google Play
-      </a>
-       
-      <button id="watch-trailer-btn" data-translate="trailerBtn" class="btn-trailer">▶ Watch Trailer</button>  
-    </div>
-    <br>
-    <img src="invoicer-x-logo2copy.png" id="invoicer-x-logo2" alt="Invoicer X Logo Thumbnail" width="300px" height="300px" />
-    <div class="video-thumbnail">
-      <img src="qr code.png" alt="Scan QR code to download Invoicer X app" />
-    </div>
-    
-  </div>
-  
-  <!-- Modal -->
-  <div id="video-modal" class="modal">
-    <div class="modal-content">
-      <span class="close-btn" id="close-modal">&times;</span>
-      <iframe 
-        id="youtube-video" 
-        width="560" 
-        height="315" 
-        src="" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-      </iframe>
+      <div class="language-dropdown">
+        <button id="language-btn" aria-haspopup="true" aria-expanded="false">
+          Language
+        </button>
+        <ul id="language-menu" role="menu" hidden>
+          <li role="menuitem"><button data-lang="en">🇺🇸 English (US)</button></li>
+        </ul>
+      </div>
     </div>
   </div>
-  
-   
-    
-    
-  
-</header>
-<div class="header-divider"></div>
 
-<section class="whats-new">
-  <div class="container">
-    <h2 data-translate="whatsNewTitle">🆕 What's New</h2>
-    <p>
-  <strong>Release Date: 17.01.2026</strong><br><br>
-  <strong>Invoicer X – New Dashboard Update:</strong><br>
-  • Added a brand new dashboard to provide a clear overview of all invoices and quotes.<br>
-  • Every time you save a PDF file, it will now appear on the dashboard, whether it’s an invoice or a quote.<br>
-  • Introduced a search bar for quickly finding any file.<br>
-  • Click on any file in the dashboard to instantly preview the PDF.<br>
-  • All saved files can also be accessed in your device’s Downloads folder.
-</p>
-<br>
-    <p data-translate="whatsNewText">
-      01.01.2026
-      Invoicer X now includes full - <strong>Quote creation support!</strong> - You can quickly generate professional quotes for your clients, just like invoices.  
-      Save, export, and share quotes as PDFs instantly, with the same ease, layout, and multi-currency options as invoices.  
-      Perfect for freelancers, contractors, and small businesses who need fast, professional quotations alongside their invoicing workflow.
-    </p>
-  </div>
-</section>
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container hero-grid">
 
- <section class="language-support">
-  <h2>🇺🇸 Built for the United States</h2>
-  <p>
-    Invoicer X is optimized exclusively for the US region, supporting USD billing,
-    EIN-based invoicing, and US banking requirements.
-  </p>
-</section>
+      <div class="hero-left">
+        <h1 class="hero-title">
+          <span class="brand">
+            <span class="invoicer">Invoicer</span><span class="x">X</span>
+          </span>
+          <span class="subtitle">Android App for US Invoices and Quotes</span>
+        </h1>
 
+        <p class="hero-lead">
+          Your US-focused invoice generator with EIN & routing number support
+        </p>
 
+        <div class="gdpr-badge">
+          🛡️ <strong>Privacy-first</strong><br>
+          <span class="line1">🔒 No cloud • No tracking • Local storage only</span><br>
+          <span class="line2">Your data stays on your device</span>
+        </div>
 
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=my.invoice.invoicegeneratorapp" target="_blank" rel="noopener">
+            Get it on Google Play
+          </a>
 
-  
+          <button id="watch-trailer-btn" class="btn btn-ghost" type="button">
+            ▶ Watch Trailer
+          </button>
+        </div>
 
+        <p class="hero-mini">Your all-in-one invoice generator app</p>
+      </div>
 
-</section>
+      <div class="hero-right">
+        <div class="hero-right-grid">
+          <img class="hero-logo" src="invoicer-x-logo2copy.png" alt="Invoicer X Logo" />
+          <div class="qr-card">
+            <img src="qr code.png" alt="Scan QR code to download Invoicer X app" />
+            <p class="qr-caption">Scan to open Google Play</p>
+          </div>
+        </div>
+      </div>
 
+    </div>
+  </header>
 
+  <div class="hero-divider"></div>
 
-<section class="description">
-  <div class="container">
-    <h2 data-translate="descriptionTitle">What is Invoicer X?</h2>
-    <p data-translate="descriptionParagraph1">
-      Invoicer X is your ultimate solution for creating fast, professional, and customizable invoices. Whether you're a freelancer, small business owner, or large enterprise, this app simplifies billing and financial management.
-    </p>
-    <p data-translate="descriptionParagraph2">
-      With intuitive design, multi-currency support, and features tailored for modern business needs — including QR codes and VAT compliance — Invoicer X helps you stay organized and get paid faster.
-    </p>
-  </div>
-</section>
+  <!-- What's New -->
+  <section class="section">
+    <div class="container narrow">
+      <h2 class="section-title">🆕 What's New</h2>
 
-<section class="how-to-use" data-translate="howToUse">
-  <div class="container">
-    <h2 data-translate="howToUseTitle">📲 How to Use Invoicer X</h2>
-    <ol class="how-to-steps">
-      <li data-translate="howToUseStep1"><strong>Step 1:</strong> Download the app from Google Play.</li>
-      <li data-translate="howToUseStep2"><strong>Step 2:</strong> Open the app and go to <em>My Profile</em>.</li>
-      <li data-translate="howToUseStep3"><strong>Step 3:</strong> Select your preferred language before filling in your profile!</li>
-      <li data-translate="howToUseStep4"><strong>Step 4:</strong> Fill in your company details and (optionally) add your logo.</li>
-      <li data-translate="howToUseStep5"><strong>Step 5:</strong> Save your information by tapping the <em>Save Profile</em> button.</li>
-      <li data-translate="howToUseStep6"><strong>Step 6:</strong> Go back to the <em>Invoice</em> section.</li>
-      <li data-translate="howToUseStep7"><strong>Step 7:</strong> Enter client details: name, address, VAT number (if needed).</li>
-      <li data-translate="howToUseStep8"><strong>Step 8:</strong> Add services, quantities, and prices for the invoice.</li>
-      <li data-translate="howToUseStep9"><strong>Step 9:</strong> Tap the <em>Generate Invoice</em> button to create the invoice.</li>
-      <li data-translate="howToUseStep10"><strong>Step 10:</strong> If needed, save the invoice as a PDF or print it.</li>
-    </ol>
-    <p class="how-to-footer" data-translate="howToUseWarning">⚠️ The invoice will not generate correctly if required fields are missing or incomplete!</p>
-    <p class="how-to-footer" data-translate="howToUseEasy">Simple and fast! ⚡</p>
-  </div>
-</section>
+      <div class="card">
+        <p><strong>Release Date: 17.01.2026</strong></p>
+        <p><strong>Invoicer X – New Dashboard Update:</strong></p>
+        <ul class="list">
+          <li>Added a brand new dashboard to provide a clear overview of all invoices and quotes.</li>
+          <li>Every time you save a PDF file, it will now appear on the dashboard, whether it’s an invoice or a quote.</li>
+          <li>Introduced a search bar for quickly finding any file.</li>
+          <li>Click on any file in the dashboard to instantly preview the PDF.</li>
+          <li>All saved files can also be accessed in your device’s Downloads folder.</li>
+        </ul>
 
-<div class="card">
-<section>
-  <h2 data-translate="screenshotsTitle">App Screenshots Gallery</h2>
+        <div class="hr"></div>
+
+        <p>
+          <strong>01.01.2026 — Quote support:</strong>
+          Invoicer X now includes full quote creation support. Save, export and share quotes as PDFs instantly.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Built for US -->
+  <section class="section section-soft">
+    <div class="container narrow">
+      <div class="card card-center">
+        <h2 class="section-title-alt">🇺🇸 Built for the United States</h2>
+        <p class="muted">
+          Invoicer X is optimized for the US region, supporting USD billing,
+          EIN-based invoicing, and US banking requirements.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- What is -->
+  <section class="section">
+    <div class="container narrow">
+      <h2 class="section-title">What is Invoicer X?</h2>
+      <div class="card">
+        <p>
+          Invoicer X is your solution for creating fast, professional, customizable invoices.
+          Whether you're a freelancer or small business owner, this app simplifies billing.
+        </p>
+        <p class="muted">
+          With clean design and US-focused features, Invoicer X helps you stay organized and get paid faster.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to use -->
+  <section class="section section-soft">
+    <div class="container narrow">
+      <div class="card">
+        <h2 class="section-title">📲 How to Use Invoicer X</h2>
+        <ol class="steps">
+          <li><strong>Step 1:</strong> Download the app from Google Play.</li>
+          <li><strong>Step 2:</strong> Open the app and go to <em>My Profile</em>.</li>
+          <li><strong>Step 3:</strong> Select your preferred language before filling in your profile.</li>
+          <li><strong>Step 4:</strong> Fill in your company details and (optionally) add your logo.</li>
+          <li><strong>Step 5:</strong> Save your information by tapping <em>Save Profile</em>.</li>
+          <li><strong>Step 6:</strong> Go back to the <em>Invoice</em> section.</li>
+          <li><strong>Step 7:</strong> Enter client details.</li>
+          <li><strong>Step 8:</strong> Add services, quantities, and prices.</li>
+          <li><strong>Step 9:</strong> Tap <em>Generate Invoice</em>.</li>
+          <li><strong>Step 10:</strong> Save as PDF or print if needed.</li>
+        </ol>
+
+        <p class="note-warn">⚠️ The invoice will not generate correctly if required fields are missing.</p>
+        <p class="note-ok">Simple and fast! ⚡</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots -->
+  <section>
+  <h2>App Screenshots Gallery</h2>
+
   <div class="screenshots">
-
     <div class="screenshot-item">
-      <img src="Screenshot 2025-09-11 at 23-47-52 Invoicer X - Invoice Maker - Apps on Google Play.png" alt="Screenshot 0" data-index="0" loading="lazy"/>
-      <p class="caption" data-translate="caption0">Difrent Templates</p>
+      <img src="Screenshot 2025-09-11 at 23-47-52 Invoicer X - Invoice Maker - Apps on Google Play.png" alt="Screenshot 0" data-index="0" loading="lazy" />
+      <p class="caption">Different Templates</p>
     </div>
 
     <div class="screenshot-item">
-      <img src="Screenshot_20250626_144404_InvoicerX.jpg" alt="Screenshot 4" data-index="3" loading="lazy"/>
-      <p class="caption" data-translate="caption3">Adding New Clients.</p>
+      <img src="Screenshot_20250626_144404_InvoicerX.jpg" alt="Screenshot 1" data-index="1" loading="lazy" />
+      <p class="caption">Adding New Clients</p>
     </div>
 
     <div class="screenshot-item">
-      <img src="Screenshot_20250626_144444_InvoicerX.jpg" alt="Screenshot 5" data-index="4" loading="lazy"/>
-      <p class="caption" data-translate="caption4">Automatic Tax Calculation and Flat Rate Option.</p>
+      <img src="Screenshot_20250626_144444_InvoicerX.jpg" alt="Screenshot 2" data-index="2" loading="lazy" />
+      <p class="caption">Automatic Tax Calculation</p>
     </div>
 
     <div class="screenshot-item">
-      <img src="Screenshot_20250628_100750_InvoicerX.jpg" alt="Screenshot 12" data-index="11" loading="lazy"/>
-      <p class="caption" data-translate="caption11">Client overview and adding new clients.</p>
+      <img src="Screenshot_20250628_100750_InvoicerX.jpg" alt="Screenshot 3" data-index="3" loading="lazy" />
+      <p class="caption">Client Overview</p>
     </div>
 
     <div class="screenshot-item">
-      <img src="Screenshot_20250628_100801_InvoicerX.jpg" alt="Screenshot 13" data-index="12" loading="lazy"/>
-      <p class="caption" data-translate="caption12">Managing saved clients.</p>
+      <img src="Screenshot_20250628_100801_InvoicerX.jpg" alt="Screenshot 4" data-index="4" loading="lazy" />
+      <p class="caption">Managing Saved Clients</p>
     </div>
 
     <div class="screenshot-item">
-      <img src="Screenshot_20250628_100813_InvoicerX.jpg" alt="Screenshot 14" data-index="13" loading="lazy"/>
-      <p class="caption" data-translate="caption13">Click on a saved client to generate an invoice.</p>
+      <img src="Screenshot_20250628_100813_InvoicerX.jpg" alt="Screenshot 5" data-index="5" loading="lazy" />
+      <p class="caption">Generate an Invoice</p>
     </div>
 
     <div class="screenshot-item">
-      <img src="Screenshot_20250628_100836_InvoicerX.jpg" alt="Screenshot 15" data-index="14" loading="lazy"/>
-      <p class="caption" data-translate="caption14">Currency selection.</p>
+      <img src="Screenshot_20250628_100836_InvoicerX.jpg" alt="Screenshot 6" data-index="6" loading="lazy" />
+      <p class="caption">Currency Selection</p>
     </div>
 
     <div class="screenshot-item">
-      <img src="Screenshot_20250628_100856_InvoicerX.jpg" alt="Screenshot 16" data-index="15" loading="lazy"/>
-      <p class="caption" data-translate="caption15">Add multiple service items with quantity and price.</p>
+      <img src="Screenshot_20250628_100856_InvoicerX.jpg" alt="Screenshot 7" data-index="7" loading="lazy" />
+      <p class="caption">Multiple Service Items</p>
     </div>
 
     <div class="screenshot-item">
-      <img src="InvoicePDFLookZaFacebook copy.png" alt="Screenshot 18" data-index="18" loading="lazy"/>
-      <p class="caption" data-translate="caption18">Appearance of the saved PDF invoice.</p>
+      <img src="InvoicePDFLookZaFacebook copy.png" alt="Screenshot 8" data-index="8" loading="lazy" />
+      <p class="caption">Saved PDF Invoice</p>
     </div>
 
     <div class="screenshot-item">
-      <img src="Screenshot_20250628_111929_InvoicerX.jpg" alt="Screenshot 19" data-index="19" loading="lazy"/>
-      <p class="caption" data-translate="caption19">Add a company logo that will be visible on the invoice.</p>
+      <img src="Screenshot_20250628_111929_InvoicerX.jpg" alt="Screenshot 9" data-index="9" loading="lazy" />
+      <p class="caption">Company Logo Upload</p>
     </div>
 
     <div class="screenshot-item">
-      <img src="IspravljenaVerzijaMobilniLayout copy.png" alt="Screenshot 20" data-index="20" loading="lazy"/>
-      <p class="caption" data-translate="caption20">Mobile Layout</p>
+      <img src="IspravljenaVerzijaMobilniLayout copy.png" alt="Screenshot 10" data-index="10" loading="lazy" />
+      <p class="caption">Mobile Layout</p>
     </div>
-
-
   </div>
 </section>
-</div>
 
-<!-- Lightbox Modal -->
 <div id="lightbox-modal" class="lightbox hidden">
   <span class="close-lightbox">&times;</span>
   <img id="lightbox-image" src="" alt="Large view" />
   <div class="nav-buttons">
-    <button id="prev-btn">&#10094;</button>
-    <button id="next-btn">&#10095;</button>
+    <button id="prev-btn" type="button">&#10094;</button>
+    <button id="next-btn" type="button">&#10095;</button>
   </div>
 </div>
 
-<section class="app-description">
-  <h2 data-translate="tryTitle">Try Invoicer X – Free for 3 Days!</h2>
+  <!-- CTA card -->
+  <section class="section section-soft">
+    <div class="container narrow">
+      <div class="card">
+        <h2 class="section-title">Try Invoicer X – Free for 3 Days!</h2>
+        <p class="muted">Enjoy full access to premium features during your trial – no commitment, cancel anytime.</p>
 
-  <p data-translate="trialInfo">
-    Enjoy full access to all premium features during your trial – no commitment, cancel anytime.
-  </p>
+        <div class="cols">
+          <div>
+            <h3 class="h3">Key Features</h3>
+            <ul class="list">
+              <li><strong>Dynamic Invoice Creation</strong> — Clean invoices in seconds</li>
+              <li><strong>Client Management</strong> — Save and reuse clients</li>
+              <li><strong>Automatic Numbering</strong> — No manual tracking</li>
+              <li><strong>PDF Export</strong> — Save/print instantly</li>
+              <li><strong>Logo Upload</strong> — Branding in one tap</li>
+            </ul>
+          </div>
 
-  <p data-translate="appIntro">
-    Create and send professional invoices in just a few taps with <strong>Invoicer X</strong>, the smart invoicing app built for 
-    <strong>freelancers, small businesses, and B2B entrepreneurs</strong>.
-  </p>
+          <div>
+            <h3 class="h3">Ideal for</h3>
+            <p class="muted">
+              Freelancers, consultants, contractors, and small businesses (B2B) who need fast, professional invoicing.
+            </p>
+            <a class="btn btn-primary btn-wide" href="https://play.google.com/store/apps/details?id=my.invoice.invoicegeneratorapp" target="_blank" rel="noopener">
+              Download on Google Play
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <p data-translate="targetAudience">
-    Whether you’re a designer, developer, consultant, or contractor, Invoicer X makes invoicing fast, reliable, and fully customizable – 
-    perfect for both <strong>individual and business clients (B2B)</strong>.
-  </p>
+  <!-- Contact -->
+  <section class="section">
+    <div class="container narrow">
+      <h2 class="section-title">Need a Desktop or Custom Version?</h2>
+      <p class="muted center">
+        If you would like a desktop version of Invoicer X or a tailored version, contact us and we’ll help.
+      </p>
 
-  <h3 data-translate="featuresTitle">Key Features:</h3>
-  <ul>
-    <li data-translate="feature1"><strong>Dynamic Invoice Creation</strong> – Build clean, professional invoices in seconds</li>
-    <li data-translate="feature2"><strong>Client Management</strong> – Save and reuse your client list for future billing</li>
-    <li data-translate="feature3"><strong>Company or Individual Profiles</strong> – Tailor invoice details to match your business type</li>
-    <li data-translate="feature4"><strong>Automatic Invoice Numbering</strong> – No more manual tracking</li>
-  <!--maknuti feature 5 6 7 10-->
-    <li data-translate="feature5" style="display: none;"><strong>International Payments</strong> – Add IBAN & SWIFT/BIC for cross-border compatibility</li>
-    <li data-translate="feature6" style="display: none;"><strong>B2B VAT Support</strong> – Include VAT ID with country-specific validation</li>
-    <li data-translate="feature7" style="display: none;"><strong>Tax Settings</strong> – Set VAT rates or issue tax-exempt invoices</li>
-    <li data-translate="feature8"><strong>Legal Notes & QR Code</strong> – Add legal disclaimers and payment QR codes</li>
-    <li data-translate="feature9"><strong>PDF Export & Print</strong> – Save or print invoices instantly</li>
-    <li data-translate="feature10" style="display: none;"><strong>Multi-language & Multi-currency</strong> – Invoice clients worldwide</li>
-    <li data-translate="feature11" style="display: none;"><strong>Light & Dark Mode</strong> – Work your way</li>
-    <li data-translate="feature12"><strong>Company Logo Upload</strong> – Add personal branding with ease</li>
-  </ul>
+      <div class="card">
+        <form action="https://formspree.io/f/xnnlenzd" method="POST" id="contact-form">
+          <div class="form-row">
+            <label>
+              <span>Your Name</span>
+              <input type="text" name="name" required placeholder="Your Name">
+            </label>
 
-  <h3 data-translate="idealForTitle">Ideal for:</h3>
-  <p data-translate="idealForText">
-    Freelancers, consultants, sole traders, agencies, service providers, and B2B businesses needing simple, efficient invoicing.
-  </p>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" required placeholder="email@">
+            </label>
+          </div>
 
+          <label>
+            <span>Message</span>
+            <textarea name="message" required placeholder="Message"></textarea>
+          </label>
 
-  <p data-translate="noBloat"><em>No complicated tools. No bloated features. Just everything you need to get paid.</em></p>
-  <p data-translate="cta"><strong>Download now and start sending better invoices today!</strong></p>
-</section>
+          <!-- honeypot -->
+          <input type="text" name="_honey" style="display:none">
 
+          <!-- TODO: promijeni _next na stvarni URL -->
+          <input type="hidden" name="_next" value="https://invoicerx.github.io/InvoicerX-app-website/thank-you.html">
 
+          <button class="btn btn-primary btn-wide" type="submit">Send</button>
+          <p class="fine muted center">Tip: add invoice number in subject if needed.</p>
+        </form>
+      </div>
+    </div>
+  </section>
 
-<button id="toTopBtn" title="Go to top">↑</button>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <p>© 2025 Invoicer X. All rights reserved.</p>
+        <p class="muted small">🔒 Privacy-first • No cloud • No tracking • Local storage only</p>
+      </div>
+      <div class="footer-links">
+        <a href="privacypolicy.html">Privacy Policy</a>
+        <span class="dot">•</span>
+        <a href="termsofservice.html">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
 
-<section class="user-manual">
-  <div class="container">
-    <h2 data-translate="userManualTitle">📄 How to Create Your First Invoice – Quick Guide</h2>
-    <ol>
-      <li><strong data-translate="step1Strong">Install the App:</strong> <span data-translate="step1Text">Download Invoicer X from <a href="https://play.google.com/store/apps/details?id=my.invoice.invoicegeneratorapp" target="_blank">Google Play Store</a>.</span></li>
-      <li><strong data-translate="step2Strong">Go to "My Profile":</strong> <span data-translate="step2Text"> Add your business or personal info, and upload your logo.</span></li>
-      <li><strong data-translate="step3Strong">Save Your Information:</strong> <span data-translate="step3Text">Scroll to the bottom and tap "Save" to confirm your profile settings.</span></li>
-      <li><strong data-translate="step4Strong">Go to "Invoice":</strong> <span data-translate="step4Text">Add the client's name, address, and optional EIN (for business clients)
-     </span></li>
-      <li><strong data-translate="step5Strong">Flat Rate Users:</strong> <span data-translate="step5Text">If you are using a flat rate, check the corresponding box.</span></li>
-      <li><strong data-translate="step6Strong">Non-Flat Rate Users:</strong> <span data-translate="step6Text">Add your service, quantity, currency, and price.</span></li>
-      <li><strong data-translate="step7Strong">Optional Note:</strong> <span data-translate="step7Text">You can add additional notes in the "Notes!" field if needed.</span></li>
-      <li><strong data-translate="step8Strong">Add More Items:</strong> <span data-translate="step8Text">To add more services or products, click "Add Item" and fill in the details.</span></li>
-      <li><strong data-translate="step9Strong">Generate Invoice:</strong> <span data-translate="step9Text">Tap "Generate Invoice" – the invoice will be dynamically created based on your input.</span></li>
-      <li><strong data-translate="step10Strong">Save and Print:</strong> <span data-translate="step10Text">Save the generated invoice as a PDF and print it if needed.</span></li>
-      <li><strong data-translate="step11Strong">Find Saved Invoices:</strong> <span data-translate="step11Text">All saved invoices are located in your device's Downloads folder.</span></li>
-    </ol>
-
-    <p><strong data-translate="tipStrong">✅ Tip:</strong> <span data-translate="tipText">Make sure to complete your profile first so the invoice includes your correct business info and logo.</span></p>
-    <p><strong data-translate="reminderStrong">🧾 Reminder:</strong> <span data-translate="reminderText">You can reuse client info for future invoices to save time.</span></p>
+  <!-- Video Modal -->
+  <div id="video-modal" class="modal" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-label="Trailer">
+      <button class="modal-close" id="close-modal" type="button" aria-label="Close">×</button>
+      <iframe
+        id="youtube-video"
+        title="Invoicer X Trailer"
+        src=""
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
   </div>
-</section>
 
-<section class="contact-us-desktop-version">
-  <div class="contactUsContainer">
-    <h2 data-translate="costumVersion">Need a Desktop or Custom Version?</h2>
-    <p data-translate="desktopOrCustomVersion">
-      If you would like a desktop version of Invoicer X or a version tailored to your device, feel free to <a class="contactUs">contact us</a> and we'll be happy to help!
-    </p>
-  </div>
-</section>
+  <!-- Lightbox -->
+  
 
+  <button id="toTopBtn" class="toTop" type="button" aria-label="Back to top">↑</button>
 
-<div class="userForm" id="contact">
-   
-<form action="https://formspree.io/f/xnnlenzd" method="POST" id="contact-form">
-  <p data-translate="contactDescription" style="font-weight: bold; color: #007BFF; text-shadow: 2px 2px 3px rgba(90, 90, 90, 0.3);">
-    Contact Us.
-  </p>
-  <br>
-  <input type="text" name="name" data-translate="nameUser" required placeholder="Your Name">
-  <input type="email" name="email" data-translate="emailUser" required placeholder="email@">
-  <textarea name="message" data-translate="messageUser" required placeholder="Message"></textarea>
-
-  <!-- Zaštita od bota -->
-  <input type="text" name="_honey"  style="display:none">
-
-  <!-- Redirekcija nakon slanja -->
-  <input type="hidden" name="_next" value="https://tvojsite.github.io/thank-you.html">
-
-  <button type="submit" data-translate="submit">Pošalji</button>
-</form>
-
-</div>
-
-
-<footer>
-  <p>© 2025 Invoicer X. All rights reserved. <br> Web Design by Alen K</p>
-  <p style="font-size:13px; opacity:0.75;">
-   🔒 Privacy-first • No cloud • No tracking • Local storage only
-</p>
-
-  <p>
-  <a href="privacypolicy.html" data-translate="privacyPolicy">Privacy Policy</a> |
-  <a href="termsofservice.html" data-translate="termsOfService">Terms of Service</a>
-</p>
-
-</footer>
-
-<script src="language.js"></script>
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
