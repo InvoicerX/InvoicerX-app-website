@@ -8,7 +8,7 @@
 
 Nije potreban Node, VSC, npm, server aplikacije niti build na GitHubu. script.js je gotova skripta za galeriju, teme, FAQ i dijaloge. Slike su PNG i SVG, a fontovi WOFF2. Ništa nije objavljeno automatski.
 
-Privacy i Terms imaju novi izgled i lokalne poveznice; tekst je sačuvan iz izvornog sajta. Prije produkcijske objave treba uskladiti stari pravni tekst: Terms još navodi 3-day trial i staru kontakt-adresu, Privacy navodi localStorage i tvrdnju o neuporabi third-party API-ja. To ne opisuje u cijelosti novu nativnu aplikaciju s Google Play Billingom. Ovim paketom nije provedena pravna revizija niti promjena uvjeta.
+Privacy i Terms imaju novi izgled i lokalne poveznice; tekst je prenesen iz izvornog sajta, uz trial usklađen na 7 dana. Prije produkcijske objave treba uskladiti stari pravni tekst: Terms još navodi staru kontakt-adresu, Privacy navodi localStorage i tvrdnju o neuporabi third-party API-ja. To ne opisuje u cijelosti novu nativnu aplikaciju s Google Play Billingom. Ovim paketom nije provedena pravna revizija niti promjena uvjeta.
 
 Početna stranica i dalje jasno označava novu aplikaciju kao razvojni pregled. Prikazi su postojeći SVG dizajni. Cijena se provjerava na Google Playu; uvjeti stare objavljene aplikacije nisu zamijenjeni uvjetima još neobjavljene nove verzije.
 
